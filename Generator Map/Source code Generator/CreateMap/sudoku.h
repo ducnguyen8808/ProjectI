@@ -40,7 +40,7 @@ public :
         string temp = "";
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 8; j++) {
-                temp += to_string(arr[i][j]) + " ";
+                temp += to_string(arr[i][j]) + ",";
             }
             temp += to_string(arr[i][8]) + "\n";
 
@@ -55,7 +55,7 @@ public :
         string temp = "";
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 8; j++) {
-                temp += to_string(arr[i][j]) + " ";
+                temp += to_string(arr[i][j]) + ",";
             }
             temp += to_string(arr[i][8]) + "\n";
 
@@ -70,7 +70,7 @@ public :
         string temp = "";
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 8; j++) {
-                temp += to_string(arr[i][j]) + " ";
+                temp += to_string(arr[i][j]) + ",";
             }
             temp += to_string(arr[i][8]) + "\n";
 
