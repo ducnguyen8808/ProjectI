@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CreateMap/main.cpp
+iostream
+-
+sudoku.h
+D:/CreateMap/sudoku.h
+
+D:/CreateMap/sudoku.h
+iostream
+-
+random
+-
+cstdlib
+-
+ctime
+-
+chrono
+-
+stdlib.h
+-
+iomanip
+-
+fstream
+-
+
