@@ -36,7 +36,7 @@ public class importMap {
     public static int[][] readMatrix() throws IOException {
         int[][] matrix = new int[9][9];
         Random rd = new Random();
-        int n = rd.nextInt(500);
+        int n = rd.nextInt(300);
         String line = "";
         for(int i = 1; i <= n*10; i++){
             reader.readLine();
@@ -44,7 +44,7 @@ public class importMap {
         for(int i = 0;i<9;i++){
             line = reader.readLine();
             for(int j = 0; j<9; j++){
-                matrix[i][j] = Integer.parseInt(line.split(" ")[j]);
+                matrix[i][j] = Integer.parseInt(line.split(",")[j]);
             }
         }
         return matrix;
