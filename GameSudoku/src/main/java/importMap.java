@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class importMap {
 
-    private final static String FILE_URL = "C:\\Users\\DELL\\Documents\\ProjectI\\DataMap\\";
+    private final static String FILE_URL = "DataMap\\";
 
     public static BufferedReader reader;
 
