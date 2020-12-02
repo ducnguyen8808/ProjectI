@@ -273,6 +273,7 @@ public class MainForm extends javax.swing.JFrame {
         time.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         time.setText("Time:");
 
+        ptime.setEditable(false);
         ptime.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         ptime.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         ptime.addActionListener(new java.awt.event.ActionListener() {
@@ -286,6 +287,7 @@ public class MainForm extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel1.setText("Point");
 
+        jTextField1.setEditable(false);
         jTextField1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
         custom.setBackground(new java.awt.Color(229, 226, 209));
@@ -1048,13 +1050,16 @@ private JTextField[][] setBox(){
         return matrix;
     }
     
-    private void checkMatrix(int[][] matrix){
+    private void checkMatrix(int[][] matrix,int[][] newMT){
         Slove sl = new Slove();
         JTextField[][] boxNumber = setBox();
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
-                if(sl.checkValid(matrix,i,j,Integer.parseInt(boxNumber[i][j].getText())))
-                    boxNumber[i][j].setBackground(Color.green);
+                if(matrix[i][j]==0){
+                    if(sl.checkValid(matrix,i,j,newMT[i][j]))
+                        boxNumber[i][j].setBackground(Color.green);
+                    else 
+                        boxNumber[i][j].setBackground(Color.red);}
             }
         }
     }
@@ -1126,6 +1131,9 @@ private JTextField[][] setBox(){
 
     private void checkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkActionPerformed
         // TODO add your handling code here:
+        int[][] newMT = new int[9][9];
+        newMT = getMatrix();
+        checkMatrix(mt,newMT);
     }//GEN-LAST:event_checkActionPerformed
 
 
