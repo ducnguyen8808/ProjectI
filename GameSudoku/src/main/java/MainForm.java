@@ -17,10 +17,16 @@ import javax.swing.*;
  * @author ducng
  */
 public class MainForm extends javax.swing.JFrame {
-    public int point = 100;
+    private int point = 100;
+    private int[][] mt = new int[9][9];
     /** Creates new form MainForm */
     public MainForm() {
         initComponents();
+        ButtonGroup bg = new ButtonGroup();
+        bg.add(easy);
+        bg.add(normal);
+        bg.add(hard);
+        bg.add(custom);
         setTitle("Sudoku Game");
         setLocation(300, 100);
     }
@@ -33,7 +39,7 @@ public class MainForm extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        ButtonGroup bg = new ButtonGroup();
+
         jTextField20 = new javax.swing.JTextField();
         jTextField21 = new javax.swing.JTextField();
         jTextField22 = new javax.swing.JTextField();
@@ -247,6 +253,11 @@ public class MainForm extends javax.swing.JFrame {
 
         check.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         check.setText("Check");
+        check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkActionPerformed(evt);
+            }
+        });
 
         sloove.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         sloove.setText("Slove");
@@ -585,15 +596,6 @@ public class MainForm extends javax.swing.JFrame {
 
         m78.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m78.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-
-        //thử
-
-        bg.add(easy);
-        bg.add(normal);
-        bg.add(hard);
-        bg.add(custom);
-
-
 
         m83.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m83.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1073,13 +1075,12 @@ private JTextField[][] setBox(){
             else if (hard.isSelected()) {
                 map = new importMap(3);
             }
-            int[][] matrix = new int[9][9] ;
             try {
-                matrix = map.readMatrix();
+                mt = map.readMatrix();
             } catch (IOException ex) {
                 //Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
             }
-            drawMatrix(matrix);
+            drawMatrix(mt);
         }
     }//GEN-LAST:event_newgameActionPerformed
 
@@ -1122,6 +1123,10 @@ private JTextField[][] setBox(){
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_quitMouseClicked
+
+    private void checkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checkActionPerformed
 
 
     /**
