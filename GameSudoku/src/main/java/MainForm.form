@@ -478,13 +478,14 @@
         <Component class="javax.swing.JTextField" name="ptime">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="d1" green="e2" red="e5" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="14" style="0"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder/>
-              </Border>
+              <Border info="null"/>
             </Property>
           </Properties>
           <Events>
@@ -511,8 +512,14 @@
         <Component class="javax.swing.JTextField" name="jTextField1">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="d1" green="e2" red="e5" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="14" style="0"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
             </Property>
           </Properties>
         </Component>
@@ -843,9 +850,6 @@
       <SubComponents>
         <Component class="javax.swing.JTextField" name="m11">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -856,12 +860,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m11KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m12">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -872,12 +876,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m12KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m13">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -888,12 +892,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m13KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m16">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -904,12 +908,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m16KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m14">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -920,12 +924,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m14KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m15">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -936,12 +940,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m15KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m19">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -952,12 +956,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m19KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m17">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -968,12 +972,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m17KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m18">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -984,12 +988,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m18KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m23">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1000,12 +1004,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m23KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m26">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1016,12 +1020,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m26KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m24">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1032,12 +1036,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m24KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m25">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1048,12 +1052,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m25KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m21">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1064,12 +1068,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m21KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m29">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1080,12 +1084,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m29KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m27">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1096,12 +1100,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m27KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m28">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1112,12 +1116,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m28KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m22">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1128,12 +1132,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m22KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m33">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1144,12 +1148,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m33KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m36">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1160,12 +1164,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m36KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m34">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1176,12 +1180,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m34KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m35">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1192,12 +1196,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m35KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m31">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1208,12 +1212,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m31KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m39">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1224,12 +1228,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m39KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m37">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1240,12 +1244,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m37KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m38">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1256,12 +1260,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m38KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m32">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1272,12 +1276,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m32KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m69">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1288,12 +1292,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m69KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m67">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1304,12 +1308,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m67KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m68">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1320,12 +1324,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m68KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m62">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1336,12 +1340,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m62KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m43">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1352,12 +1356,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m43KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m46">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1368,12 +1372,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m46KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m44">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1384,12 +1388,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m44KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m45">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1400,12 +1404,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m45KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m41">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1416,12 +1420,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m41KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m49">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1432,12 +1436,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m49KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m47">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1448,12 +1452,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m47KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m48">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1464,12 +1468,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m48KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m53">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1480,12 +1484,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m53KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m56">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1496,12 +1500,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m56KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m54">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1512,12 +1516,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m54KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m55">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1528,12 +1532,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m55KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m51">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1544,12 +1548,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m51KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m63">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1560,12 +1564,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m63KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m59">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1576,12 +1580,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m59KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m66">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1592,12 +1596,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m66KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m57">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1608,12 +1612,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m57KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m64">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1624,12 +1628,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m64KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m58">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1640,12 +1644,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m58KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m65">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1656,12 +1660,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m65KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m52">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1672,12 +1676,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m52KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m61">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1688,12 +1692,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m61KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m42">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1704,12 +1708,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m42KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m99">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1726,9 +1730,6 @@
         </Component>
         <Component class="javax.swing.JTextField" name="m97">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1739,12 +1740,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m97KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m98">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1755,12 +1756,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m98KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m92">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1771,12 +1772,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m92KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m73">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1787,12 +1788,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m73KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m76">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1803,12 +1804,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m76KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m74">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1819,12 +1820,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m74KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m75">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1835,12 +1836,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m75KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m71">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1851,12 +1852,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m71KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m79">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1867,12 +1868,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m79KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m77">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1883,12 +1884,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m77KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m78">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1899,12 +1900,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m78KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m83">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1915,12 +1916,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m83KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m86">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1931,12 +1932,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m86KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m84">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1947,12 +1948,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m84KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m85">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1963,12 +1964,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m85KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m81">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1979,12 +1980,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m81KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m93">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -1995,12 +1996,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m93KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m89">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -2011,12 +2012,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m89KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m96">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -2027,12 +2028,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m96KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m87">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -2043,12 +2044,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m87KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m94">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -2059,12 +2060,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m94KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m88">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -2075,12 +2076,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m88KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m95">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -2091,12 +2092,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m95KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m82">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -2107,12 +2108,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m82KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m91">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -2123,12 +2124,12 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m91KeyTyped"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="m72">
           <Properties>
-            <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="26" style="0"/>
             </Property>
@@ -2139,6 +2140,9 @@
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="m72KeyTyped"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

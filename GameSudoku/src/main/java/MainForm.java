@@ -274,8 +274,9 @@ public class MainForm extends javax.swing.JFrame {
         time.setText("Time:");
 
         ptime.setEditable(false);
+        ptime.setBackground(new java.awt.Color(229, 226, 209));
         ptime.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        ptime.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        ptime.setBorder(null);
         ptime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ptimeActionPerformed(evt);
@@ -288,7 +289,9 @@ public class MainForm extends javax.swing.JFrame {
         jLabel1.setText("Point");
 
         jTextField1.setEditable(false);
+        jTextField1.setBackground(new java.awt.Color(229, 226, 209));
         jTextField1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField1.setBorder(null);
 
         custom.setBackground(new java.awt.Color(229, 226, 209));
         custom.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -406,324 +409,594 @@ public class MainForm extends javax.swing.JFrame {
         m11.setToolTipText("");
         m11.setActionCommand("<Not Set>");
         m11.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m11.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m11KeyTyped(evt);
+            }
+        });
 
         m12.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m12.setToolTipText("");
         m12.setActionCommand("<Not Set>");
         m12.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m12.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m12KeyTyped(evt);
+            }
+        });
 
         m13.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m13.setToolTipText("");
         m13.setActionCommand("<Not Set>");
         m13.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m13.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m13KeyTyped(evt);
+            }
+        });
 
         m16.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m16.setToolTipText("");
         m16.setActionCommand("<Not Set>");
         m16.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m16.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m16KeyTyped(evt);
+            }
+        });
 
         m14.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m14.setToolTipText("");
         m14.setActionCommand("<Not Set>");
         m14.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m14.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m14KeyTyped(evt);
+            }
+        });
 
         m15.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m15.setToolTipText("");
         m15.setActionCommand("<Not Set>");
         m15.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m15.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m15KeyTyped(evt);
+            }
+        });
 
         m19.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m19.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m19.setToolTipText("");
         m19.setActionCommand("<Not Set>");
         m19.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m19.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m19KeyTyped(evt);
+            }
+        });
 
         m17.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m17.setToolTipText("");
         m17.setActionCommand("<Not Set>");
         m17.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m17.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m17KeyTyped(evt);
+            }
+        });
 
         m18.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m18.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m18.setToolTipText("");
         m18.setActionCommand("<Not Set>");
         m18.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m18.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m18KeyTyped(evt);
+            }
+        });
 
         m23.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m23.setToolTipText("");
         m23.setActionCommand("<Not Set>");
         m23.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m23.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m23KeyTyped(evt);
+            }
+        });
 
         m26.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m26.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m26.setToolTipText("");
         m26.setActionCommand("<Not Set>");
         m26.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m26.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m26KeyTyped(evt);
+            }
+        });
 
         m24.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m24.setToolTipText("");
         m24.setActionCommand("<Not Set>");
         m24.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m24.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m24KeyTyped(evt);
+            }
+        });
 
         m25.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m25.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m25.setToolTipText("");
         m25.setActionCommand("<Not Set>");
         m25.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m25.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m25KeyTyped(evt);
+            }
+        });
 
         m21.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m21.setToolTipText("");
         m21.setActionCommand("<Not Set>");
         m21.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m21.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m21KeyTyped(evt);
+            }
+        });
 
         m29.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m29.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m29.setToolTipText("");
         m29.setActionCommand("<Not Set>");
         m29.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m29.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m29KeyTyped(evt);
+            }
+        });
 
         m27.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m27.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m27.setToolTipText("");
         m27.setActionCommand("<Not Set>");
         m27.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m27.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m27KeyTyped(evt);
+            }
+        });
 
         m28.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m28.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m28.setToolTipText("");
         m28.setActionCommand("<Not Set>");
         m28.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m28.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m28KeyTyped(evt);
+            }
+        });
 
         m22.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m22.setToolTipText("");
         m22.setActionCommand("<Not Set>");
         m22.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m22.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m22KeyTyped(evt);
+            }
+        });
 
         m33.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m33.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m33.setToolTipText("");
         m33.setActionCommand("<Not Set>");
         m33.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m33.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m33KeyTyped(evt);
+            }
+        });
 
         m36.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m36.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m36.setToolTipText("");
         m36.setActionCommand("<Not Set>");
         m36.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m36.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m36KeyTyped(evt);
+            }
+        });
 
         m34.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m34.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m34.setToolTipText("");
         m34.setActionCommand("<Not Set>");
         m34.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m34.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m34KeyTyped(evt);
+            }
+        });
 
         m35.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m35.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m35.setToolTipText("");
         m35.setActionCommand("<Not Set>");
         m35.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m35.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m35KeyTyped(evt);
+            }
+        });
 
         m31.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m31.setToolTipText("");
         m31.setActionCommand("<Not Set>");
         m31.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m31.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m31KeyTyped(evt);
+            }
+        });
 
         m39.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m39.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m39.setToolTipText("");
         m39.setActionCommand("<Not Set>");
         m39.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m39.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m39KeyTyped(evt);
+            }
+        });
 
         m37.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m37.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m37.setToolTipText("");
         m37.setActionCommand("<Not Set>");
         m37.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m37.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m37KeyTyped(evt);
+            }
+        });
 
         m38.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m38.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m38.setToolTipText("");
         m38.setActionCommand("<Not Set>");
         m38.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m38.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m38KeyTyped(evt);
+            }
+        });
 
         m32.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m32.setToolTipText("");
         m32.setActionCommand("<Not Set>");
         m32.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m32.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m32KeyTyped(evt);
+            }
+        });
 
         m69.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m69.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m69.setToolTipText("");
         m69.setActionCommand("<Not Set>");
         m69.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m69.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m69KeyTyped(evt);
+            }
+        });
 
         m67.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m67.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m67.setToolTipText("");
         m67.setActionCommand("<Not Set>");
         m67.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m67.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m67KeyTyped(evt);
+            }
+        });
 
         m68.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m68.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m68.setToolTipText("");
         m68.setActionCommand("<Not Set>");
         m68.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m68.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m68KeyTyped(evt);
+            }
+        });
 
         m62.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m62.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m62.setToolTipText("");
         m62.setActionCommand("<Not Set>");
         m62.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m62.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m62KeyTyped(evt);
+            }
+        });
 
         m43.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m43.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m43.setToolTipText("");
         m43.setActionCommand("<Not Set>");
         m43.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m43.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m43KeyTyped(evt);
+            }
+        });
 
         m46.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m46.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m46.setToolTipText("");
         m46.setActionCommand("<Not Set>");
         m46.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m46.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m46KeyTyped(evt);
+            }
+        });
 
         m44.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m44.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m44.setToolTipText("");
         m44.setActionCommand("<Not Set>");
         m44.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m44.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m44KeyTyped(evt);
+            }
+        });
 
         m45.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m45.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m45.setToolTipText("");
         m45.setActionCommand("<Not Set>");
         m45.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m45.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m45KeyTyped(evt);
+            }
+        });
 
         m41.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m41.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m41.setToolTipText("");
         m41.setActionCommand("<Not Set>");
         m41.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m41.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m41KeyTyped(evt);
+            }
+        });
 
         m49.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m49.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m49.setToolTipText("");
         m49.setActionCommand("<Not Set>");
         m49.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m49.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m49KeyTyped(evt);
+            }
+        });
 
         m47.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m47.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m47.setToolTipText("");
         m47.setActionCommand("<Not Set>");
         m47.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m47.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m47KeyTyped(evt);
+            }
+        });
 
         m48.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m48.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m48.setToolTipText("");
         m48.setActionCommand("<Not Set>");
         m48.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m48.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m48KeyTyped(evt);
+            }
+        });
 
         m53.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m53.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m53.setToolTipText("");
         m53.setActionCommand("<Not Set>");
         m53.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m53.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m53KeyTyped(evt);
+            }
+        });
 
         m56.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m56.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m56.setToolTipText("");
         m56.setActionCommand("<Not Set>");
         m56.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m56.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m56KeyTyped(evt);
+            }
+        });
 
         m54.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m54.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m54.setToolTipText("");
         m54.setActionCommand("<Not Set>");
         m54.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m54.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m54KeyTyped(evt);
+            }
+        });
 
         m55.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m55.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m55.setToolTipText("");
         m55.setActionCommand("<Not Set>");
         m55.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m55.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m55KeyTyped(evt);
+            }
+        });
 
         m51.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m51.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m51.setToolTipText("");
         m51.setActionCommand("<Not Set>");
         m51.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m51.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m51KeyTyped(evt);
+            }
+        });
 
         m63.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m63.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m63.setToolTipText("");
         m63.setActionCommand("<Not Set>");
         m63.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m63.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m63KeyTyped(evt);
+            }
+        });
 
         m59.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m59.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m59.setToolTipText("");
         m59.setActionCommand("<Not Set>");
         m59.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m59.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m59KeyTyped(evt);
+            }
+        });
 
         m66.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m66.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m66.setToolTipText("");
         m66.setActionCommand("<Not Set>");
         m66.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m66.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m66KeyTyped(evt);
+            }
+        });
 
         m57.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m57.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m57.setToolTipText("");
         m57.setActionCommand("<Not Set>");
         m57.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m57.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m57KeyTyped(evt);
+            }
+        });
 
         m64.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m64.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m64.setToolTipText("");
         m64.setActionCommand("<Not Set>");
         m64.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m64.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m64KeyTyped(evt);
+            }
+        });
 
         m58.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m58.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m58.setToolTipText("");
         m58.setActionCommand("<Not Set>");
         m58.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m58.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m58KeyTyped(evt);
+            }
+        });
 
         m65.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m65.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m65.setToolTipText("");
         m65.setActionCommand("<Not Set>");
         m65.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m65.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m65KeyTyped(evt);
+            }
+        });
 
         m52.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m52.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m52.setToolTipText("");
         m52.setActionCommand("<Not Set>");
         m52.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m52.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m52KeyTyped(evt);
+            }
+        });
 
         m61.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m61.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m61.setToolTipText("");
         m61.setActionCommand("<Not Set>");
         m61.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m61.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m61KeyTyped(evt);
+            }
+        });
 
         m42.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m42.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m42.setToolTipText("");
         m42.setActionCommand("<Not Set>");
         m42.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m42.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m42KeyTyped(evt);
+            }
+        });
 
         m99.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m99.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -741,156 +1014,286 @@ public class MainForm extends javax.swing.JFrame {
         m97.setToolTipText("");
         m97.setActionCommand("<Not Set>");
         m97.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m97.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m97KeyTyped(evt);
+            }
+        });
 
         m98.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m98.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m98.setToolTipText("");
         m98.setActionCommand("<Not Set>");
         m98.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m98.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m98KeyTyped(evt);
+            }
+        });
 
         m92.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m92.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m92.setToolTipText("");
         m92.setActionCommand("<Not Set>");
         m92.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m92.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m92KeyTyped(evt);
+            }
+        });
 
         m73.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m73.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m73.setToolTipText("");
         m73.setActionCommand("<Not Set>");
         m73.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m73.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m73KeyTyped(evt);
+            }
+        });
 
         m76.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m76.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m76.setToolTipText("");
         m76.setActionCommand("<Not Set>");
         m76.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m76.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m76KeyTyped(evt);
+            }
+        });
 
         m74.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m74.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m74.setToolTipText("");
         m74.setActionCommand("<Not Set>");
         m74.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m74.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m74KeyTyped(evt);
+            }
+        });
 
         m75.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m75.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m75.setToolTipText("");
         m75.setActionCommand("<Not Set>");
         m75.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m75.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m75KeyTyped(evt);
+            }
+        });
 
         m71.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m71.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m71.setToolTipText("");
         m71.setActionCommand("<Not Set>");
         m71.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m71.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m71KeyTyped(evt);
+            }
+        });
 
         m79.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m79.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m79.setToolTipText("");
         m79.setActionCommand("<Not Set>");
         m79.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m79.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m79KeyTyped(evt);
+            }
+        });
 
         m77.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m77.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m77.setToolTipText("");
         m77.setActionCommand("<Not Set>");
         m77.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m77.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m77KeyTyped(evt);
+            }
+        });
 
         m78.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m78.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m78.setToolTipText("");
         m78.setActionCommand("<Not Set>");
         m78.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m78.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m78KeyTyped(evt);
+            }
+        });
 
         m83.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m83.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m83.setToolTipText("");
         m83.setActionCommand("<Not Set>");
         m83.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m83.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m83KeyTyped(evt);
+            }
+        });
 
         m86.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m86.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m86.setToolTipText("");
         m86.setActionCommand("<Not Set>");
         m86.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m86.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m86KeyTyped(evt);
+            }
+        });
 
         m84.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m84.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m84.setToolTipText("");
         m84.setActionCommand("<Not Set>");
         m84.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m84.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m84KeyTyped(evt);
+            }
+        });
 
         m85.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m85.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m85.setToolTipText("");
         m85.setActionCommand("<Not Set>");
         m85.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m85.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m85KeyTyped(evt);
+            }
+        });
 
         m81.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m81.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m81.setToolTipText("");
         m81.setActionCommand("<Not Set>");
         m81.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m81.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m81KeyTyped(evt);
+            }
+        });
 
         m93.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m93.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m93.setToolTipText("");
         m93.setActionCommand("<Not Set>");
         m93.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m93.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m93KeyTyped(evt);
+            }
+        });
 
         m89.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m89.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m89.setToolTipText("");
         m89.setActionCommand("<Not Set>");
         m89.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m89.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m89KeyTyped(evt);
+            }
+        });
 
         m96.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m96.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m96.setToolTipText("");
         m96.setActionCommand("<Not Set>");
         m96.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m96.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m96KeyTyped(evt);
+            }
+        });
 
         m87.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m87.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m87.setToolTipText("");
         m87.setActionCommand("<Not Set>");
         m87.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m87.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m87KeyTyped(evt);
+            }
+        });
 
         m94.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m94.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m94.setToolTipText("");
         m94.setActionCommand("<Not Set>");
         m94.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m94.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m94KeyTyped(evt);
+            }
+        });
 
         m88.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m88.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m88.setToolTipText("");
         m88.setActionCommand("<Not Set>");
         m88.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m88.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m88KeyTyped(evt);
+            }
+        });
 
         m95.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m95.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m95.setToolTipText("");
         m95.setActionCommand("<Not Set>");
         m95.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m95.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m95KeyTyped(evt);
+            }
+        });
 
         m82.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m82.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m82.setToolTipText("");
         m82.setActionCommand("<Not Set>");
         m82.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m82.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m82KeyTyped(evt);
+            }
+        });
 
         m91.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m91.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m91.setToolTipText("");
         m91.setActionCommand("<Not Set>");
         m91.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m91.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m91KeyTyped(evt);
+            }
+        });
 
         m72.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m72.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         m72.setToolTipText("");
         m72.setActionCommand("<Not Set>");
         m72.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m72.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m72KeyTyped(evt);
+            }
+        });
 
         org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1394,6 +1797,567 @@ private JTextField[][] setBox(){
                 evt.consume();
            }
     }//GEN-LAST:event_m99KeyTyped
+
+    private void m11KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m11.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m12KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m12.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m13KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m13.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m14KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m14.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m15KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m15.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m16KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m16.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m17KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m17.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m18KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m18.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m19KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m19.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m21KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m21.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m22KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m22.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m23KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m23.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m24KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m24.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m25KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m25.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m26KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m26.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m27KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m27.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m28KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m28.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m29KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m29.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m31KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m31.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m32KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m32.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m33KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m33.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m34KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m34.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m35KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m35.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m36KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m36.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m37KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m37.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m38KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m38.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m39KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m39.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m41KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m41.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m42KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m42.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m43KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m43.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m44KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m44.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m45KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m45.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m46KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m46.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m47KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m47.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m48KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m48.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m49KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m49.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m51KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m51.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m52KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m52.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m53KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m53.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m54KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m54.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m55KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m55.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m56KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m56.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m57KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m57.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m58KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m58.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m59KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m59.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m61KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m61.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m62KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m62.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m63KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m63.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m64KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m64.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m65KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m65.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m66KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m66.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m67KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m67.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m68KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m68.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m69KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m69.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m71KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m71.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m72KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m72.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m73KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m73.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m74KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m74.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m75KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m75.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m76KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m76.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m77KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m77.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m78KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m78.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m79KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m79.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m81KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m81.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m82KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m82.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m83KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m83.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m84KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m84.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m85KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m85.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m86KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m86.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m87KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m87.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m88KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m88.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m89KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m89.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m91KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m91.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m92KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m92.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m93KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m93.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m94KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m94.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m95KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m95.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m96KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m96.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m97KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m97.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
+    private void m98KeyTyped(java.awt.event.KeyEvent evt) {
+        char caracter = evt.getKeyChar();
+        if (m98.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                && (caracter != '\b')) {
+            evt.consume();
+        }
+    }
 
 
     /**
