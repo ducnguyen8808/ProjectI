@@ -403,246 +403,494 @@ public class MainForm extends javax.swing.JFrame {
 
         m11.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m11.setToolTipText("");
+        m11.setActionCommand("<Not Set>");
+        m11.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m12.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m12.setToolTipText("");
+        m12.setActionCommand("<Not Set>");
+        m12.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m13.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m13.setToolTipText("");
+        m13.setActionCommand("<Not Set>");
+        m13.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m16.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m16.setToolTipText("");
+        m16.setActionCommand("<Not Set>");
+        m16.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m14.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m14.setToolTipText("");
+        m14.setActionCommand("<Not Set>");
+        m14.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m15.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m15.setToolTipText("");
+        m15.setActionCommand("<Not Set>");
+        m15.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m19.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m19.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m19.setToolTipText("");
+        m19.setActionCommand("<Not Set>");
+        m19.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m17.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m17.setToolTipText("");
+        m17.setActionCommand("<Not Set>");
+        m17.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m18.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m18.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m18.setToolTipText("");
+        m18.setActionCommand("<Not Set>");
+        m18.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m23.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m23.setToolTipText("");
+        m23.setActionCommand("<Not Set>");
+        m23.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m26.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m26.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m26.setToolTipText("");
+        m26.setActionCommand("<Not Set>");
+        m26.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m24.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m24.setToolTipText("");
+        m24.setActionCommand("<Not Set>");
+        m24.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m25.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m25.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m25.setToolTipText("");
+        m25.setActionCommand("<Not Set>");
+        m25.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m21.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m21.setToolTipText("");
+        m21.setActionCommand("<Not Set>");
+        m21.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m29.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m29.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m29.setToolTipText("");
+        m29.setActionCommand("<Not Set>");
+        m29.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m27.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m27.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m27.setToolTipText("");
+        m27.setActionCommand("<Not Set>");
+        m27.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m28.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m28.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m28.setToolTipText("");
+        m28.setActionCommand("<Not Set>");
+        m28.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m22.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m22.setToolTipText("");
+        m22.setActionCommand("<Not Set>");
+        m22.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m33.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m33.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m33.setToolTipText("");
+        m33.setActionCommand("<Not Set>");
+        m33.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m36.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m36.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m36.setToolTipText("");
+        m36.setActionCommand("<Not Set>");
+        m36.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m34.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m34.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m34.setToolTipText("");
+        m34.setActionCommand("<Not Set>");
+        m34.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m35.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m35.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m35.setToolTipText("");
+        m35.setActionCommand("<Not Set>");
+        m35.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m31.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m31.setToolTipText("");
+        m31.setActionCommand("<Not Set>");
+        m31.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m39.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m39.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m39.setToolTipText("");
+        m39.setActionCommand("<Not Set>");
+        m39.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m37.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m37.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m37.setToolTipText("");
+        m37.setActionCommand("<Not Set>");
+        m37.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m38.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m38.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m38.setToolTipText("");
+        m38.setActionCommand("<Not Set>");
+        m38.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m32.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m32.setToolTipText("");
+        m32.setActionCommand("<Not Set>");
+        m32.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m69.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m69.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m69.setToolTipText("");
+        m69.setActionCommand("<Not Set>");
+        m69.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m67.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m67.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m67.setToolTipText("");
+        m67.setActionCommand("<Not Set>");
+        m67.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m68.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m68.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m68.setToolTipText("");
+        m68.setActionCommand("<Not Set>");
+        m68.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m62.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m62.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m62.setToolTipText("");
+        m62.setActionCommand("<Not Set>");
+        m62.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m43.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m43.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m43.setToolTipText("");
+        m43.setActionCommand("<Not Set>");
+        m43.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m46.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m46.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m46.setToolTipText("");
+        m46.setActionCommand("<Not Set>");
+        m46.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m44.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m44.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m44.setToolTipText("");
+        m44.setActionCommand("<Not Set>");
+        m44.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m45.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m45.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m45.setToolTipText("");
+        m45.setActionCommand("<Not Set>");
+        m45.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m41.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m41.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m41.setToolTipText("");
+        m41.setActionCommand("<Not Set>");
+        m41.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m49.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m49.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m49.setToolTipText("");
+        m49.setActionCommand("<Not Set>");
+        m49.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m47.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m47.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m47.setToolTipText("");
+        m47.setActionCommand("<Not Set>");
+        m47.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m48.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m48.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m48.setToolTipText("");
+        m48.setActionCommand("<Not Set>");
+        m48.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m53.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m53.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m53.setToolTipText("");
+        m53.setActionCommand("<Not Set>");
+        m53.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m56.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m56.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m56.setToolTipText("");
+        m56.setActionCommand("<Not Set>");
+        m56.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m54.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m54.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m54.setToolTipText("");
+        m54.setActionCommand("<Not Set>");
+        m54.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m55.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m55.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m55.setToolTipText("");
+        m55.setActionCommand("<Not Set>");
+        m55.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m51.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m51.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m51.setToolTipText("");
+        m51.setActionCommand("<Not Set>");
+        m51.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m63.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m63.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m63.setToolTipText("");
+        m63.setActionCommand("<Not Set>");
+        m63.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m59.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m59.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m59.setToolTipText("");
+        m59.setActionCommand("<Not Set>");
+        m59.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m66.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m66.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m66.setToolTipText("");
+        m66.setActionCommand("<Not Set>");
+        m66.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m57.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m57.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m57.setToolTipText("");
+        m57.setActionCommand("<Not Set>");
+        m57.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m64.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m64.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m64.setToolTipText("");
+        m64.setActionCommand("<Not Set>");
+        m64.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m58.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m58.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m58.setToolTipText("");
+        m58.setActionCommand("<Not Set>");
+        m58.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m65.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m65.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m65.setToolTipText("");
+        m65.setActionCommand("<Not Set>");
+        m65.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m52.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m52.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m52.setToolTipText("");
+        m52.setActionCommand("<Not Set>");
+        m52.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m61.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m61.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m61.setToolTipText("");
+        m61.setActionCommand("<Not Set>");
+        m61.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m42.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m42.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m42.setToolTipText("");
+        m42.setActionCommand("<Not Set>");
+        m42.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m99.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m99.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m99.setToolTipText("");
+        m99.setActionCommand("<Not Set>");
+        m99.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m99.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                m99KeyTyped(evt);
+            }
+        });
 
         m97.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m97.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m97.setToolTipText("");
+        m97.setActionCommand("<Not Set>");
+        m97.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m98.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m98.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m98.setToolTipText("");
+        m98.setActionCommand("<Not Set>");
+        m98.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m92.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m92.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m92.setToolTipText("");
+        m92.setActionCommand("<Not Set>");
+        m92.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m73.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m73.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m73.setToolTipText("");
+        m73.setActionCommand("<Not Set>");
+        m73.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m76.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m76.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m76.setToolTipText("");
+        m76.setActionCommand("<Not Set>");
+        m76.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m74.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m74.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m74.setToolTipText("");
+        m74.setActionCommand("<Not Set>");
+        m74.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m75.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m75.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m75.setToolTipText("");
+        m75.setActionCommand("<Not Set>");
+        m75.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m71.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m71.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m71.setToolTipText("");
+        m71.setActionCommand("<Not Set>");
+        m71.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m79.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m79.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m79.setToolTipText("");
+        m79.setActionCommand("<Not Set>");
+        m79.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m77.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m77.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m77.setToolTipText("");
+        m77.setActionCommand("<Not Set>");
+        m77.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m78.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m78.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m78.setToolTipText("");
+        m78.setActionCommand("<Not Set>");
+        m78.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m83.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m83.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m83.setToolTipText("");
+        m83.setActionCommand("<Not Set>");
+        m83.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m86.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m86.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m86.setToolTipText("");
+        m86.setActionCommand("<Not Set>");
+        m86.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m84.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m84.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m84.setToolTipText("");
+        m84.setActionCommand("<Not Set>");
+        m84.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m85.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m85.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m85.setToolTipText("");
+        m85.setActionCommand("<Not Set>");
+        m85.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m81.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m81.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m81.setToolTipText("");
+        m81.setActionCommand("<Not Set>");
+        m81.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m93.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m93.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m93.setToolTipText("");
+        m93.setActionCommand("<Not Set>");
+        m93.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m89.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m89.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m89.setToolTipText("");
+        m89.setActionCommand("<Not Set>");
+        m89.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m96.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m96.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m96.setToolTipText("");
+        m96.setActionCommand("<Not Set>");
+        m96.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m87.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m87.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m87.setToolTipText("");
+        m87.setActionCommand("<Not Set>");
+        m87.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m94.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m94.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m94.setToolTipText("");
+        m94.setActionCommand("<Not Set>");
+        m94.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m88.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m88.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m88.setToolTipText("");
+        m88.setActionCommand("<Not Set>");
+        m88.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m95.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m95.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m95.setToolTipText("");
+        m95.setActionCommand("<Not Set>");
+        m95.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m82.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m82.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m82.setToolTipText("");
+        m82.setActionCommand("<Not Set>");
+        m82.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m91.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m91.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m91.setToolTipText("");
+        m91.setActionCommand("<Not Set>");
+        m91.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         m72.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m72.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        m72.setToolTipText("");
+        m72.setActionCommand("<Not Set>");
+        m72.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1043,6 +1291,8 @@ private JTextField[][] setBox(){
             for(int j = 0;j<9;j++){
                 if(Integer.parseInt(boxNumber[i][j].getText())>=1&&Integer.parseInt(boxNumber[i][j].getText())<=9)
                     matrix[i][j] = Integer.parseInt(boxNumber[i][j].getText());
+                else if(boxNumber[i][j].getText() == null)
+                    matrix[i][j] = 0;
                 else
                     matrix[i][j] = 0;
             }
@@ -1135,6 +1385,15 @@ private JTextField[][] setBox(){
         newMT = getMatrix();
         checkMatrix(mt,newMT);
     }//GEN-LAST:event_checkActionPerformed
+
+    private void m99KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_m99KeyTyped
+        // TODO add your handling code here:
+        char caracter = evt.getKeyChar();
+            if (m99.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
+                    && (caracter != '\b')) {
+                evt.consume();
+           }
+    }//GEN-LAST:event_m99KeyTyped
 
 
     /**
