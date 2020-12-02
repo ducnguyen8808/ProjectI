@@ -19,6 +19,7 @@ import javax.swing.*;
 public class MainForm extends javax.swing.JFrame {
     private int point = 100;
     private int[][] mt = new int[9][9];
+    final JFileChooser  fileDialog = new JFileChooser();
     /** Creates new form MainForm */
     public MainForm() {
         initComponents();
@@ -222,11 +223,6 @@ public class MainForm extends javax.swing.JFrame {
                 savegameMouseClicked(evt);
             }
         });
-        savegame.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                savegameActionPerformed(evt);
-            }
-        });
 
         loadgame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         loadgame.setText("Load Game");
@@ -238,11 +234,6 @@ public class MainForm extends javax.swing.JFrame {
 
         quit.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         quit.setText("Quit");
-        quit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                quitMouseClicked(evt);
-            }
-        });
         quit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 quitActionPerformed(evt);
@@ -282,11 +273,6 @@ public class MainForm extends javax.swing.JFrame {
         ptime.setBackground(new java.awt.Color(229, 226, 209));
         ptime.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         ptime.setBorder(null);
-        ptime.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ptimeActionPerformed(evt);
-            }
-        });
 
         jSeparator2.setForeground(new java.awt.Color(16, 16, 16));
 
@@ -323,16 +309,16 @@ public class MainForm extends javax.swing.JFrame {
                                 .add(time)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                                 .add(ptime, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 83, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                        .add(18, 18, 18)
                         .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(menuPanelLayout.createSequentialGroup()
-                                .add(slove, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(16, 16, 16))
-                            .add(menuPanelLayout.createSequentialGroup()
+                                .add(32, 32, 32)
                                 .add(jLabel1)
-                                .add(18, 18, 18)
-                                .add(jTextField1)
-                                .add(15, 15, 15)))))
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(jTextField1))
+                            .add(menuPanelLayout.createSequentialGroup()
+                                .add(0, 0, Short.MAX_VALUE)
+                                .add(slove, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                        .add(15, 15, 15)))
                 .addContainerGap())
             .add(menuPanelLayout.createSequentialGroup()
                 .add(114, 114, 114)
@@ -1649,14 +1635,19 @@ public class MainForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void savegameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_savegameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_savegameActionPerformed
-
     private void loadgameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loadgameMouseClicked
         // TODO add your handling code here:
-        ChoseFile choseFile = new ChoseFile();
-        choseFile.setVisible(true);
+        SaveGame s = new SaveGame();
+        int returnVal = fileDialog.showOpenDialog(null);
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            java.io.File file = fileDialog.getSelectedFile();
+            try {
+                mt = s.readFile(fileDialog.getCurrentDirectory().toString()+"\\"+file.getName());
+            } catch (IOException ex) {
+                Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            drawMatrix(mt);
+            }   
     }//GEN-LAST:event_loadgameMouseClicked
     
 private JTextField[][] setBox(){
@@ -1682,6 +1673,12 @@ private JTextField[][] setBox(){
                     boxNumber[i][j].setBackground(Color.white);
                     boxNumber[i][j].setEditable(true);
                 }
+                else if(matrix[i][j]>=10){
+                    matrix[i][j] /= 10;
+                    boxNumber[i][j].setText(String.valueOf(matrix[i][j]));
+                    boxNumber[i][j].setBackground(Color.white);
+                    boxNumber[i][j].setEditable(true);
+                }
                 else{
                     boxNumber[i][j].setText(String.valueOf(matrix[i][j]));
                     boxNumber[i][j].setBackground(Color.LIGHT_GRAY);
@@ -1697,12 +1694,10 @@ private JTextField[][] setBox(){
         JTextField[][] boxNumber = setBox();
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
-                if(Integer.parseInt(boxNumber[i][j].getText())>=1&&Integer.parseInt(boxNumber[i][j].getText())<=9)
-                    matrix[i][j] = Integer.parseInt(boxNumber[i][j].getText());
-                else if(boxNumber[i][j].getText().equals(""))
+                if(boxNumber[i][j].getText().equals(""))
                     matrix[i][j] = 0;
-                else
-                    matrix[i][j] = 0;
+                else if(Integer.parseInt(boxNumber[i][j].getText())>=1&&Integer.parseInt(boxNumber[i][j].getText())<=9)
+                    matrix[i][j] = Integer.parseInt(boxNumber[i][j].getText());            
             }
         }
         return matrix;
@@ -1728,8 +1723,8 @@ private JTextField[][] setBox(){
 
     private void newgameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newgameActionPerformed
         importMap map = null;
-        if (!easy.isSelected() && !normal.isSelected() && !hard.isSelected() && ! custom.isSelected()) {
-            System.out.println("Lỗi");
+        if (!easy.isSelected() && !normal.isSelected() && !hard.isSelected()) {
+            JOptionPane.showMessageDialog(this,"Hãy chọn chế độ chơi !");
         } else {
             if(easy.isSelected())
                 map = new importMap(1);
@@ -1747,14 +1742,28 @@ private JTextField[][] setBox(){
         }
     }//GEN-LAST:event_newgameActionPerformed
 
-    private void ptimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ptimeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ptimeActionPerformed
-
     private void savegameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_savegameMouseClicked
         // TODO add your handling code here:
-        ChoseFile choseFile = new ChoseFile();
-        choseFile.setVisible(true);
+        int[][] newMatrix = new int[9][9];
+        newMatrix = getMatrix();
+        for(int i = 0;i<9;i++){
+            for(int j = 0;j<9;j++){
+                if(mt[i][j]==0)
+                    newMatrix[i][j]*=10;
+            }
+        }
+        SaveGame s = new SaveGame();
+        int returnVal = fileDialog.showSaveDialog(null);
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            java.io.File file = fileDialog.getSelectedFile();
+            try {
+                s.creatFile(fileDialog.getCurrentDirectory().toString(), file.getName(), newMatrix);
+                JOptionPane.showMessageDialog(this,"Đã lưu !");
+            } catch (IOException ex) {
+                Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            }   
+        
     }//GEN-LAST:event_savegameMouseClicked
 
     private void menuFIleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuFIleMouseClicked
@@ -1763,8 +1772,7 @@ private JTextField[][] setBox(){
 
     private void loadGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loadGameMouseClicked
         // TODO add your handling code here:
-        ChoseFile choseFile = new ChoseFile();
-        choseFile.setVisible(true);
+        
     }//GEN-LAST:event_loadGameMouseClicked
 
     private void exitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitMouseClicked
@@ -1782,16 +1790,13 @@ private JTextField[][] setBox(){
         // TODO add your handling code here:
     }//GEN-LAST:event_menuFIleMouseEntered
 
-    private void quitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quitMouseClicked
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_quitMouseClicked
-
     private void checkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkActionPerformed
         // TODO add your handling code here:
         int[][] newMT = new int[9][9];
         newMT = getMatrix();
         checkMatrix(mt,newMT);
+        point -= 5;
+        jTextField1.setText(String.valueOf(point));
     }//GEN-LAST:event_checkActionPerformed
 
     private void m99KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_m99KeyTyped
@@ -1811,7 +1816,6 @@ private JTextField[][] setBox(){
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
                 boxNumber[i][j].setText(String.valueOf(mt[i][j]));
-                boxNumber[i][j].setBackground(Color.CYAN);
             }
         }
     }//GEN-LAST:event_sloveActionPerformed
@@ -2377,7 +2381,6 @@ private JTextField[][] setBox(){
         }
     }
 
-
     /**
      * @param args the command line arguments
      */
@@ -2412,7 +2415,6 @@ private JTextField[][] setBox(){
             }
         });
     }
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem about;
     private javax.swing.JButton check;
