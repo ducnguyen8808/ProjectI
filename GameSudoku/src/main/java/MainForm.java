@@ -999,23 +999,7 @@ public class MainForm extends javax.swing.JFrame {
         choseFile.setVisible(true);
     }//GEN-LAST:event_loadgameMouseClicked
     
-//    private int[][] getMatrix(){
-//        int[][] 
-//        JTextField[][] boxNumber = {{m11,m12,m13,m14,m15,m16,m17,m18,m19},
-//                                    {m21,m22,m23,m24,m25,m26,m27,m28,m29},
-//                                    {m31,m32,m33,m34,m35,m36,m37,m38,m39},
-//                                    {m41,m42,m43,m44,m45,m46,m47,m48,m49},
-//                                    {m51,m52,m53,m54,m55,m56,m57,m58,m59},
-//                                    {m61,m62,m63,m64,m65,m66,m67,m68,m69},
-//                                    {m71,m72,m73,m74,m75,m76,m77,m78,m79},
-//                                    {m81,m82,m83,m84,m85,m86,m87,m88,m89},
-//                                    {m91,m92,m93,m94,m95,m96,m97,m98,m99}};
-//        
-//        
-//    }
-    
-    private void drawMatrix(int[][] matrix){
-        jTextField1.setText(String.valueOf(point));
+private JTextField[][] setBox(){
         JTextField[][] boxNumber = {{m11,m12,m13,m14,m15,m16,m17,m18,m19},
                                     {m21,m22,m23,m24,m25,m26,m27,m28,m29},
                                     {m31,m32,m33,m34,m35,m36,m37,m38,m39},
@@ -1025,6 +1009,12 @@ public class MainForm extends javax.swing.JFrame {
                                     {m71,m72,m73,m74,m75,m76,m77,m78,m79},
                                     {m81,m82,m83,m84,m85,m86,m87,m88,m89},
                                     {m91,m92,m93,m94,m95,m96,m97,m98,m99}};
+        return boxNumber;
+    }     
+   
+    private void drawMatrix(int[][] matrix){
+        jTextField1.setText(String.valueOf(point));
+        JTextField[][] boxNumber = setBox();
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
                 if(matrix[i][j]==0){
@@ -1041,7 +1031,31 @@ public class MainForm extends javax.swing.JFrame {
         }
     }
     
-    private void checkMatrix(int[][] matrix){}
+    private int[][] getMatrix(){
+        int[][] matrix = new int[9][9];
+        jTextField1.setText(String.valueOf(point));
+        JTextField[][] boxNumber = setBox();
+        for(int i = 0;i<9;i++){
+            for(int j = 0;j<9;j++){
+                if(Integer.parseInt(boxNumber[i][j].getText())>=1&&Integer.parseInt(boxNumber[i][j].getText())<=9)
+                    matrix[i][j] = Integer.parseInt(boxNumber[i][j].getText());
+                else
+                    matrix[i][j] = 0;
+            }
+        }
+        return matrix;
+    }
+    
+    private void checkMatrix(int[][] matrix){
+        Slove sl = new Slove();
+        JTextField[][] boxNumber = setBox();
+        for(int i = 0;i<9;i++){
+            for(int j = 0;j<9;j++){
+                if(sl.checkValid(matrix,i,j,Integer.parseInt(boxNumber[i][j].getText())))
+                    boxNumber[i][j].setBackground(Color.green);
+            }
+        }
+    }
     
     private void quitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitActionPerformed
         // TODO add your handling code here:
