@@ -261,6 +261,11 @@ public class MainForm extends javax.swing.JFrame {
 
         slove.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         slove.setText("Slove");
+        slove.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sloveActionPerformed(evt);
+            }
+        });
 
         newgame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         newgame.setText("New Game");
@@ -1694,7 +1699,7 @@ private JTextField[][] setBox(){
             for(int j = 0;j<9;j++){
                 if(Integer.parseInt(boxNumber[i][j].getText())>=1&&Integer.parseInt(boxNumber[i][j].getText())<=9)
                     matrix[i][j] = Integer.parseInt(boxNumber[i][j].getText());
-                else if(boxNumber[i][j].getText() == null)
+                else if(boxNumber[i][j].getText().equals(""))
                     matrix[i][j] = 0;
                 else
                     matrix[i][j] = 0;
@@ -1797,6 +1802,19 @@ private JTextField[][] setBox(){
                 evt.consume();
            }
     }//GEN-LAST:event_m99KeyTyped
+
+    private void sloveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sloveActionPerformed
+        // TODO add your handling code here:
+        Slove sl = new Slove();
+        JTextField[][] boxNumber = setBox();
+        sl.sloveSudoku(mt, 0, 0);
+        for(int i = 0;i<9;i++){
+            for(int j = 0;j<9;j++){
+                boxNumber[i][j].setText(String.valueOf(mt[i][j]));
+                boxNumber[i][j].setBackground(Color.CYAN);
+            }
+        }
+    }//GEN-LAST:event_sloveActionPerformed
 
     private void m11KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
