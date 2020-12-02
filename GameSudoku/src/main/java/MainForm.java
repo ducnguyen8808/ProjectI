@@ -60,7 +60,7 @@ public class MainForm extends javax.swing.JFrame {
         quit = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         check = new javax.swing.JButton();
-        sloove = new javax.swing.JButton();
+        slove = new javax.swing.JButton();
         newgame = new javax.swing.JButton();
         time = new javax.swing.JLabel();
         ptime = new javax.swing.JTextField();
@@ -259,8 +259,8 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        sloove.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        sloove.setText("Slove");
+        slove.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        slove.setText("Slove");
 
         newgame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         newgame.setText("New Game");
@@ -321,7 +321,7 @@ public class MainForm extends javax.swing.JFrame {
                         .add(18, 18, 18)
                         .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(menuPanelLayout.createSequentialGroup()
-                                .add(sloove, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(slove, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                 .add(16, 16, 16))
                             .add(menuPanelLayout.createSequentialGroup()
                                 .add(jLabel1)
@@ -389,7 +389,7 @@ public class MainForm extends javax.swing.JFrame {
                 .add(18, 18, 18)
                 .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(check)
-                    .add(sloove))
+                    .add(slove))
                 .add(18, 18, 18)
                 .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(time)
@@ -2512,7 +2512,7 @@ private JTextField[][] setBox(){
     private javax.swing.JButton quit;
     private javax.swing.JMenuItem saveGame;
     private javax.swing.JButton savegame;
-    private javax.swing.JButton sloove;
+    private javax.swing.JButton slove;
     private javax.swing.JLabel time;
     // End of variables declaration//GEN-END:variables
 

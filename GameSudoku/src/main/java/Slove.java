@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Slove {
     private int[][] array = new int[9][9];
 
@@ -10,6 +12,12 @@ public class Slove {
     }
 
     public void printSolution(int[][] S) {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 8; j++) {
+                if (S[i][j] == 0)
+                    return;
+            }
+        }
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 8; j++) {
                 System.out.print(S[i][j] + " ");
@@ -41,7 +49,6 @@ public class Slove {
         if (y == 9) {
             if (x == 8) {
                 printSolution(S);
-                System.exit(0);
             } else {
                 sloveSudoku(S, x + 1, 0);
             }
@@ -57,6 +64,5 @@ public class Slove {
             sloveSudoku(S, x, y + 1);
         }
     }
-
 
 }
