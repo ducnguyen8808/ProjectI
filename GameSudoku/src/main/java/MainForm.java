@@ -3,7 +3,7 @@ import java.awt.Color;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JTextField;
+import javax.swing.*;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -32,7 +32,7 @@ public class MainForm extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
+        ButtonGroup bg = new ButtonGroup();
         jTextField20 = new javax.swing.JTextField();
         jTextField21 = new javax.swing.JTextField();
         jTextField22 = new javax.swing.JTextField();
@@ -584,6 +584,15 @@ public class MainForm extends javax.swing.JFrame {
 
         m78.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m78.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        //thử
+
+        bg.add(easy);
+        bg.add(normal);
+        bg.add(hard);
+        bg.add(custom);
+
+
 
         m83.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         m83.setHorizontalAlignment(javax.swing.JTextField.CENTER);
