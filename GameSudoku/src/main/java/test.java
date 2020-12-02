@@ -1,5 +1,4 @@
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -36,9 +35,30 @@ public class test {
             file.close();//Nếu chương trình lỗi thì đóng file lại
         }    
     }
+    public static int[][] readFile(String url) throws IOException{
+        int[][] matrix = new int[9][9];
+        File file = new File(url);
+        InputStream inputStream = new FileInputStream(file);
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader reader = new BufferedReader(inputStreamReader);
+        for(int i = 0;i<9;i++){
+            String line = reader.readLine();
+            for(int j = 0; j<9; j++){
+                matrix[i][j] = Integer.parseInt(line.split(",")[j]);
+            }
+        }
+        return matrix;
+    }
     public static void main(String[] args) throws IOException {
         importMap easyMap = new importMap(1);
         int[][] matrix = easyMap.readMatrix();
-        creatFile("C:\\Users\\DELL\\Documents\\ProjectI\\DataMap", "test", matrix);
+        creatFile("C:\\Users\\DELL\\Documents\\ProjectI\\DataMap", "test1", matrix);
+        int[][] ma = readFile("C:\\Users\\DELL\\Documents\\ProjectI\\DataMap\\test.txt");
+        for(int i = 0;i<9;i++){
+            for(int j = 0; j<9; j++){
+                System.out.print(ma[i][j]+" ");
+            }
+            System.out.print("\n");
+        }
     }
 }

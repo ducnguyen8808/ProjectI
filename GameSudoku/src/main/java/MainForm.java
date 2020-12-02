@@ -1,3 +1,10 @@
+
+import java.awt.Color;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JTextField;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,14 +16,14 @@
  * @author ducng
  */
 public class MainForm extends javax.swing.JFrame {
-
+    public int point = 100;
     /** Creates new form MainForm */
     public MainForm() {
         initComponents();
         setTitle("Sudoku Game");
         setLocation(300, 100);
     }
-
+    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -26,6 +33,15 @@ public class MainForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField20 = new javax.swing.JTextField();
+        jTextField21 = new javax.swing.JTextField();
+        jTextField22 = new javax.swing.JTextField();
+        jTextField23 = new javax.swing.JTextField();
+        jTextField24 = new javax.swing.JTextField();
+        jTextField31 = new javax.swing.JTextField();
+        jTextField32 = new javax.swing.JTextField();
+        jTextField33 = new javax.swing.JTextField();
+        jTextField34 = new javax.swing.JTextField();
         menuPanel = new javax.swing.JPanel();
         name = new javax.swing.JLabel();
         level = new javax.swing.JLabel();
@@ -46,6 +62,88 @@ public class MainForm extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         custom = new javax.swing.JRadioButton();
+        jPanel1 = new javax.swing.JPanel();
+        m11 = new javax.swing.JTextField();
+        m12 = new javax.swing.JTextField();
+        m13 = new javax.swing.JTextField();
+        m16 = new javax.swing.JTextField();
+        m14 = new javax.swing.JTextField();
+        m15 = new javax.swing.JTextField();
+        m19 = new javax.swing.JTextField();
+        m17 = new javax.swing.JTextField();
+        m18 = new javax.swing.JTextField();
+        m23 = new javax.swing.JTextField();
+        m26 = new javax.swing.JTextField();
+        m24 = new javax.swing.JTextField();
+        m25 = new javax.swing.JTextField();
+        m21 = new javax.swing.JTextField();
+        m29 = new javax.swing.JTextField();
+        m27 = new javax.swing.JTextField();
+        m28 = new javax.swing.JTextField();
+        m22 = new javax.swing.JTextField();
+        m33 = new javax.swing.JTextField();
+        m36 = new javax.swing.JTextField();
+        m34 = new javax.swing.JTextField();
+        m35 = new javax.swing.JTextField();
+        m31 = new javax.swing.JTextField();
+        m39 = new javax.swing.JTextField();
+        m37 = new javax.swing.JTextField();
+        m38 = new javax.swing.JTextField();
+        m32 = new javax.swing.JTextField();
+        m69 = new javax.swing.JTextField();
+        m67 = new javax.swing.JTextField();
+        m68 = new javax.swing.JTextField();
+        m62 = new javax.swing.JTextField();
+        m43 = new javax.swing.JTextField();
+        m46 = new javax.swing.JTextField();
+        m44 = new javax.swing.JTextField();
+        m45 = new javax.swing.JTextField();
+        m41 = new javax.swing.JTextField();
+        m49 = new javax.swing.JTextField();
+        m47 = new javax.swing.JTextField();
+        m48 = new javax.swing.JTextField();
+        m53 = new javax.swing.JTextField();
+        m56 = new javax.swing.JTextField();
+        m54 = new javax.swing.JTextField();
+        m55 = new javax.swing.JTextField();
+        m51 = new javax.swing.JTextField();
+        m63 = new javax.swing.JTextField();
+        m59 = new javax.swing.JTextField();
+        m66 = new javax.swing.JTextField();
+        m57 = new javax.swing.JTextField();
+        m64 = new javax.swing.JTextField();
+        m58 = new javax.swing.JTextField();
+        m65 = new javax.swing.JTextField();
+        m52 = new javax.swing.JTextField();
+        m61 = new javax.swing.JTextField();
+        m42 = new javax.swing.JTextField();
+        m99 = new javax.swing.JTextField();
+        m97 = new javax.swing.JTextField();
+        m98 = new javax.swing.JTextField();
+        m92 = new javax.swing.JTextField();
+        m73 = new javax.swing.JTextField();
+        m76 = new javax.swing.JTextField();
+        m74 = new javax.swing.JTextField();
+        m75 = new javax.swing.JTextField();
+        m71 = new javax.swing.JTextField();
+        m79 = new javax.swing.JTextField();
+        m77 = new javax.swing.JTextField();
+        m78 = new javax.swing.JTextField();
+        m83 = new javax.swing.JTextField();
+        m86 = new javax.swing.JTextField();
+        m84 = new javax.swing.JTextField();
+        m85 = new javax.swing.JTextField();
+        m81 = new javax.swing.JTextField();
+        m93 = new javax.swing.JTextField();
+        m89 = new javax.swing.JTextField();
+        m96 = new javax.swing.JTextField();
+        m87 = new javax.swing.JTextField();
+        m94 = new javax.swing.JTextField();
+        m88 = new javax.swing.JTextField();
+        m95 = new javax.swing.JTextField();
+        m82 = new javax.swing.JTextField();
+        m91 = new javax.swing.JTextField();
+        m72 = new javax.swing.JTextField();
         menuBar = new javax.swing.JMenuBar();
         menuFIle = new javax.swing.JMenu();
         saveGame = new javax.swing.JMenuItem();
@@ -54,7 +152,35 @@ public class MainForm extends javax.swing.JFrame {
         help = new javax.swing.JMenu();
         about = new javax.swing.JMenuItem();
 
+        jTextField20.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jTextField21.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        jTextField21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jTextField22.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        jTextField22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jTextField23.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        jTextField23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jTextField24.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        jTextField24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jTextField31.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        jTextField31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jTextField32.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        jTextField32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jTextField33.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        jTextField33.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jTextField34.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        jTextField34.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 0, 0));
 
         menuPanel.setBackground(new java.awt.Color(229, 226, 209));
 
@@ -241,7 +367,7 @@ public class MainForm extends javax.swing.JFrame {
                 .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(loadgame)
                     .add(quit))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 20, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(jSeparator1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
                 .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
@@ -256,6 +382,528 @@ public class MainForm extends javax.swing.JFrame {
                 .add(53, 53, 53)
                 .add(logo)
                 .add(226, 226, 226))
+        );
+
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel1.setPreferredSize(new java.awt.Dimension(492, 492));
+
+        m11.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m12.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m13.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m16.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m14.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m15.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m19.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m19.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m17.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m18.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m18.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m23.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m26.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m26.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m24.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m25.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m25.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m21.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m29.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m29.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m27.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m27.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m28.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m28.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m22.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m33.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m33.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m36.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m36.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m34.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m34.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m35.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m35.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m31.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m39.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m39.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m37.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m37.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m38.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m38.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m32.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m69.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m69.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m67.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m67.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m68.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m68.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m62.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m62.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m43.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m43.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m46.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m46.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m44.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m44.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m45.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m45.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m41.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m41.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m49.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m49.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m47.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m47.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m48.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m48.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m53.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m53.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m56.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m56.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m54.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m54.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m55.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m55.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m51.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m51.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m63.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m63.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m59.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m59.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m66.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m66.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m57.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m57.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m64.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m64.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m58.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m58.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m65.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m65.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m52.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m52.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m61.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m61.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m42.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m42.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m99.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m99.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m97.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m97.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m98.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m98.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m92.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m92.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m73.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m73.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m76.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m76.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m74.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m74.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m75.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m75.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m71.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m71.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m79.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m79.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m77.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m77.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m78.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m78.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m83.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m83.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m86.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m86.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m84.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m84.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m85.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m85.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m81.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m81.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m93.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m93.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m89.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m89.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m96.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m96.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m87.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m87.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m94.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m94.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m88.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m88.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m95.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m95.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m82.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m82.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m91.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m91.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        m72.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        m72.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel1Layout.createSequentialGroup()
+                .add(4, 4, 4)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(m71, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m72, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m73, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m74, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m75, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m76, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m77, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m78, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m79, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(m81, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m82, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m83, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m84, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m85, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m86, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m87, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m88, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m89, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(m91, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m93, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m94, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m95, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m96, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m97, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m98, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m99, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(m11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m12, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m13, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m15, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m18, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(m21, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m22, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m23, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m24, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m26, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m27, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m28, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m29, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(m31, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m32, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m33, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m34, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m35, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m36, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m37, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m38, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m39, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(m41, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m42, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m43, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m44, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m45, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m46, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m47, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m48, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(m51, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m53, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m54, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m55, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m56, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m57, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m58, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m59, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(m61, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m62, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m63, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m64, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m65, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m66, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(m67, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m68, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(2, 2, 2)
+                        .add(m69, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel1Layout.createSequentialGroup()
+                .add(4, 4, 4)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(m11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m12, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m13, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m15, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m18, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(2, 2, 2)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(m21, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m22, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m23, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m24, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m26, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m27, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m28, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m29, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(2, 2, 2)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(m31, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m32, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m33, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m34, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m35, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m36, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m37, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m38, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m39, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(m41, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m42, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m43, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m44, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m45, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m46, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m47, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m48, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m49, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(2, 2, 2)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(m51, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m53, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m54, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m55, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m56, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m57, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m58, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m59, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(2, 2, 2)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(m61, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m62, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m63, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m64, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m65, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m66, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m67, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m68, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m69, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(m71, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m72, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m73, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m74, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m75, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m76, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m77, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m78, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m79, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(2, 2, 2)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(m81, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m82, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m83, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m84, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m85, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m86, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m87, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m88, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m89, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(2, 2, 2)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(m91, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m93, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m94, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m95, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m96, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m97, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m98, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(m99, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         menuFIle.setText("File");
@@ -313,13 +961,19 @@ public class MainForm extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
-                .add(0, 512, Short.MAX_VALUE)
+            .add(layout.createSequentialGroup()
+                .add(14, 14, 14)
+                .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 500, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                 .add(menuPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 308, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(menuPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(menuPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 531, Short.MAX_VALUE)
+            .add(layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 501, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         pack();
@@ -334,13 +988,70 @@ public class MainForm extends javax.swing.JFrame {
         ChoseFile choseFile = new ChoseFile();
         choseFile.setVisible(true);
     }//GEN-LAST:event_loadgameMouseClicked
-
+    
+//    private int[][] getMatrix(){
+//        int[][] 
+//        JTextField[][] boxNumber = {{m11,m12,m13,m14,m15,m16,m17,m18,m19},
+//                                    {m21,m22,m23,m24,m25,m26,m27,m28,m29},
+//                                    {m31,m32,m33,m34,m35,m36,m37,m38,m39},
+//                                    {m41,m42,m43,m44,m45,m46,m47,m48,m49},
+//                                    {m51,m52,m53,m54,m55,m56,m57,m58,m59},
+//                                    {m61,m62,m63,m64,m65,m66,m67,m68,m69},
+//                                    {m71,m72,m73,m74,m75,m76,m77,m78,m79},
+//                                    {m81,m82,m83,m84,m85,m86,m87,m88,m89},
+//                                    {m91,m92,m93,m94,m95,m96,m97,m98,m99}};
+//        
+//        
+//    }
+    
+    private void drawMatrix(int[][] matrix){
+        jTextField1.setText(String.valueOf(point));
+        JTextField[][] boxNumber = {{m11,m12,m13,m14,m15,m16,m17,m18,m19},
+                                    {m21,m22,m23,m24,m25,m26,m27,m28,m29},
+                                    {m31,m32,m33,m34,m35,m36,m37,m38,m39},
+                                    {m41,m42,m43,m44,m45,m46,m47,m48,m49},
+                                    {m51,m52,m53,m54,m55,m56,m57,m58,m59},
+                                    {m61,m62,m63,m64,m65,m66,m67,m68,m69},
+                                    {m71,m72,m73,m74,m75,m76,m77,m78,m79},
+                                    {m81,m82,m83,m84,m85,m86,m87,m88,m89},
+                                    {m91,m92,m93,m94,m95,m96,m97,m98,m99}};
+        for(int i = 0;i<9;i++){
+            for(int j = 0;j<9;j++){
+                if(matrix[i][j]==0){
+                    boxNumber[i][j].setText("");
+                    boxNumber[i][j].setBackground(Color.white);
+                    boxNumber[i][j].setEditable(true);
+                }
+                else{
+                    boxNumber[i][j].setText(String.valueOf(matrix[i][j]));
+                    boxNumber[i][j].setBackground(Color.LIGHT_GRAY);
+                    boxNumber[i][j].setEditable(false);
+                }
+            }
+        }
+    }
+    
+    private void checkMatrix(int[][] matrix){}
+    
     private void quitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_quitActionPerformed
 
     private void newgameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newgameActionPerformed
-        // TODO add your handling code here:
+        importMap map = null;
+        if(1==1)
+            map = new importMap(1);
+        else if(2==1)
+            System.out.println("");
+        else
+            System.out.println("");
+        int[][] matrix = new int[9][9] ;
+        try {
+            matrix = map.readMatrix();
+        } catch (IOException ex) {
+            Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        drawMatrix(matrix);
     }//GEN-LAST:event_newgameActionPerformed
 
     private void ptimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ptimeActionPerformed
@@ -418,7 +1129,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem about;
     private javax.swing.JButton check;
@@ -428,13 +1139,104 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JRadioButton hard;
     private javax.swing.JMenu help;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField23;
+    private javax.swing.JTextField jTextField24;
+    private javax.swing.JTextField jTextField31;
+    private javax.swing.JTextField jTextField32;
+    private javax.swing.JTextField jTextField33;
+    private javax.swing.JTextField jTextField34;
     private javax.swing.JLabel level;
     private javax.swing.JMenuItem loadGame;
     private javax.swing.JButton loadgame;
     private javax.swing.JLabel logo;
+    private javax.swing.JTextField m11;
+    private javax.swing.JTextField m12;
+    private javax.swing.JTextField m13;
+    private javax.swing.JTextField m14;
+    private javax.swing.JTextField m15;
+    private javax.swing.JTextField m16;
+    private javax.swing.JTextField m17;
+    private javax.swing.JTextField m18;
+    private javax.swing.JTextField m19;
+    private javax.swing.JTextField m21;
+    private javax.swing.JTextField m22;
+    private javax.swing.JTextField m23;
+    private javax.swing.JTextField m24;
+    private javax.swing.JTextField m25;
+    private javax.swing.JTextField m26;
+    private javax.swing.JTextField m27;
+    private javax.swing.JTextField m28;
+    private javax.swing.JTextField m29;
+    private javax.swing.JTextField m31;
+    private javax.swing.JTextField m32;
+    private javax.swing.JTextField m33;
+    private javax.swing.JTextField m34;
+    private javax.swing.JTextField m35;
+    private javax.swing.JTextField m36;
+    private javax.swing.JTextField m37;
+    private javax.swing.JTextField m38;
+    private javax.swing.JTextField m39;
+    private javax.swing.JTextField m41;
+    private javax.swing.JTextField m42;
+    private javax.swing.JTextField m43;
+    private javax.swing.JTextField m44;
+    private javax.swing.JTextField m45;
+    private javax.swing.JTextField m46;
+    private javax.swing.JTextField m47;
+    private javax.swing.JTextField m48;
+    private javax.swing.JTextField m49;
+    private javax.swing.JTextField m51;
+    private javax.swing.JTextField m52;
+    private javax.swing.JTextField m53;
+    private javax.swing.JTextField m54;
+    private javax.swing.JTextField m55;
+    private javax.swing.JTextField m56;
+    private javax.swing.JTextField m57;
+    private javax.swing.JTextField m58;
+    private javax.swing.JTextField m59;
+    private javax.swing.JTextField m61;
+    private javax.swing.JTextField m62;
+    private javax.swing.JTextField m63;
+    private javax.swing.JTextField m64;
+    private javax.swing.JTextField m65;
+    private javax.swing.JTextField m66;
+    private javax.swing.JTextField m67;
+    private javax.swing.JTextField m68;
+    private javax.swing.JTextField m69;
+    private javax.swing.JTextField m71;
+    private javax.swing.JTextField m72;
+    private javax.swing.JTextField m73;
+    private javax.swing.JTextField m74;
+    private javax.swing.JTextField m75;
+    private javax.swing.JTextField m76;
+    private javax.swing.JTextField m77;
+    private javax.swing.JTextField m78;
+    private javax.swing.JTextField m79;
+    private javax.swing.JTextField m81;
+    private javax.swing.JTextField m82;
+    private javax.swing.JTextField m83;
+    private javax.swing.JTextField m84;
+    private javax.swing.JTextField m85;
+    private javax.swing.JTextField m86;
+    private javax.swing.JTextField m87;
+    private javax.swing.JTextField m88;
+    private javax.swing.JTextField m89;
+    private javax.swing.JTextField m91;
+    private javax.swing.JTextField m92;
+    private javax.swing.JTextField m93;
+    private javax.swing.JTextField m94;
+    private javax.swing.JTextField m95;
+    private javax.swing.JTextField m96;
+    private javax.swing.JTextField m97;
+    private javax.swing.JTextField m98;
+    private javax.swing.JTextField m99;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenu menuFIle;
     private javax.swing.JPanel menuPanel;
