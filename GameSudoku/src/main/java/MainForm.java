@@ -252,11 +252,6 @@ public class MainForm extends javax.swing.JFrame {
 
         slove.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         slove.setText("Slove");
-        slove.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                sloveMouseClicked(evt);
-            }
-        });
         slove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sloveActionPerformed(evt);
@@ -1651,6 +1646,7 @@ public class MainForm extends javax.swing.JFrame {
             } catch (IOException ex) {
                 Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
             }
+            point = 100;
             drawMatrix(mt);
             }   
     }//GEN-LAST:event_loadgameMouseClicked
@@ -1728,9 +1724,19 @@ private JTextField[][] setBox(){
 
     private void newgameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newgameActionPerformed
         importMap map = null;
-        if (!easy.isSelected() && !normal.isSelected() && !hard.isSelected()) {
+        point = 100;
+        if (!easy.isSelected() && !normal.isSelected() && !hard.isSelected()&&!custom.isSelected()) {
             JOptionPane.showMessageDialog(this,"Hãy chọn chế độ chơi !");
-        } else {
+        }
+        else if(custom.isSelected()){
+            for(int i = 0;i<9;i++){
+                for(int j = 0;j<9;j++){
+                    mt[i][j]=0;
+            }
+        }
+            drawMatrix(mt);
+        }
+        else {
             if(easy.isSelected())
                 map = new importMap(1);
             else if(normal.isSelected())
@@ -1748,25 +1754,47 @@ private JTextField[][] setBox(){
     }//GEN-LAST:event_newgameActionPerformed
     private void savegameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_savegameMouseClicked
         // TODO add your handling code here:
-        int[][] newMatrix = new int[9][9];
-        newMatrix = getMatrix();
-        for(int i = 0;i<9;i++){
-            for(int j = 0;j<9;j++){
-                if(mt[i][j]==0)
-                    newMatrix[i][j]*=10;
+        if(custom.isSelected()){
+            if(2==1){
+                JOptionPane.showMessageDialog(this,"Ma trận này không có lời giải !");
             }
+            else{
+                int[][] newMatrix = new int[9][9];
+                newMatrix = getMatrix();
+                JTextField[][] boxNumber = setBox();
+                SaveGame s = new SaveGame();
+                int returnVal = fileDialog.showSaveDialog(null);
+                if (returnVal == JFileChooser.APPROVE_OPTION) {
+                    java.io.File file = fileDialog.getSelectedFile();
+                    try {
+                        s.creatFile(fileDialog.getCurrentDirectory().toString(), file.getName(), newMatrix);
+                        JOptionPane.showMessageDialog(this,"Đã lưu !");
+                    } catch (IOException ex) {
+                        Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+            }}
         }
-        SaveGame s = new SaveGame();
-        int returnVal = fileDialog.showSaveDialog(null);
-        if (returnVal == JFileChooser.APPROVE_OPTION) {
-            java.io.File file = fileDialog.getSelectedFile();
-            try {
-                s.creatFile(fileDialog.getCurrentDirectory().toString(), file.getName(), newMatrix);
-                JOptionPane.showMessageDialog(this,"Đã lưu !");
-            } catch (IOException ex) {
-                Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+        else {
+            int[][] newMatrix = new int[9][9];
+            newMatrix = getMatrix();
+            JTextField[][] boxNumber = setBox();
+            for(int i = 0;i<9;i++){
+                for(int j = 0;j<9;j++){
+                    if(boxNumber[i][j].isEditable())
+                        newMatrix[i][j]*=10;
+                }
             }
-            }   
+            SaveGame s = new SaveGame();
+            int returnVal = fileDialog.showSaveDialog(null);
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                java.io.File file = fileDialog.getSelectedFile();
+                try {
+                    s.creatFile(fileDialog.getCurrentDirectory().toString(), file.getName(), newMatrix);
+                    JOptionPane.showMessageDialog(this,"Đã lưu !");
+                } catch (IOException ex) {
+                    Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            } } 
         
     }//GEN-LAST:event_savegameMouseClicked
 
@@ -1776,7 +1804,18 @@ private JTextField[][] setBox(){
 
     private void loadGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loadGameMouseClicked
         // TODO add your handling code here:
-        
+        SaveGame s = new SaveGame();
+        int returnVal = fileDialog.showOpenDialog(null);
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            java.io.File file = fileDialog.getSelectedFile();
+            try {
+                mt = s.readFile(fileDialog.getCurrentDirectory().toString()+"\\"+file.getName());
+            } catch (IOException ex) {
+                Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            point = 100;
+            drawMatrix(mt);
+            }   
     }//GEN-LAST:event_loadGameMouseClicked
 
     private void exitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitMouseClicked
@@ -1795,11 +1834,14 @@ private JTextField[][] setBox(){
 
     private void checkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkActionPerformed
         // TODO add your handling code here:
-        int[][] newMT = new int[9][9];
-        newMT = getMatrix();
-        checkMatrix(mt,newMT);
-        point -= 5;
-        jTextField1.setText(String.valueOf(point));
+        if(point > 0){
+            int[][] newMT = new int[9][9];
+            newMT = getMatrix();
+            checkMatrix(mt,newMT);
+            point -= 5;
+            jTextField1.setText(String.valueOf(point));}
+        else
+            JOptionPane.showMessageDialog(this,"Đã hết lượt check. Bạn còn 0 điểm!");
     }//GEN-LAST:event_checkActionPerformed
 
     private void m99KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_m99KeyTyped
@@ -1823,14 +1865,12 @@ private JTextField[][] setBox(){
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
                 boxNumber[i][j].setText(String.valueOf(sl.getAns()[i][j]));
+                boxNumber[i][j].setBackground(Color.LIGHT_GRAY);
+                boxNumber[i][j].setEditable(false);
             }
+        jTextField1.setText(String.valueOf("0"));
         }
     }//GEN-LAST:event_sloveActionPerformed
-
-    private void sloveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sloveMouseClicked
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_sloveMouseClicked
 
     private void m11KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();

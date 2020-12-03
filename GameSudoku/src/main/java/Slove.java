@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Slove {
     //ma trận lưu trữ kết quả
     private int[][] ans = new int[9][9];
