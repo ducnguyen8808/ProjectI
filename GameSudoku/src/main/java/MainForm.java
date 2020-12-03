@@ -1859,6 +1859,12 @@ private JTextField[][] setBox(){
     private void sloveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sloveActionPerformed
         // TODO add your handling code here:b  
         JTextField[][] boxNumber = setBox();
+        for(int i = 0;i<9;i++){
+                for(int j = 0;j<9;j++){
+                    if(boxNumber[i][j].isEditable())
+                        mt[i][j]=0;
+                }
+        }
         sl.setAns(mt);
         sl.sloveSudoku();
         int[][] ans = new int[9][9];
@@ -1866,8 +1872,11 @@ private JTextField[][] setBox(){
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
                 boxNumber[i][j].setText(String.valueOf(ans[i][j]));
+                boxNumber[i][j].setBackground(Color.LIGHT_GRAY);
+                boxNumber[i][j].setEditable(false);
             }
         }
+        jTextField1.setText(String.valueOf("0"));
     }//GEN-LAST:event_sloveActionPerformed
 
     private void m11KeyTyped(java.awt.event.KeyEvent evt) {
