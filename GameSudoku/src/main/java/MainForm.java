@@ -252,6 +252,11 @@ public class MainForm extends javax.swing.JFrame {
 
         slove.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         slove.setText("Slove");
+        slove.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sloveMouseClicked(evt);
+            }
+        });
         slove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sloveActionPerformed(evt);
@@ -1741,7 +1746,6 @@ private JTextField[][] setBox(){
             drawMatrix(mt);
         }
     }//GEN-LAST:event_newgameActionPerformed
-
     private void savegameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_savegameMouseClicked
         // TODO add your handling code here:
         int[][] newMatrix = new int[9][9];
@@ -1782,8 +1786,7 @@ private JTextField[][] setBox(){
 
     private void saveGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_saveGameMouseClicked
         // TODO add your handling code here:
-        ChoseFile choseFile = new ChoseFile();
-        choseFile.setVisible(true);
+
     }//GEN-LAST:event_saveGameMouseClicked
 
     private void menuFIleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuFIleMouseEntered
@@ -1808,17 +1811,26 @@ private JTextField[][] setBox(){
            }
     }//GEN-LAST:event_m99KeyTyped
 
+
+    //sửa ở đây
+    
     private void sloveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sloveActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:b  
         Slove sl = new Slove();
         JTextField[][] boxNumber = setBox();
-        sl.sloveSudoku(mt, 0, 0);
+        sl.TRY(mt, 0, 0);
+        sl.returnSolution(mt);
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
-                boxNumber[i][j].setText(String.valueOf(mt[i][j]));
+                boxNumber[i][j].setText(String.valueOf(sl.getAns()[i][j]));
             }
         }
     }//GEN-LAST:event_sloveActionPerformed
+
+    private void sloveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sloveMouseClicked
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_sloveMouseClicked
 
     private void m11KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
