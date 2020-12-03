@@ -20,6 +20,7 @@ public class MainForm extends javax.swing.JFrame {
     private int point = 100;
     private int[][] mt = new int[9][9];
     final JFileChooser  fileDialog = new JFileChooser();
+    Slove sl = new Slove();
     /** Creates new form MainForm */
     public MainForm() {
         initComponents();
@@ -1705,14 +1706,13 @@ private JTextField[][] setBox(){
     }
     
     private void checkMatrix(int[][] matrix,int[][] newMT){
-        Slove sl = new Slove();
         JTextField[][] boxNumber = setBox();
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
                 if(matrix[i][j]==0){
-                    if(sl.checkValid(matrix,i,j,newMT[i][j]))
+                    if(sl.isSafe(matrix,i,j,newMT[i][j]))
                         boxNumber[i][j].setBackground(Color.green);
-                    else 
+                    else
                         boxNumber[i][j].setBackground(Color.red);}
             }
         }
@@ -1858,17 +1858,15 @@ private JTextField[][] setBox(){
     
     private void sloveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sloveActionPerformed
         // TODO add your handling code here:b  
-        Slove sl = new Slove();
         JTextField[][] boxNumber = setBox();
-        sl.TRY(mt, 0, 0);
-        sl.returnSolution(mt);
+        sl.setAns(mt);
+        sl.sloveSudoku();
+        int[][] ans = new int[9][9];
+        ans = sl.getAns();
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
-                boxNumber[i][j].setText(String.valueOf(sl.getAns()[i][j]));
-                boxNumber[i][j].setBackground(Color.LIGHT_GRAY);
-                boxNumber[i][j].setEditable(false);
+                boxNumber[i][j].setText(String.valueOf(ans[i][j]));
             }
-        jTextField1.setText(String.valueOf("0"));
         }
     }//GEN-LAST:event_sloveActionPerformed
 

@@ -1,63 +1,100 @@
+import java.util.Scanner;
+
 public class Slove {
-    //ma trận lưu trữ kết quả
     private int[][] ans = new int[9][9];
 
-    //get kết quả từ class khác
     public int[][] getAns() {
         return ans;
     }
 
-    //gán kết quả
-    public void returnSolution(int[][] S) {
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 8; j++) {
-                if (S[i][j] == 0)
-                    return;
-            }
-        }
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                ans[i][j] = S[i][j];
-            }
-        }
+    public void setAns(int[][] ans) {
+        this.ans = ans;
     }
 
-    public boolean checkValid(int[][] S, int x, int y, int k) {
-        for (int i = 0; i < 9; i++) {
-            if (S[x][i] == k)
-                return false;
-        }
-        for (int i = 0; i < 9; i++) {
-            if (S[i][y] == k)
-                return false;
-        }
-        int a = x / 3, b = y / 3;
-        for (int i = 3 * a; i < 3 * a + 3; i++) {
-            for (int j = 3 * b; j < 3 * b + 3; j++) {
-                if (S[i][j] == k)
-                    return false;
-            }
-        }
-        return true;
+    public void sloveSudoku() {
+        sudoku(ans);
     }
 
-    public void TRY(int[][] S, int x, int y) {
-        if (y == 9) {
-            if (x == 8) {
-                returnSolution(S);
-            } else {
-                TRY(S, x + 1, 0);
+    public boolean sudoku(int[][] array) {
+        int[] location = findNullLocation(array);
+
+        //điều kiện dừng: toàn bộ ô được điền hết
+        if (location[0] == -1)
+            return true;
+
+        //tạo bước xét tiếp theo
+        int row = location[0];
+        int col = location[1];
+
+        for (int num = 1; num < 10; num++) {
+            //kiểm tra num
+            if (isSafe(array, row, col, num)) {
+
+                //nếu num thoả mãn, gán
+                array[row][col] = num;
+
+                //quay lui trạng thái ô tiếp theo
+                boolean check = sudoku(array);
+
+                //điều kiện dừng
+                if (check == true)
+                    return true;
+
+                //quay lui nếu chọn num là ngõ cụt
+                array[row][col] = 0;
             }
-        } else if (S[x][y] == 0) {
-            for (int i = 1; i <= 9; i++) {
-                if (checkValid(S, x, y, i)) {
-                    S[x][y] = i;
-                    TRY(S, x, y + 1);
-                    S[x][y] = 0;
+        }
+
+        return false;
+    }
+
+    public int[] findNullLocation(int[][] arr) {
+        int[] location = new int[2]; //trả về ô chưa điền đầu tiên
+        location[0] = -1;
+        location[1] = -1;
+
+        for (int row = 0; row < 9; row++) {
+            for (int col = 0; col < 9; col++) {
+                if (arr[row][col] == 0) {
+                    location[0] = row;
+                    location[1] = col;
+                    return location;
                 }
             }
-        } else {
-            TRY(S, x, y + 1);
         }
+
+        return location;
+    }
+
+    public boolean usedInRow(int[][] grid, int row, int num) {
+        for (int i = 0; i < 9; i++) {
+            if (grid[row][i] == num) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean usedIncol(int[][] grid, int col, int num) {
+        for (int i = 0; i < 9; i++) {
+            if (grid[i][col] == num) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean usedInBox(int[][] grid, int row1Start, int col1Start, int num) {
+        for (int row = 0; row < 3; row++)
+            for (int col = 0; col < 3; col++)
+                if (grid[row + row1Start][col + col1Start] == num) {
+                    return true;
+                }
+        return false;
+
+    }
+
+    public boolean isSafe(int[][] grid, int row, int col, int num) {
+        return (!usedIncol(grid, col, num) && !usedInRow(grid, row, num) && !usedInBox(grid, row - row % 3, col - col % 3, num));
     }
 }
