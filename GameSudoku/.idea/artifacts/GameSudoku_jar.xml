@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GameSudoku:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GameSudoku_jar</output-path>
+    <root id="archive" name="GameSudoku.jar">
+      <element id="module-output" name="GameSudoku" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/swinglabs/swing-layout/1.0.3/swing-layout-1.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/swing-layout-1.0.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
