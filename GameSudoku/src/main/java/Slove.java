@@ -97,4 +97,13 @@ public class Slove {
     public boolean isSafe(int[][] grid, int row, int col, int num) {
         return (!usedIncol(grid, col, num) && !usedInRow(grid, row, num) && !usedInBox(grid, row - row % 3, col - col % 3, num));
     }
+    public boolean isSafe(int[][] grid) {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (usedInRow(grid, i, grid[i][j]) == true || usedIncol(grid, j, grid[i][j]) == true || usedInBox(grid, i - i % 3, j - j % 3, grid[i][j]) == true)
+                    return false;
+            }
+        }
+        return true;
+    }
 }

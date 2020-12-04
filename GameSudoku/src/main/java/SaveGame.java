@@ -28,7 +28,7 @@ public class SaveGame {
             System.out.print("Da ghi thanh cong!");
  
         }
-        catch (Exception e){
+        catch (IOException e){
             System.out.print(e);// In lỗi ra màn hình
         }
         finally {

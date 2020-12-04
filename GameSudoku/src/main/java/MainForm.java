@@ -190,6 +190,7 @@ public class MainForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
+        setResizable(false);
 
         menuPanel.setBackground(new java.awt.Color(229, 226, 209));
 
@@ -1755,7 +1756,7 @@ private JTextField[][] setBox(){
     private void savegameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_savegameMouseClicked
         // TODO add your handling code here:
         if(custom.isSelected()){
-            if(2==1){
+            if(!checkCustom()){
                 JOptionPane.showMessageDialog(this,"Ma trận này không có lời giải !");
             }
             else{
@@ -1831,15 +1832,38 @@ private JTextField[][] setBox(){
     private void menuFIleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuFIleMouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_menuFIleMouseEntered
-
+    private boolean checkCustom(){
+        mt = getMatrix();
+        Slove s = new Slove();
+        if(s.isSafe(mt))
+            return true;
+        return false;
+    }
+    private int getcheck(){
+        JTextField[][] boxNumber = setBox();
+        for(int i = 0;i<9;i++){
+                for(int j = 0;j<9;j++){
+                    if(boxNumber[i][j].isEditable())
+                        if(boxNumber[i][j].getBackground() == Color.RED)
+                            return 0;
+                }
+            }
+        return 1;
+    }
+    
     private void checkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkActionPerformed
         // TODO add your handling code here:
         if(point > 0){
             int[][] newMT = new int[9][9];
             newMT = getMatrix();
             checkMatrix(mt,newMT);
-            point -= 5;
-            jTextField1.setText(String.valueOf(point));}
+            int check = getcheck();
+            if(check == 0){
+                point -= 5;
+                jTextField1.setText(String.valueOf(point));}
+            else
+                JOptionPane.showMessageDialog(this,"YOU WIN !!!!");
+    }
         else
             JOptionPane.showMessageDialog(this,"Đã hết lượt check. Bạn còn 0 điểm!");
     }//GEN-LAST:event_checkActionPerformed
