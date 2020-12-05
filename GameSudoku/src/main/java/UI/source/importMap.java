@@ -5,34 +5,25 @@ import java.io.*;
 import java.util.Random;
 public class importMap {
 
-    private final static String FILE_URL = ".\\res\\";
-
     public static BufferedReader reader;
 
     public importMap(int i){
-        File file = null;
+        String url = "";
         switch (i){
             case 1 :
-                file = new File(FILE_URL+"MapEasy.txt");
+                url = "/MapEasy.txt";
                 break;
             case 2 :
-                file = new File(FILE_URL+"MapNormal.txt");
+                url = "/MapNormal.txt";
                 break;
             case 3 :
-                file = new File(FILE_URL+"MapHard.txt");
+                url = "/MapHard.txt";
                 break;
             default:
                 break;
         }
-        InputStream inputStream;
-        try {
-            inputStream = new FileInputStream(file);
-            InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-            reader = new BufferedReader(inputStreamReader);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
+        InputStream inputStream = getClass().getResourceAsStream(url);
+        reader = new BufferedReader(new InputStreamReader(inputStream));
     }
 
     public static int[][] readMatrix() throws IOException {
