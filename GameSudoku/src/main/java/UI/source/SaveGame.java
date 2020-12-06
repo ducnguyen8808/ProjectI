@@ -50,16 +50,4 @@ public class SaveGame {
         }
         return matrix;
     }
-//    public static void main(String[] args) throws IOException {
-//        importMap easyMap = new importMap(1);
-//        int[][] matrix = easyMap.readMatrix();
-//        creatFile("C:\\Users\\DELL\\Documents\\ProjectI\\DataMap", "test1", matrix);
-//        int[][] ma = readFile("C:\\Users\\DELL\\Documents\\ProjectI\\DataMap\\test.txt");
-//        for(int i = 0;i<9;i++){
-//            for(int j = 0; j<9; j++){ 
-//                System.out.print(ma[i][j]+" ");
-//            }
-//            System.out.print("\n");
-//        }
-//    }
 }

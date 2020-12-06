@@ -49,14 +49,14 @@ public class Slove {
         return false;
     }
 
-    public int[] findNullLocation(int[][] arr) {
+    public int[] findNullLocation(int[][] grid) {
         int[] location = new int[2]; //trả về ô chưa điền đầu tiên
         location[0] = -1;
         location[1] = -1;
 
         for (int row = 0; row < 9; row++) {
             for (int col = 0; col < 9; col++) {
-                if (arr[row][col] == 0) {
+                if (grid[row][col] == 0) {
                     location[0] = row;
                     location[1] = col;
                     return location;
@@ -97,14 +97,5 @@ public class Slove {
 
     public boolean isSafe(int[][] grid, int row, int col, int num) {
         return (!usedIncol(grid, col, num) && !usedInRow(grid, row, num) && !usedInBox(grid, row - row % 3, col - col % 3, num));
-    }
-    public boolean isSafe(int[][] grid) {
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                if (grid[i][j] != 0 && (usedInRow(grid, i, grid[i][j]) == true || usedIncol(grid, j, grid[i][j]) == true || usedInBox(grid, i - i % 3, j - j % 3, grid[i][j]) == true))
-                    return false;
-            }
-        }
-        return true;
     }
 }

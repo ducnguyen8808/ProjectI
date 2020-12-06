@@ -1,6 +1,8 @@
 package UI.source;
 import java.awt.Color;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -31,6 +33,16 @@ public class MainForm extends javax.swing.JFrame {
         bg.add(custom);
         setTitle("Sudoku Game");
         setLocation(300, 100);
+        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                int x = JOptionPane.showConfirmDialog(null, "Bạn có muốn thoát?", "Xác nhận",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+                if (x == JOptionPane.YES_OPTION) {
+                    e.getWindow().dispose();
+                }
+            }
+        });
     }
     
     /** This method is called from within the constructor to
@@ -1838,8 +1850,9 @@ private JTextField[][] setBox(){
     }//GEN-LAST:event_menuFIleMouseEntered
     private boolean checkCustom(){
         mt = getMatrix();
-        Slove s = new Slove();
-        if(s.isSafe(mt))
+        CheckCustomMap checkCustomMap = new CheckCustomMap();
+        checkCustomMap.setInput(mt);
+        if(checkCustomMap.check_broad())
             return true;
         return false;
     }
