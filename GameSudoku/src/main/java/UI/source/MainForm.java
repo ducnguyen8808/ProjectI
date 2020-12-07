@@ -1774,8 +1774,8 @@ private JTextField[][] setBox(){
         if(custom.isSelected()){
             if(!checkCustom()){
                 JOptionPane.showMessageDialog(this,"Ma trận này không có lời giải !");
-            }
-            else{
+            } else {
+                JOptionPane.showMessageDialog(this, "Hợp lệ!");
                 int[][] newMatrix = new int[9][9];
                 newMatrix = getMatrix();
                 JTextField[][] boxNumber = setBox();
@@ -1789,9 +1789,9 @@ private JTextField[][] setBox(){
                     } catch (IOException ex) {
                         Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
                     }
-            }}
-        }
-        else {
+                }
+            }
+        } else {
             int[][] newMatrix = new int[9][9];
             newMatrix = getMatrix();
             JTextField[][] boxNumber = setBox();
@@ -1852,6 +1852,11 @@ private JTextField[][] setBox(){
         mt = getMatrix();
         CheckCustomMap checkCustomMap = new CheckCustomMap();
         checkCustomMap.setInput(mt);
+        for (int i = 0; i <9; i++) {
+            for (int j = 0; j < 9; j++)
+                System.out.print(mt[i][j]);
+            System.out.println();
+        }
         if(checkCustomMap.check_broad())
             return true;
         return false;
