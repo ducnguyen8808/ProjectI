@@ -4,6 +4,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
+import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
@@ -83,6 +84,7 @@ public class MainForm extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         custom = new javax.swing.JRadioButton();
+        jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         m11 = new javax.swing.JTextField();
         m12 = new javax.swing.JTextField();
@@ -204,7 +206,7 @@ public class MainForm extends javax.swing.JFrame {
         setBackground(new java.awt.Color(0, 0, 0));
         setResizable(false);
 
-        menuPanel.setBackground(new java.awt.Color(229, 226, 209));
+        menuPanel.setBackground(new java.awt.Color(214, 217, 223));
 
         name.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         name.setText("Sudoku Game");
@@ -215,21 +217,22 @@ public class MainForm extends javax.swing.JFrame {
         level.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         level.setText("Level: ");
 
-        easy.setBackground(new java.awt.Color(229, 226, 209));
+        easy.setBackground(new java.awt.Color(214, 217, 223));
         easy.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         easy.setText("Easy");
         easy.setBorder(null);
 
-        normal.setBackground(new java.awt.Color(229, 226, 209));
+        normal.setBackground(new java.awt.Color(214, 217, 223));
         normal.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         normal.setText("Normal");
         normal.setBorder(null);
 
-        hard.setBackground(new java.awt.Color(229, 226, 209));
+        hard.setBackground(new java.awt.Color(214, 217, 223));
         hard.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         hard.setText("Hard");
         hard.setBorder(null);
 
+        savegame.setBackground(new java.awt.Color(214, 217, 223));
         savegame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         savegame.setText("Save Game");
         savegame.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -238,6 +241,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
+        loadgame.setBackground(new java.awt.Color(214, 217, 223));
         loadgame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         loadgame.setText("Load Game");
         loadgame.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -246,6 +250,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
+        quit.setBackground(new java.awt.Color(214, 217, 223));
         quit.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         quit.setText("Quit");
         quit.addActionListener(new java.awt.event.ActionListener() {
@@ -256,6 +261,7 @@ public class MainForm extends javax.swing.JFrame {
 
         jSeparator1.setForeground(new java.awt.Color(16, 16, 16));
 
+        check.setBackground(new java.awt.Color(214, 217, 223));
         check.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         check.setText("Check");
         check.addActionListener(new java.awt.event.ActionListener() {
@@ -264,6 +270,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
+        slove.setBackground(new java.awt.Color(214, 217, 223));
         slove.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         slove.setText("Slove");
         slove.addActionListener(new java.awt.event.ActionListener() {
@@ -272,6 +279,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
+        newgame.setBackground(new java.awt.Color(214, 217, 223));
         newgame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         newgame.setText("New Game");
         newgame.addActionListener(new java.awt.event.ActionListener() {
@@ -284,7 +292,7 @@ public class MainForm extends javax.swing.JFrame {
         time.setText("Time:");
 
         ptime.setEditable(false);
-        ptime.setBackground(new java.awt.Color(229, 226, 209));
+        ptime.setBackground(new java.awt.Color(214, 217, 223));
         ptime.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         ptime.setBorder(null);
 
@@ -294,14 +302,16 @@ public class MainForm extends javax.swing.JFrame {
         jLabel1.setText("Point");
 
         jTextField1.setEditable(false);
-        jTextField1.setBackground(new java.awt.Color(229, 226, 209));
+        jTextField1.setBackground(new java.awt.Color(214, 217, 223));
         jTextField1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jTextField1.setBorder(null);
 
-        custom.setBackground(new java.awt.Color(229, 226, 209));
+        custom.setBackground(new java.awt.Color(214, 217, 223));
         custom.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         custom.setText("Custom");
         custom.setBorder(null);
+
+        jLabel3.setIcon(new ImageIcon("src\\main\\java\\UI\\Image\\panel.png")); // NOI18N
 
         org.jdesktop.layout.GroupLayout menuPanelLayout = new org.jdesktop.layout.GroupLayout(menuPanel);
         menuPanel.setLayout(menuPanelLayout);
@@ -310,29 +320,34 @@ public class MainForm extends javax.swing.JFrame {
             .add(jSeparator2)
             .add(menuPanelLayout.createSequentialGroup()
                 .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(menuPanelLayout.createSequentialGroup()
-                        .add(157, 157, 157)
-                        .add(logo)
-                        .add(0, 0, Short.MAX_VALUE))
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, jSeparator1)
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, menuPanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(check, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                             .add(menuPanelLayout.createSequentialGroup()
-                                .add(time)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                                .add(ptime, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 83, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                        .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(check, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                    .add(menuPanelLayout.createSequentialGroup()
+                                        .add(6, 6, 6)
+                                        .add(time)
+                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                        .add(ptime, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 83, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                                .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(menuPanelLayout.createSequentialGroup()
+                                        .add(0, 0, Short.MAX_VALUE)
+                                        .add(slove, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                                    .add(menuPanelLayout.createSequentialGroup()
+                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                                        .add(logo)
+                                        .add(32, 32, 32)
+                                        .add(jLabel1)
+                                        .add(41, 41, 41)
+                                        .add(jTextField1)))
+                                .add(15, 15, 15))
                             .add(menuPanelLayout.createSequentialGroup()
-                                .add(32, 32, 32)
-                                .add(jLabel1)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(jTextField1))
-                            .add(menuPanelLayout.createSequentialGroup()
-                                .add(0, 0, Short.MAX_VALUE)
-                                .add(slove, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                        .add(15, 15, 15)))
+                                .add(46, 46, 46)
+                                .add(jLabel3)
+                                .add(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
             .add(menuPanelLayout.createSequentialGroup()
                 .add(114, 114, 114)
@@ -401,9 +416,11 @@ public class MainForm extends javax.swing.JFrame {
                     .add(ptime, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 24, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(jLabel1)
                     .add(jTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(53, 53, 53)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(jLabel3)
+                .add(202, 202, 202)
                 .add(logo)
-                .add(226, 226, 226))
+                .add(308, 308, 308))
         );
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
@@ -2529,6 +2546,7 @@ private JTextField[][] setBox(){
     private javax.swing.JRadioButton hard;
     private javax.swing.JMenu help;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
