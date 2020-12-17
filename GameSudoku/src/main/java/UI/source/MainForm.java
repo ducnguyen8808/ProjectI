@@ -1668,7 +1668,7 @@ public class MainForm extends javax.swing.JFrame {
 
     private void loadgameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loadgameMouseClicked
         // TODO add your handling code here:
-        SaveGame s = new SaveGame();
+        SaveData s = new SaveData();
         int returnVal = fileDialog.showOpenDialog(null);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileDialog.getSelectedFile();
@@ -1676,6 +1676,8 @@ public class MainForm extends javax.swing.JFrame {
                 mt = s.readFile(fileDialog.getCurrentDirectory().toString()+"\\"+file.getName());
             } catch (IOException ex) {
                 Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
             point = 100;
             drawMatrix(mt);
@@ -1796,15 +1798,17 @@ private JTextField[][] setBox(){
                 int[][] newMatrix = new int[9][9];
                 newMatrix = getMatrix();
                 JTextField[][] boxNumber = setBox();
-                SaveGame s = new SaveGame();
+                SaveData s = new SaveData();
                 int returnVal = fileDialog.showSaveDialog(null);
                 if (returnVal == JFileChooser.APPROVE_OPTION) {
                     java.io.File file = fileDialog.getSelectedFile();
                     try {
-                        s.creatFile(fileDialog.getCurrentDirectory().toString(), file.getName(), newMatrix);
+                        s.createFile(fileDialog.getCurrentDirectory().toString(), file.getName(), newMatrix);
                         JOptionPane.showMessageDialog(this,"Đã lưu !");
                     } catch (IOException ex) {
                         Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
                 }
             }
@@ -1818,15 +1822,17 @@ private JTextField[][] setBox(){
                         newMatrix[i][j]*=10;
                 }
             }
-            SaveGame s = new SaveGame();
+            SaveData s = new SaveData();
             int returnVal = fileDialog.showSaveDialog(null);
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                 java.io.File file = fileDialog.getSelectedFile();
                 try {
-                    s.creatFile(fileDialog.getCurrentDirectory().toString(), file.getName(), newMatrix);
+                    s.createFile(fileDialog.getCurrentDirectory().toString(), file.getName(), newMatrix);
                     JOptionPane.showMessageDialog(this,"Đã lưu !");
                 } catch (IOException ex) {
                     Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
             } } 
         
@@ -1838,7 +1844,7 @@ private JTextField[][] setBox(){
 
     private void loadGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loadGameMouseClicked
         // TODO add your handling code here:
-        SaveGame s = new SaveGame();
+        SaveData s = new SaveData();
         int returnVal = fileDialog.showOpenDialog(null);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileDialog.getSelectedFile();
@@ -1846,6 +1852,8 @@ private JTextField[][] setBox(){
                 mt = s.readFile(fileDialog.getCurrentDirectory().toString()+"\\"+file.getName());
             } catch (IOException ex) {
                 Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
             point = 100;
             drawMatrix(mt);
@@ -1869,11 +1877,6 @@ private JTextField[][] setBox(){
         mt = getMatrix();
         CheckCustomMap checkCustomMap = new CheckCustomMap();
         checkCustomMap.setInput(mt);
-        for (int i = 0; i <9; i++) {
-            for (int j = 0; j < 9; j++)
-                System.out.print(mt[i][j]);
-            System.out.println();
-        }
         if(checkCustomMap.check_broad())
             return true;
         return false;
@@ -1922,12 +1925,6 @@ private JTextField[][] setBox(){
     private void sloveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sloveActionPerformed
         // TODO add your handling code here:b  
         JTextField[][] boxNumber = setBox();
-        for(int i = 0;i<9;i++){
-                for(int j = 0;j<9;j++){
-                    if(boxNumber[i][j].isEditable())
-                        mt[i][j]=0;
-                }
-        }
         sl.setAns(mt);
         sl.sloveSudoku();
         int[][] ans = new int[9][9];
