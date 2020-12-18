@@ -77,14 +77,11 @@ public class MainForm extends javax.swing.JFrame {
         check = new javax.swing.JButton();
         slove = new javax.swing.JButton();
         newgame = new javax.swing.JButton();
-        time = new javax.swing.JLabel();
-        ptime = new javax.swing.JTextField();
         logo = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         custom = new javax.swing.JRadioButton();
-        jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         m11 = new javax.swing.JTextField();
         m12 = new javax.swing.JTextField();
@@ -288,14 +285,6 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        time.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        time.setText("Time:");
-
-        ptime.setEditable(false);
-        ptime.setBackground(new java.awt.Color(214, 217, 223));
-        ptime.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        ptime.setBorder(null);
-
         jSeparator2.setForeground(new java.awt.Color(16, 16, 16));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -311,8 +300,6 @@ public class MainForm extends javax.swing.JFrame {
         custom.setText("Custom");
         custom.setBorder(null);
 
-        jLabel3.setIcon(new ImageIcon("src\\main\\java\\UI\\Image\\panel.png")); // NOI18N
-
         org.jdesktop.layout.GroupLayout menuPanelLayout = new org.jdesktop.layout.GroupLayout(menuPanel);
         menuPanel.setLayout(menuPanelLayout);
         menuPanelLayout.setHorizontalGroup(
@@ -322,32 +309,23 @@ public class MainForm extends javax.swing.JFrame {
                 .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, jSeparator1)
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, menuPanelLayout.createSequentialGroup()
-                        .addContainerGap()
                         .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(menuPanelLayout.createSequentialGroup()
-                                .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(check, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(menuPanelLayout.createSequentialGroup()
-                                        .add(6, 6, 6)
-                                        .add(time)
-                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                        .add(ptime, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 83, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                                .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(menuPanelLayout.createSequentialGroup()
-                                        .add(0, 0, Short.MAX_VALUE)
-                                        .add(slove, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                    .add(menuPanelLayout.createSequentialGroup()
-                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                                        .add(logo)
-                                        .add(32, 32, 32)
-                                        .add(jLabel1)
-                                        .add(41, 41, 41)
-                                        .add(jTextField1)))
-                                .add(15, 15, 15))
+                                .addContainerGap()
+                                .add(check, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(menuPanelLayout.createSequentialGroup()
-                                .add(46, 46, 46)
-                                .add(jLabel3)
-                                .add(0, 0, Short.MAX_VALUE)))))
+                                .add(68, 68, 68)
+                                .add(jLabel1)))
+                        .add(9, 9, 9)
+                        .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(menuPanelLayout.createSequentialGroup()
+                                .add(0, 0, Short.MAX_VALUE)
+                                .add(slove, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                            .add(menuPanelLayout.createSequentialGroup()
+                                .add(logo)
+                                .add(0, 0, Short.MAX_VALUE))
+                            .add(jTextField1))
+                        .add(15, 15, 15)))
                 .addContainerGap())
             .add(menuPanelLayout.createSequentialGroup()
                 .add(114, 114, 114)
@@ -412,13 +390,9 @@ public class MainForm extends javax.swing.JFrame {
                     .add(slove))
                 .add(18, 18, 18)
                 .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(time)
-                    .add(ptime, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 24, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(jLabel1)
                     .add(jTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(jLabel3)
-                .add(202, 202, 202)
+                .add(409, 409, 409)
                 .add(logo)
                 .add(308, 308, 308))
         );
@@ -2543,7 +2517,6 @@ private JTextField[][] setBox(){
     private javax.swing.JRadioButton hard;
     private javax.swing.JMenu help;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
@@ -2648,12 +2621,10 @@ private JTextField[][] setBox(){
     private javax.swing.JLabel name;
     private javax.swing.JButton newgame;
     private javax.swing.JRadioButton normal;
-    private javax.swing.JTextField ptime;
     private javax.swing.JButton quit;
     private javax.swing.JMenuItem saveGame;
     private javax.swing.JButton savegame;
     private javax.swing.JButton slove;
-    private javax.swing.JLabel time;
     // End of variables declaration//GEN-END:variables
 
 }
