@@ -1900,17 +1900,22 @@ private JTextField[][] setBox(){
         // TODO add your handling code here:b  
         JTextField[][] boxNumber = setBox();
         sl.setAns(mt);
-        sl.sloveSudoku();
-        int[][] ans = new int[9][9];
-        ans = sl.getAns();
-        for(int i = 0;i<9;i++){
-            for(int j = 0;j<9;j++){
-                boxNumber[i][j].setText(String.valueOf(ans[i][j]));
-                boxNumber[i][j].setBackground(Color.LIGHT_GRAY);
-                boxNumber[i][j].setEditable(false);
+        Object[] option = {"Có", "Không"};
+        int chose = JOptionPane.showOptionDialog(this, "Bạn có muốn xem lời giải?", "Xác nhận", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, option, option[0]);
+        if (chose == 0) {
+            sl.sloveSudoku();
+            int[][] ans = new int[9][9];
+            ans = sl.getAns();
+            for(int i = 0;i<9;i++){
+                for(int j = 0;j<9;j++){
+                    boxNumber[i][j].setText(String.valueOf(ans[i][j]));
+                    boxNumber[i][j].setBackground(Color.LIGHT_GRAY);
+                    boxNumber[i][j].setEditable(false);
+                }
             }
+            JOptionPane.showMessageDialog(this, "Bạn đã thua!");
+            jTextField1.setText(String.valueOf("0"));
         }
-        jTextField1.setText(String.valueOf("0"));
     }//GEN-LAST:event_sloveActionPerformed
 
     private void m11KeyTyped(java.awt.event.KeyEvent evt) {
