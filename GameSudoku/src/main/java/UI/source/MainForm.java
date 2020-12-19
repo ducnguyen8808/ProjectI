@@ -35,6 +35,7 @@ public class MainForm extends javax.swing.JFrame {
         setTitle("Sudoku Game");
         setLocation(300, 100);
         this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        this.getContentPane().setBackground(new Color(255,255,255));
         this.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -164,94 +165,7 @@ public class MainForm extends javax.swing.JFrame {
         m82 = new javax.swing.JTextField();
         m91 = new javax.swing.JTextField();
         m72 = new javax.swing.JTextField();
-        menuBar = new javax.swing.JMenuBar();
-        menuFIle = new javax.swing.JMenu();
-        saveGame = new javax.swing.JMenuItem();
-        loadGame = new javax.swing.JMenuItem();
-        exit = new javax.swing.JMenuItem();
-        help = new javax.swing.JMenu();
-        about = new javax.swing.JMenuItem();
-        m11.setCaretColor(new Color(255,255,255,0));
-        m12.setCaretColor(new Color(255,255,255,0));
-        m13.setCaretColor(new Color(255,255,255,0));
-        m14.setCaretColor(new Color(255,255,255,0));
-        m15.setCaretColor(new Color(255,255,255,0));
-        m16.setCaretColor(new Color(255,255,255,0));
-        m17.setCaretColor(new Color(255,255,255,0));
-        m18.setCaretColor(new Color(255,255,255,0));
-        m19.setCaretColor(new Color(255,255,255,0));
-        m21.setCaretColor(new Color(255,255,255,0));
-        m22.setCaretColor(new Color(255,255,255,0));
-        m23.setCaretColor(new Color(255,255,255,0));
-        m24.setCaretColor(new Color(255,255,255,0));
-        m25.setCaretColor(new Color(255,255,255,0));
-        m26.setCaretColor(new Color(255,255,255,0));
-        m27.setCaretColor(new Color(255,255,255,0));
-        m28.setCaretColor(new Color(255,255,255,0));
-        m29.setCaretColor(new Color(255,255,255,0));
-        m31.setCaretColor(new Color(255,255,255,0));
-        m32.setCaretColor(new Color(255,255,255,0));
-        m33.setCaretColor(new Color(255,255,255,0));
-        m34.setCaretColor(new Color(255,255,255,0));
-        m35.setCaretColor(new Color(255,255,255,0));
-        m36.setCaretColor(new Color(255,255,255,0));
-        m37.setCaretColor(new Color(255,255,255,0));
-        m38.setCaretColor(new Color(255,255,255,0));
-        m39.setCaretColor(new Color(255,255,255,0));
-        m41.setCaretColor(new Color(255,255,255,0));
-        m42.setCaretColor(new Color(255,255,255,0));
-        m43.setCaretColor(new Color(255,255,255,0));
-        m44.setCaretColor(new Color(255,255,255,0));
-        m45.setCaretColor(new Color(255,255,255,0));
-        m46.setCaretColor(new Color(255,255,255,0));
-        m47.setCaretColor(new Color(255,255,255,0));
-        m48.setCaretColor(new Color(255,255,255,0));
-        m49.setCaretColor(new Color(255,255,255,0));
-        m51.setCaretColor(new Color(255,255,255,0));
-        m52.setCaretColor(new Color(255,255,255,0));
-        m53.setCaretColor(new Color(255,255,255,0));
-        m54.setCaretColor(new Color(255,255,255,0));
-        m55.setCaretColor(new Color(255,255,255,0));
-        m56.setCaretColor(new Color(255,255,255,0));
-        m57.setCaretColor(new Color(255,255,255,0));
-        m58.setCaretColor(new Color(255,255,255,0));
-        m59.setCaretColor(new Color(255,255,255,0));
-        m61.setCaretColor(new Color(255,255,255,0));
-        m62.setCaretColor(new Color(255,255,255,0));
-        m63.setCaretColor(new Color(255,255,255,0));
-        m64.setCaretColor(new Color(255,255,255,0));
-        m65.setCaretColor(new Color(255,255,255,0));
-        m66.setCaretColor(new Color(255,255,255,0));
-        m67.setCaretColor(new Color(255,255,255,0));
-        m68.setCaretColor(new Color(255,255,255,0));
-        m69.setCaretColor(new Color(255,255,255,0));
-        m71.setCaretColor(new Color(255,255,255,0));
-        m72.setCaretColor(new Color(255,255,255,0));
-        m73.setCaretColor(new Color(255,255,255,0));
-        m74.setCaretColor(new Color(255,255,255,0));
-        m75.setCaretColor(new Color(255,255,255,0));
-        m76.setCaretColor(new Color(255,255,255,0));
-        m77.setCaretColor(new Color(255,255,255,0));
-        m78.setCaretColor(new Color(255,255,255,0));
-        m79.setCaretColor(new Color(255,255,255,0));
-        m81.setCaretColor(new Color(255,255,255,0));
-        m82.setCaretColor(new Color(255,255,255,0));
-        m83.setCaretColor(new Color(255,255,255,0));
-        m84.setCaretColor(new Color(255,255,255,0));
-        m85.setCaretColor(new Color(255,255,255,0));
-        m86.setCaretColor(new Color(255,255,255,0));
-        m87.setCaretColor(new Color(255,255,255,0));
-        m88.setCaretColor(new Color(255,255,255,0));
-        m89.setCaretColor(new Color(255,255,255,0));
-        m91.setCaretColor(new Color(255,255,255,0));
-        m92.setCaretColor(new Color(255,255,255,0));
-        m93.setCaretColor(new Color(255,255,255,0));
-        m94.setCaretColor(new Color(255,255,255,0));
-        m95.setCaretColor(new Color(255,255,255,0));
-        m96.setCaretColor(new Color(255,255,255,0));
-        m97.setCaretColor(new Color(255,255,255,0));
-        m98.setCaretColor(new Color(255,255,255,0));
-        m99.setCaretColor(new Color(255,255,255,0));
+
         jTextField20.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
@@ -2063,57 +1977,6 @@ public class MainForm extends javax.swing.JFrame {
                 .add(2, 2, 2))
         );
 
-        menuFIle.setText("File");
-        menuFIle.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        menuFIle.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                menuFIleMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                menuFIleMouseEntered(evt);
-            }
-        });
-
-        saveGame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        saveGame.setText("Save game");
-        saveGame.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                saveGameMouseClicked(evt);
-            }
-        });
-        menuFIle.add(saveGame);
-
-        loadGame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        loadGame.setText("Load game");
-        loadGame.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                loadGameMouseClicked(evt);
-            }
-        });
-        menuFIle.add(loadGame);
-
-        exit.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        exit.setText("Exit");
-        exit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                exitMouseClicked(evt);
-            }
-        });
-        menuFIle.add(exit);
-
-        menuBar.add(menuFIle);
-
-        help.setText("Help");
-        help.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-
-        about.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        about.setText("About");
-        help.add(about);
-
-        menuBar.add(help);
-
-        setJMenuBar(menuBar);
-
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -2126,11 +1989,13 @@ public class MainForm extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(menuPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
-                .add(10, 10, 10)
+            .add(layout.createSequentialGroup()
+                .addContainerGap()
                 .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 480, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(10, 10, 10))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(layout.createSequentialGroup()
+                .add(menuPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 500, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -2151,9 +2016,9 @@ public class MainForm extends javax.swing.JFrame {
             }
             point = 100;
             drawMatrix(mt);
-            }   
+            }
     }//GEN-LAST:event_loadgameMouseClicked
-    
+
 private JTextField[][] setBox(){
         JTextField[][] boxNumber = {{m11,m12,m13,m14,m15,m16,m17,m18,m19},
                                     {m21,m22,m23,m24,m25,m26,m27,m28,m29},
@@ -2165,8 +2030,8 @@ private JTextField[][] setBox(){
                                     {m81,m82,m83,m84,m85,m86,m87,m88,m89},
                                     {m91,m92,m93,m94,m95,m96,m97,m98,m99}};
         return boxNumber;
-    }     
-   
+    }
+
     private void drawMatrix(int[][] matrix){
         jTextField1.setText(String.valueOf(point));
         JTextField[][] boxNumber = setBox();
@@ -2191,7 +2056,7 @@ private JTextField[][] setBox(){
             }
         }
     }
-    
+
     private int[][] getMatrix(){
         int[][] matrix = new int[9][9];
         jTextField1.setText(String.valueOf(point));
@@ -2201,12 +2066,12 @@ private JTextField[][] setBox(){
                 if(boxNumber[i][j].getText().equals(""))
                     matrix[i][j] = 0;
                 else if(Integer.parseInt(boxNumber[i][j].getText())>=1&&Integer.parseInt(boxNumber[i][j].getText())<=9)
-                    matrix[i][j] = Integer.parseInt(boxNumber[i][j].getText());            
+                    matrix[i][j] = Integer.parseInt(boxNumber[i][j].getText());
             }
         }
         return matrix;
     }
-    
+
     private void checkMatrix(int[][] matrix,int[][] newMT){
         JTextField[][] boxNumber = setBox();
         for(int i = 0;i<9;i++){
@@ -2219,7 +2084,7 @@ private JTextField[][] setBox(){
             }
         }
     }
-    
+
     private void quitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitActionPerformed
         // TODO add your handling code here:
         Object[] option = {"Đồng ý", "Huỷ"};
@@ -2304,45 +2169,9 @@ private JTextField[][] setBox(){
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            } } 
-        
+            } }
+
     }//GEN-LAST:event_savegameMouseClicked
-
-    private void menuFIleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuFIleMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuFIleMouseClicked
-
-    private void loadGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loadGameMouseClicked
-        // TODO add your handling code here:
-        SaveData s = new SaveData();
-        int returnVal = fileDialog.showOpenDialog(null);
-        if (returnVal == JFileChooser.APPROVE_OPTION) {
-            java.io.File file = fileDialog.getSelectedFile();
-            try {
-                mt = s.readFile(fileDialog.getCurrentDirectory().toString()+"\\"+file.getName());
-            } catch (IOException ex) {
-                Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            point = 100;
-            drawMatrix(mt);
-            }   
-    }//GEN-LAST:event_loadGameMouseClicked
-
-    private void exitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitMouseClicked
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_exitMouseClicked
-
-    private void saveGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_saveGameMouseClicked
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_saveGameMouseClicked
-
-    private void menuFIleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuFIleMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuFIleMouseEntered
     private boolean checkCustom(){
         mt = getMatrix();
         CheckCustomMap checkCustomMap = new CheckCustomMap();
@@ -2362,7 +2191,7 @@ private JTextField[][] setBox(){
             }
         return 1;
     }
-    
+
     private void checkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkActionPerformed
         // TODO add your handling code here:
         if(point > 0){
@@ -2393,9 +2222,9 @@ private JTextField[][] setBox(){
 
 
     //sửa ở đây
-    
+
     private void sloveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sloveActionPerformed
-        // TODO add your handling code here:b  
+        // TODO add your handling code here:b
         JTextField[][] boxNumber = setBox();
         int[][] temp = new int[9][9];
         for(int i = 0;i<9;i++){
@@ -3675,13 +3504,10 @@ private JTextField[][] setBox(){
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem about;
     private javax.swing.JButton check;
     private javax.swing.JRadioButton custom;
     private javax.swing.JRadioButton easy;
-    private javax.swing.JMenuItem exit;
     private javax.swing.JRadioButton hard;
-    private javax.swing.JMenu help;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
@@ -3697,7 +3523,6 @@ private JTextField[][] setBox(){
     private javax.swing.JTextField jTextField33;
     private javax.swing.JTextField jTextField34;
     private javax.swing.JLabel level;
-    private javax.swing.JMenuItem loadGame;
     private javax.swing.JButton loadgame;
     private javax.swing.JLabel logo;
     private javax.swing.JTextField m11;
@@ -3781,14 +3606,11 @@ private JTextField[][] setBox(){
     private javax.swing.JTextField m97;
     private javax.swing.JTextField m98;
     private javax.swing.JTextField m99;
-    private javax.swing.JMenuBar menuBar;
-    private javax.swing.JMenu menuFIle;
     private javax.swing.JPanel menuPanel;
     private javax.swing.JLabel name;
     private javax.swing.JButton newgame;
     private javax.swing.JRadioButton normal;
     private javax.swing.JButton quit;
-    private javax.swing.JMenuItem saveGame;
     private javax.swing.JButton savegame;
     private javax.swing.JButton slove;
     // End of variables declaration//GEN-END:variables
