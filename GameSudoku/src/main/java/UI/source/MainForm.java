@@ -35,7 +35,7 @@ public class MainForm extends javax.swing.JFrame {
         setTitle("Sudoku Game");
         setLocation(300, 100);
         this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-        this.getContentPane().setBackground(new Color(255,255,255));
+        this.getContentPane().setBackground(new Color(227, 227, 227));
         this.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -80,8 +80,6 @@ public class MainForm extends javax.swing.JFrame {
         newgame = new javax.swing.JButton();
         logo = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
         custom = new javax.swing.JRadioButton();
         jPanel1 = new javax.swing.JPanel();
         m11 = new javax.swing.JTextField();
@@ -166,6 +164,88 @@ public class MainForm extends javax.swing.JFrame {
         m91 = new javax.swing.JTextField();
         m72 = new javax.swing.JTextField();
 
+        m11.setCaretColor(new Color(255,255,255,0));
+        m12.setCaretColor(new Color(255,255,255,0));
+        m13.setCaretColor(new Color(255,255,255,0));
+        m14.setCaretColor(new Color(255,255,255,0));
+        m15.setCaretColor(new Color(255,255,255,0));
+        m16.setCaretColor(new Color(255,255,255,0));
+        m17.setCaretColor(new Color(255,255,255,0));
+        m18.setCaretColor(new Color(255,255,255,0));
+        m19.setCaretColor(new Color(255,255,255,0));
+        m21.setCaretColor(new Color(255,255,255,0));
+        m22.setCaretColor(new Color(255,255,255,0));
+        m23.setCaretColor(new Color(255,255,255,0));
+        m24.setCaretColor(new Color(255,255,255,0));
+        m25.setCaretColor(new Color(255,255,255,0));
+        m26.setCaretColor(new Color(255,255,255,0));
+        m27.setCaretColor(new Color(255,255,255,0));
+        m28.setCaretColor(new Color(255,255,255,0));
+        m29.setCaretColor(new Color(255,255,255,0));
+        m31.setCaretColor(new Color(255,255,255,0));
+        m32.setCaretColor(new Color(255,255,255,0));
+        m33.setCaretColor(new Color(255,255,255,0));
+        m34.setCaretColor(new Color(255,255,255,0));
+        m35.setCaretColor(new Color(255,255,255,0));
+        m36.setCaretColor(new Color(255,255,255,0));
+        m37.setCaretColor(new Color(255,255,255,0));
+        m38.setCaretColor(new Color(255,255,255,0));
+        m39.setCaretColor(new Color(255,255,255,0));
+        m41.setCaretColor(new Color(255,255,255,0));
+        m42.setCaretColor(new Color(255,255,255,0));
+        m43.setCaretColor(new Color(255,255,255,0));
+        m44.setCaretColor(new Color(255,255,255,0));
+        m45.setCaretColor(new Color(255,255,255,0));
+        m46.setCaretColor(new Color(255,255,255,0));
+        m47.setCaretColor(new Color(255,255,255,0));
+        m48.setCaretColor(new Color(255,255,255,0));
+        m49.setCaretColor(new Color(255,255,255,0));
+        m51.setCaretColor(new Color(255,255,255,0));
+        m52.setCaretColor(new Color(255,255,255,0));
+        m53.setCaretColor(new Color(255,255,255,0));
+        m54.setCaretColor(new Color(255,255,255,0));
+        m55.setCaretColor(new Color(255,255,255,0));
+        m56.setCaretColor(new Color(255,255,255,0));
+        m57.setCaretColor(new Color(255,255,255,0));
+        m58.setCaretColor(new Color(255,255,255,0));
+        m59.setCaretColor(new Color(255,255,255,0));
+        m61.setCaretColor(new Color(255,255,255,0));
+        m62.setCaretColor(new Color(255,255,255,0));
+        m63.setCaretColor(new Color(255,255,255,0));
+        m64.setCaretColor(new Color(255,255,255,0));
+        m65.setCaretColor(new Color(255,255,255,0));
+        m66.setCaretColor(new Color(255,255,255,0));
+        m67.setCaretColor(new Color(255,255,255,0));
+        m68.setCaretColor(new Color(255,255,255,0));
+        m69.setCaretColor(new Color(255,255,255,0));
+        m71.setCaretColor(new Color(255,255,255,0));
+        m72.setCaretColor(new Color(255,255,255,0));
+        m73.setCaretColor(new Color(255,255,255,0));
+        m74.setCaretColor(new Color(255,255,255,0));
+        m75.setCaretColor(new Color(255,255,255,0));
+        m76.setCaretColor(new Color(255,255,255,0));
+        m77.setCaretColor(new Color(255,255,255,0));
+        m78.setCaretColor(new Color(255,255,255,0));
+        m79.setCaretColor(new Color(255,255,255,0));
+        m81.setCaretColor(new Color(255,255,255,0));
+        m82.setCaretColor(new Color(255,255,255,0));
+        m83.setCaretColor(new Color(255,255,255,0));
+        m84.setCaretColor(new Color(255,255,255,0));
+        m85.setCaretColor(new Color(255,255,255,0));
+        m86.setCaretColor(new Color(255,255,255,0));
+        m87.setCaretColor(new Color(255,255,255,0));
+        m88.setCaretColor(new Color(255,255,255,0));
+        m89.setCaretColor(new Color(255,255,255,0));
+        m91.setCaretColor(new Color(255,255,255,0));
+        m92.setCaretColor(new Color(255,255,255,0));
+        m93.setCaretColor(new Color(255,255,255,0));
+        m94.setCaretColor(new Color(255,255,255,0));
+        m95.setCaretColor(new Color(255,255,255,0));
+        m96.setCaretColor(new Color(255,255,255,0));
+        m97.setCaretColor(new Color(255,255,255,0));
+        m98.setCaretColor(new Color(255,255,255,0));
+        m99.setCaretColor(new Color(255,255,255,0));
+
         jTextField20.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
@@ -194,10 +274,11 @@ public class MainForm extends javax.swing.JFrame {
         jTextField34.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(0, 0, 0));
+        setBackground(new java.awt.Color(179, 227, 255));
+        setFocusTraversalPolicyProvider(true);
         setResizable(false);
 
-        menuPanel.setBackground(new java.awt.Color(255, 255, 255));
+        menuPanel.setBackground(new java.awt.Color(227, 227, 227));
 
         name.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         name.setText("Sudoku Game");
@@ -208,22 +289,22 @@ public class MainForm extends javax.swing.JFrame {
         level.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         level.setText("Level: ");
 
-        easy.setBackground(new java.awt.Color(255, 255, 255));
+        easy.setBackground(new java.awt.Color(227, 227, 227));
         easy.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         easy.setText("Easy");
         easy.setBorder(null);
 
-        normal.setBackground(new java.awt.Color(255, 255, 255));
+        normal.setBackground(new java.awt.Color(227, 227, 227));
         normal.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         normal.setText("Normal");
         normal.setBorder(null);
 
-        hard.setBackground(new java.awt.Color(255, 255, 255));
+        hard.setBackground(new java.awt.Color(227, 227, 227));
         hard.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         hard.setText("Hard");
         hard.setBorder(null);
 
-        savegame.setBackground(new java.awt.Color(214, 217, 223));
+        savegame.setBackground(new java.awt.Color(147, 185, 249));
         savegame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         savegame.setText("Save Game");
         savegame.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -232,7 +313,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        loadgame.setBackground(new java.awt.Color(214, 217, 223));
+        loadgame.setBackground(new java.awt.Color(147, 185, 249));
         loadgame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         loadgame.setText("Load Game");
         loadgame.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -241,7 +322,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        quit.setBackground(new java.awt.Color(214, 217, 223));
+        quit.setBackground(new java.awt.Color(147, 185, 249));
         quit.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         quit.setText("Quit");
         quit.addActionListener(new java.awt.event.ActionListener() {
@@ -252,7 +333,7 @@ public class MainForm extends javax.swing.JFrame {
 
         jSeparator1.setForeground(new java.awt.Color(16, 16, 16));
 
-        check.setBackground(new java.awt.Color(214, 217, 223));
+        check.setBackground(new java.awt.Color(147, 185, 249));
         check.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         check.setText("Check");
         check.addActionListener(new java.awt.event.ActionListener() {
@@ -261,7 +342,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        slove.setBackground(new java.awt.Color(214, 217, 223));
+        slove.setBackground(new java.awt.Color(147, 185, 249));
         slove.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         slove.setText("Slove");
         slove.addActionListener(new java.awt.event.ActionListener() {
@@ -270,7 +351,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        newgame.setBackground(new java.awt.Color(214, 217, 223));
+        newgame.setBackground(new java.awt.Color(147, 185, 249));
         newgame.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         newgame.setText("New Game");
         newgame.addActionListener(new java.awt.event.ActionListener() {
@@ -281,15 +362,7 @@ public class MainForm extends javax.swing.JFrame {
 
         jSeparator2.setForeground(new java.awt.Color(16, 16, 16));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel1.setText("Point");
-
-        jTextField1.setEditable(false);
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTextField1.setBorder(null);
-
-        custom.setBackground(new java.awt.Color(255, 255, 255));
+        custom.setBackground(new java.awt.Color(227, 227, 227));
         custom.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         custom.setText("Custom");
         custom.setBorder(null);
@@ -303,13 +376,8 @@ public class MainForm extends javax.swing.JFrame {
                 .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, jSeparator1)
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, menuPanelLayout.createSequentialGroup()
-                        .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(menuPanelLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .add(check, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(menuPanelLayout.createSequentialGroup()
-                                .add(68, 68, 68)
-                                .add(jLabel1)))
+                        .addContainerGap()
+                        .add(check, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .add(9, 9, 9)
                         .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(menuPanelLayout.createSequentialGroup()
@@ -317,8 +385,7 @@ public class MainForm extends javax.swing.JFrame {
                                 .add(slove, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(menuPanelLayout.createSequentialGroup()
                                 .add(logo)
-                                .add(0, 0, Short.MAX_VALUE))
-                            .add(jTextField1))
+                                .add(0, 0, Short.MAX_VALUE)))
                         .add(15, 15, 15)))
                 .addContainerGap())
             .add(menuPanelLayout.createSequentialGroup()
@@ -382,17 +449,14 @@ public class MainForm extends javax.swing.JFrame {
                 .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(check)
                     .add(slove))
-                .add(18, 18, 18)
-                .add(menuPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel1)
-                    .add(jTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(409, 409, 409)
+                .add(444, 444, 444)
                 .add(logo)
                 .add(308, 308, 308))
         );
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setInheritsPopupMenu(true);
+        jPanel1.setOpaque(false);
         jPanel1.setPreferredSize(new java.awt.Dimension(492, 492));
 
         m11.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
@@ -1941,7 +2005,7 @@ public class MainForm extends javax.swing.JFrame {
                     .add(m67, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(m68, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(m69, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(1, 1, 1)
+                .add(2, 2, 2)
                 .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(m71, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(m72, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -1982,20 +2046,18 @@ public class MainForm extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .addContainerGap()
+                .add(5, 5, 5)
                 .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 488, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(10, 10, 10)
+                .add(5, 5, 5)
                 .add(menuPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 308, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .addContainerGap()
+                .add(5, 5, 5)
                 .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 480, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .add(layout.createSequentialGroup()
-                .add(menuPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 500, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(0, 0, Short.MAX_VALUE))
+                .add(5, 5, 5))
+            .add(menuPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
 
         pack();
@@ -2033,7 +2095,6 @@ private JTextField[][] setBox(){
     }
 
     private void drawMatrix(int[][] matrix){
-        jTextField1.setText(String.valueOf(point));
         JTextField[][] boxNumber = setBox();
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
@@ -2050,7 +2111,7 @@ private JTextField[][] setBox(){
                 }
                 else{
                     boxNumber[i][j].setText(String.valueOf(matrix[i][j]));
-                    boxNumber[i][j].setBackground(new Color(179, 227, 255));
+                    boxNumber[i][j].setBackground(new Color(80, 137, 242));
                     boxNumber[i][j].setEditable(false);
                 }
             }
@@ -2059,7 +2120,6 @@ private JTextField[][] setBox(){
 
     private int[][] getMatrix(){
         int[][] matrix = new int[9][9];
-        jTextField1.setText(String.valueOf(point));
         JTextField[][] boxNumber = setBox();
         for(int i = 0;i<9;i++){
             for(int j = 0;j<9;j++){
@@ -2201,7 +2261,7 @@ private JTextField[][] setBox(){
             int check = getcheck();
             if(check == 0){
                 point -= 5;
-                jTextField1.setText(String.valueOf(point));}
+            }
             else
                 JOptionPane.showMessageDialog(this,"YOU WIN !!!!");
     }
@@ -2242,13 +2302,12 @@ private JTextField[][] setBox(){
                 for(int j = 0;j<9;j++){
                     if (mt[i][j] == 0) {
                         boxNumber[i][j].setBackground(new Color(0,255,0));
-                    } else boxNumber[i][j].setBackground(new Color(179, 227, 255));
+                    } else boxNumber[i][j].setBackground(new Color(40, 121, 255));
                     boxNumber[i][j].setText(String.valueOf(temp[i][j]));
                     boxNumber[i][j].setEditable(false);
                 }
             }
             JOptionPane.showMessageDialog(this, "Bạn đã thua!");
-            jTextField1.setText(String.valueOf("0"));
         }
     }//GEN-LAST:event_sloveActionPerformed
 
@@ -3508,11 +3567,9 @@ private JTextField[][] setBox(){
     private javax.swing.JRadioButton custom;
     private javax.swing.JRadioButton easy;
     private javax.swing.JRadioButton hard;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField20;
     private javax.swing.JTextField jTextField21;
     private javax.swing.JTextField jTextField22;
