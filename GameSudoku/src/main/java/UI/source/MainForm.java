@@ -171,7 +171,6 @@ public class MainForm extends javax.swing.JFrame {
         exit = new javax.swing.JMenuItem();
         help = new javax.swing.JMenu();
         about = new javax.swing.JMenuItem();
-
         m11.setCaretColor(new Color(255,255,255,0));
         m12.setCaretColor(new Color(255,255,255,0));
         m13.setCaretColor(new Color(255,255,255,0));
@@ -487,6 +486,11 @@ public class MainForm extends javax.swing.JFrame {
         m11.setToolTipText("");
         m11.setActionCommand("<Not Set>");
         m11.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m11MouseClicked(evt);
+            }
+        });
         m11.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m11KeyTyped(evt);
@@ -498,6 +502,11 @@ public class MainForm extends javax.swing.JFrame {
         m12.setToolTipText("");
         m12.setActionCommand("<Not Set>");
         m12.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m12MouseClicked(evt);
+            }
+        });
         m12.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m12KeyTyped(evt);
@@ -509,6 +518,11 @@ public class MainForm extends javax.swing.JFrame {
         m13.setToolTipText("");
         m13.setActionCommand("<Not Set>");
         m13.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m13MouseClicked(evt);
+            }
+        });
         m13.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m13KeyTyped(evt);
@@ -520,6 +534,11 @@ public class MainForm extends javax.swing.JFrame {
         m16.setToolTipText("");
         m16.setActionCommand("<Not Set>");
         m16.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m16MouseClicked(evt);
+            }
+        });
         m16.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m16KeyTyped(evt);
@@ -531,6 +550,11 @@ public class MainForm extends javax.swing.JFrame {
         m14.setToolTipText("");
         m14.setActionCommand("<Not Set>");
         m14.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m14MouseClicked(evt);
+            }
+        });
         m14.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m14KeyTyped(evt);
@@ -542,6 +566,11 @@ public class MainForm extends javax.swing.JFrame {
         m15.setToolTipText("");
         m15.setActionCommand("<Not Set>");
         m15.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m15MouseClicked(evt);
+            }
+        });
         m15.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m15KeyTyped(evt);
@@ -553,6 +582,11 @@ public class MainForm extends javax.swing.JFrame {
         m19.setToolTipText("");
         m19.setActionCommand("<Not Set>");
         m19.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m19MouseClicked(evt);
+            }
+        });
         m19.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m19KeyTyped(evt);
@@ -564,6 +598,11 @@ public class MainForm extends javax.swing.JFrame {
         m17.setToolTipText("");
         m17.setActionCommand("<Not Set>");
         m17.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m17MouseClicked(evt);
+            }
+        });
         m17.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m17KeyTyped(evt);
@@ -575,6 +614,11 @@ public class MainForm extends javax.swing.JFrame {
         m18.setToolTipText("");
         m18.setActionCommand("<Not Set>");
         m18.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m18MouseClicked(evt);
+            }
+        });
         m18.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m18KeyTyped(evt);
@@ -586,6 +630,11 @@ public class MainForm extends javax.swing.JFrame {
         m23.setToolTipText("");
         m23.setActionCommand("<Not Set>");
         m23.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m23MouseClicked(evt);
+            }
+        });
         m23.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m23KeyTyped(evt);
@@ -597,6 +646,11 @@ public class MainForm extends javax.swing.JFrame {
         m26.setToolTipText("");
         m26.setActionCommand("<Not Set>");
         m26.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m26MouseClicked(evt);
+            }
+        });
         m26.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m26KeyTyped(evt);
@@ -608,6 +662,11 @@ public class MainForm extends javax.swing.JFrame {
         m24.setToolTipText("");
         m24.setActionCommand("<Not Set>");
         m24.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m24MouseClicked(evt);
+            }
+        });
         m24.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m24KeyTyped(evt);
@@ -619,6 +678,11 @@ public class MainForm extends javax.swing.JFrame {
         m25.setToolTipText("");
         m25.setActionCommand("<Not Set>");
         m25.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m25MouseClicked(evt);
+            }
+        });
         m25.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m25KeyTyped(evt);
@@ -630,6 +694,11 @@ public class MainForm extends javax.swing.JFrame {
         m21.setToolTipText("");
         m21.setActionCommand("<Not Set>");
         m21.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m21MouseClicked(evt);
+            }
+        });
         m21.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m21KeyTyped(evt);
@@ -641,6 +710,11 @@ public class MainForm extends javax.swing.JFrame {
         m29.setToolTipText("");
         m29.setActionCommand("<Not Set>");
         m29.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m29MouseClicked(evt);
+            }
+        });
         m29.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m29KeyTyped(evt);
@@ -652,6 +726,11 @@ public class MainForm extends javax.swing.JFrame {
         m27.setToolTipText("");
         m27.setActionCommand("<Not Set>");
         m27.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m27MouseClicked(evt);
+            }
+        });
         m27.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m27KeyTyped(evt);
@@ -663,6 +742,11 @@ public class MainForm extends javax.swing.JFrame {
         m28.setToolTipText("");
         m28.setActionCommand("<Not Set>");
         m28.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m28MouseClicked(evt);
+            }
+        });
         m28.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m28KeyTyped(evt);
@@ -674,6 +758,11 @@ public class MainForm extends javax.swing.JFrame {
         m22.setToolTipText("");
         m22.setActionCommand("<Not Set>");
         m22.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m22MouseClicked(evt);
+            }
+        });
         m22.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m22KeyTyped(evt);
@@ -685,6 +774,11 @@ public class MainForm extends javax.swing.JFrame {
         m33.setToolTipText("");
         m33.setActionCommand("<Not Set>");
         m33.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m33MouseClicked(evt);
+            }
+        });
         m33.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m33KeyTyped(evt);
@@ -696,6 +790,11 @@ public class MainForm extends javax.swing.JFrame {
         m36.setToolTipText("");
         m36.setActionCommand("<Not Set>");
         m36.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m36.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m36MouseClicked(evt);
+            }
+        });
         m36.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m36KeyTyped(evt);
@@ -707,6 +806,11 @@ public class MainForm extends javax.swing.JFrame {
         m34.setToolTipText("");
         m34.setActionCommand("<Not Set>");
         m34.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m34MouseClicked(evt);
+            }
+        });
         m34.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m34KeyTyped(evt);
@@ -718,6 +822,11 @@ public class MainForm extends javax.swing.JFrame {
         m35.setToolTipText("");
         m35.setActionCommand("<Not Set>");
         m35.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m35MouseClicked(evt);
+            }
+        });
         m35.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m35KeyTyped(evt);
@@ -729,6 +838,11 @@ public class MainForm extends javax.swing.JFrame {
         m31.setToolTipText("");
         m31.setActionCommand("<Not Set>");
         m31.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m31MouseClicked(evt);
+            }
+        });
         m31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 m31ActionPerformed(evt);
@@ -745,6 +859,11 @@ public class MainForm extends javax.swing.JFrame {
         m39.setToolTipText("");
         m39.setActionCommand("<Not Set>");
         m39.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m39.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m39MouseClicked(evt);
+            }
+        });
         m39.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m39KeyTyped(evt);
@@ -756,6 +875,11 @@ public class MainForm extends javax.swing.JFrame {
         m37.setToolTipText("");
         m37.setActionCommand("<Not Set>");
         m37.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m37.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m37MouseClicked(evt);
+            }
+        });
         m37.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m37KeyTyped(evt);
@@ -767,6 +891,11 @@ public class MainForm extends javax.swing.JFrame {
         m38.setToolTipText("");
         m38.setActionCommand("<Not Set>");
         m38.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m38.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m38MouseClicked(evt);
+            }
+        });
         m38.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m38KeyTyped(evt);
@@ -778,6 +907,11 @@ public class MainForm extends javax.swing.JFrame {
         m32.setToolTipText("");
         m32.setActionCommand("<Not Set>");
         m32.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m32MouseClicked(evt);
+            }
+        });
         m32.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m32KeyTyped(evt);
@@ -789,6 +923,11 @@ public class MainForm extends javax.swing.JFrame {
         m69.setToolTipText("");
         m69.setActionCommand("<Not Set>");
         m69.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m69.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m69MouseClicked(evt);
+            }
+        });
         m69.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m69KeyTyped(evt);
@@ -800,6 +939,11 @@ public class MainForm extends javax.swing.JFrame {
         m67.setToolTipText("");
         m67.setActionCommand("<Not Set>");
         m67.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m67.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m67MouseClicked(evt);
+            }
+        });
         m67.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m67KeyTyped(evt);
@@ -811,6 +955,11 @@ public class MainForm extends javax.swing.JFrame {
         m68.setToolTipText("");
         m68.setActionCommand("<Not Set>");
         m68.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m68.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m68MouseClicked(evt);
+            }
+        });
         m68.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m68KeyTyped(evt);
@@ -822,6 +971,11 @@ public class MainForm extends javax.swing.JFrame {
         m62.setToolTipText("");
         m62.setActionCommand("<Not Set>");
         m62.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m62.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m62MouseClicked(evt);
+            }
+        });
         m62.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m62KeyTyped(evt);
@@ -833,6 +987,11 @@ public class MainForm extends javax.swing.JFrame {
         m43.setToolTipText("");
         m43.setActionCommand("<Not Set>");
         m43.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m43.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m43MouseClicked(evt);
+            }
+        });
         m43.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m43KeyTyped(evt);
@@ -844,6 +1003,11 @@ public class MainForm extends javax.swing.JFrame {
         m46.setToolTipText("");
         m46.setActionCommand("<Not Set>");
         m46.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m46.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m46MouseClicked(evt);
+            }
+        });
         m46.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m46KeyTyped(evt);
@@ -855,6 +1019,11 @@ public class MainForm extends javax.swing.JFrame {
         m44.setToolTipText("");
         m44.setActionCommand("<Not Set>");
         m44.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m44.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m44MouseClicked(evt);
+            }
+        });
         m44.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m44KeyTyped(evt);
@@ -866,6 +1035,11 @@ public class MainForm extends javax.swing.JFrame {
         m45.setToolTipText("");
         m45.setActionCommand("<Not Set>");
         m45.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m45.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m45MouseClicked(evt);
+            }
+        });
         m45.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m45KeyTyped(evt);
@@ -877,6 +1051,11 @@ public class MainForm extends javax.swing.JFrame {
         m41.setToolTipText("");
         m41.setActionCommand("<Not Set>");
         m41.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m41.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m41MouseClicked(evt);
+            }
+        });
         m41.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m41KeyTyped(evt);
@@ -888,6 +1067,11 @@ public class MainForm extends javax.swing.JFrame {
         m49.setToolTipText("");
         m49.setActionCommand("<Not Set>");
         m49.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m49.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m49MouseClicked(evt);
+            }
+        });
         m49.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m49KeyTyped(evt);
@@ -899,6 +1083,11 @@ public class MainForm extends javax.swing.JFrame {
         m47.setToolTipText("");
         m47.setActionCommand("<Not Set>");
         m47.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m47.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m47MouseClicked(evt);
+            }
+        });
         m47.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m47KeyTyped(evt);
@@ -910,6 +1099,11 @@ public class MainForm extends javax.swing.JFrame {
         m48.setToolTipText("");
         m48.setActionCommand("<Not Set>");
         m48.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m48.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m48MouseClicked(evt);
+            }
+        });
         m48.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m48KeyTyped(evt);
@@ -921,6 +1115,11 @@ public class MainForm extends javax.swing.JFrame {
         m53.setToolTipText("");
         m53.setActionCommand("<Not Set>");
         m53.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m53.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m53MouseClicked(evt);
+            }
+        });
         m53.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m53KeyTyped(evt);
@@ -932,6 +1131,11 @@ public class MainForm extends javax.swing.JFrame {
         m56.setToolTipText("");
         m56.setActionCommand("<Not Set>");
         m56.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m56.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m56MouseClicked(evt);
+            }
+        });
         m56.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m56KeyTyped(evt);
@@ -943,6 +1147,11 @@ public class MainForm extends javax.swing.JFrame {
         m54.setToolTipText("");
         m54.setActionCommand("<Not Set>");
         m54.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m54.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m54MouseClicked(evt);
+            }
+        });
         m54.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m54KeyTyped(evt);
@@ -954,6 +1163,11 @@ public class MainForm extends javax.swing.JFrame {
         m55.setToolTipText("");
         m55.setActionCommand("<Not Set>");
         m55.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m55.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m55MouseClicked(evt);
+            }
+        });
         m55.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m55KeyTyped(evt);
@@ -965,6 +1179,11 @@ public class MainForm extends javax.swing.JFrame {
         m51.setToolTipText("");
         m51.setActionCommand("<Not Set>");
         m51.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m51.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m51MouseClicked(evt);
+            }
+        });
         m51.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m51KeyTyped(evt);
@@ -976,6 +1195,11 @@ public class MainForm extends javax.swing.JFrame {
         m63.setToolTipText("");
         m63.setActionCommand("<Not Set>");
         m63.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m63.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m63MouseClicked(evt);
+            }
+        });
         m63.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m63KeyTyped(evt);
@@ -987,6 +1211,11 @@ public class MainForm extends javax.swing.JFrame {
         m59.setToolTipText("");
         m59.setActionCommand("<Not Set>");
         m59.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m59.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m59MouseClicked(evt);
+            }
+        });
         m59.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m59KeyTyped(evt);
@@ -998,6 +1227,11 @@ public class MainForm extends javax.swing.JFrame {
         m66.setToolTipText("");
         m66.setActionCommand("<Not Set>");
         m66.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m66.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m66MouseClicked(evt);
+            }
+        });
         m66.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m66KeyTyped(evt);
@@ -1009,6 +1243,11 @@ public class MainForm extends javax.swing.JFrame {
         m57.setToolTipText("");
         m57.setActionCommand("<Not Set>");
         m57.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m57.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m57MouseClicked(evt);
+            }
+        });
         m57.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m57KeyTyped(evt);
@@ -1020,6 +1259,11 @@ public class MainForm extends javax.swing.JFrame {
         m64.setToolTipText("");
         m64.setActionCommand("<Not Set>");
         m64.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m64.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m64MouseClicked(evt);
+            }
+        });
         m64.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 m64ActionPerformed(evt);
@@ -1036,6 +1280,11 @@ public class MainForm extends javax.swing.JFrame {
         m58.setToolTipText("");
         m58.setActionCommand("<Not Set>");
         m58.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m58.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m58MouseClicked(evt);
+            }
+        });
         m58.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m58KeyTyped(evt);
@@ -1047,6 +1296,11 @@ public class MainForm extends javax.swing.JFrame {
         m65.setToolTipText("");
         m65.setActionCommand("<Not Set>");
         m65.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m65.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m65MouseClicked(evt);
+            }
+        });
         m65.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m65KeyTyped(evt);
@@ -1058,6 +1312,11 @@ public class MainForm extends javax.swing.JFrame {
         m52.setToolTipText("");
         m52.setActionCommand("<Not Set>");
         m52.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m52.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m52MouseClicked(evt);
+            }
+        });
         m52.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m52KeyTyped(evt);
@@ -1069,6 +1328,11 @@ public class MainForm extends javax.swing.JFrame {
         m61.setToolTipText("");
         m61.setActionCommand("<Not Set>");
         m61.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m61.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m61MouseClicked(evt);
+            }
+        });
         m61.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m61KeyTyped(evt);
@@ -1080,6 +1344,11 @@ public class MainForm extends javax.swing.JFrame {
         m42.setToolTipText("");
         m42.setActionCommand("<Not Set>");
         m42.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m42.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m42MouseClicked(evt);
+            }
+        });
         m42.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m42KeyTyped(evt);
@@ -1091,6 +1360,11 @@ public class MainForm extends javax.swing.JFrame {
         m99.setToolTipText("");
         m99.setActionCommand("<Not Set>");
         m99.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m99.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m99MouseClicked(evt);
+            }
+        });
         m99.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m99KeyTyped(evt);
@@ -1102,6 +1376,11 @@ public class MainForm extends javax.swing.JFrame {
         m97.setToolTipText("");
         m97.setActionCommand("<Not Set>");
         m97.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m97.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m97MouseClicked(evt);
+            }
+        });
         m97.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m97KeyTyped(evt);
@@ -1113,6 +1392,11 @@ public class MainForm extends javax.swing.JFrame {
         m98.setToolTipText("");
         m98.setActionCommand("<Not Set>");
         m98.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m98.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m98MouseClicked(evt);
+            }
+        });
         m98.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m98KeyTyped(evt);
@@ -1124,6 +1408,11 @@ public class MainForm extends javax.swing.JFrame {
         m92.setToolTipText("");
         m92.setActionCommand("<Not Set>");
         m92.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m92.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m92MouseClicked(evt);
+            }
+        });
         m92.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m92KeyTyped(evt);
@@ -1135,6 +1424,11 @@ public class MainForm extends javax.swing.JFrame {
         m73.setToolTipText("");
         m73.setActionCommand("<Not Set>");
         m73.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m73.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m73MouseClicked(evt);
+            }
+        });
         m73.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m73KeyTyped(evt);
@@ -1146,6 +1440,11 @@ public class MainForm extends javax.swing.JFrame {
         m76.setToolTipText("");
         m76.setActionCommand("<Not Set>");
         m76.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m76.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m76MouseClicked(evt);
+            }
+        });
         m76.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m76KeyTyped(evt);
@@ -1157,6 +1456,11 @@ public class MainForm extends javax.swing.JFrame {
         m74.setToolTipText("");
         m74.setActionCommand("<Not Set>");
         m74.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m74.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m74MouseClicked(evt);
+            }
+        });
         m74.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m74KeyTyped(evt);
@@ -1168,6 +1472,11 @@ public class MainForm extends javax.swing.JFrame {
         m75.setToolTipText("");
         m75.setActionCommand("<Not Set>");
         m75.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m75.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m75MouseClicked(evt);
+            }
+        });
         m75.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m75KeyTyped(evt);
@@ -1179,6 +1488,11 @@ public class MainForm extends javax.swing.JFrame {
         m71.setToolTipText("");
         m71.setActionCommand("<Not Set>");
         m71.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m71.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m71MouseClicked(evt);
+            }
+        });
         m71.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m71KeyTyped(evt);
@@ -1190,6 +1504,11 @@ public class MainForm extends javax.swing.JFrame {
         m79.setToolTipText("");
         m79.setActionCommand("<Not Set>");
         m79.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m79.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m79MouseClicked(evt);
+            }
+        });
         m79.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m79KeyTyped(evt);
@@ -1201,6 +1520,11 @@ public class MainForm extends javax.swing.JFrame {
         m77.setToolTipText("");
         m77.setActionCommand("<Not Set>");
         m77.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m77.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m77MouseClicked(evt);
+            }
+        });
         m77.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m77KeyTyped(evt);
@@ -1212,6 +1536,11 @@ public class MainForm extends javax.swing.JFrame {
         m78.setToolTipText("");
         m78.setActionCommand("<Not Set>");
         m78.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m78.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m78MouseClicked(evt);
+            }
+        });
         m78.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m78KeyTyped(evt);
@@ -1223,6 +1552,11 @@ public class MainForm extends javax.swing.JFrame {
         m83.setToolTipText("");
         m83.setActionCommand("<Not Set>");
         m83.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m83.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m83MouseClicked(evt);
+            }
+        });
         m83.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m83KeyTyped(evt);
@@ -1234,6 +1568,11 @@ public class MainForm extends javax.swing.JFrame {
         m86.setToolTipText("");
         m86.setActionCommand("<Not Set>");
         m86.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m86.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m86MouseClicked(evt);
+            }
+        });
         m86.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m86KeyTyped(evt);
@@ -1245,6 +1584,11 @@ public class MainForm extends javax.swing.JFrame {
         m84.setToolTipText("");
         m84.setActionCommand("<Not Set>");
         m84.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m84.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m84MouseClicked(evt);
+            }
+        });
         m84.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m84KeyTyped(evt);
@@ -1256,6 +1600,11 @@ public class MainForm extends javax.swing.JFrame {
         m85.setToolTipText("");
         m85.setActionCommand("<Not Set>");
         m85.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m85.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m85MouseClicked(evt);
+            }
+        });
         m85.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m85KeyTyped(evt);
@@ -1267,6 +1616,11 @@ public class MainForm extends javax.swing.JFrame {
         m81.setToolTipText("");
         m81.setActionCommand("<Not Set>");
         m81.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m81.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m81MouseClicked(evt);
+            }
+        });
         m81.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m81KeyTyped(evt);
@@ -1278,6 +1632,11 @@ public class MainForm extends javax.swing.JFrame {
         m93.setToolTipText("");
         m93.setActionCommand("<Not Set>");
         m93.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m93.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m93MouseClicked(evt);
+            }
+        });
         m93.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m93KeyTyped(evt);
@@ -1289,6 +1648,11 @@ public class MainForm extends javax.swing.JFrame {
         m89.setToolTipText("");
         m89.setActionCommand("<Not Set>");
         m89.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m89.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m89MouseClicked(evt);
+            }
+        });
         m89.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m89KeyTyped(evt);
@@ -1300,6 +1664,11 @@ public class MainForm extends javax.swing.JFrame {
         m96.setToolTipText("");
         m96.setActionCommand("<Not Set>");
         m96.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m96.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m96MouseClicked(evt);
+            }
+        });
         m96.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m96KeyTyped(evt);
@@ -1311,6 +1680,11 @@ public class MainForm extends javax.swing.JFrame {
         m87.setToolTipText("");
         m87.setActionCommand("<Not Set>");
         m87.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m87.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m87MouseClicked(evt);
+            }
+        });
         m87.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m87KeyTyped(evt);
@@ -1322,6 +1696,11 @@ public class MainForm extends javax.swing.JFrame {
         m94.setToolTipText("");
         m94.setActionCommand("<Not Set>");
         m94.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m94.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m94MouseClicked(evt);
+            }
+        });
         m94.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m94KeyTyped(evt);
@@ -1333,6 +1712,11 @@ public class MainForm extends javax.swing.JFrame {
         m88.setToolTipText("");
         m88.setActionCommand("<Not Set>");
         m88.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m88.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m88MouseClicked(evt);
+            }
+        });
         m88.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m88KeyTyped(evt);
@@ -1344,6 +1728,11 @@ public class MainForm extends javax.swing.JFrame {
         m95.setToolTipText("");
         m95.setActionCommand("<Not Set>");
         m95.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m95.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m95MouseClicked(evt);
+            }
+        });
         m95.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m95KeyTyped(evt);
@@ -1355,6 +1744,11 @@ public class MainForm extends javax.swing.JFrame {
         m82.setToolTipText("");
         m82.setActionCommand("<Not Set>");
         m82.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m82.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m82MouseClicked(evt);
+            }
+        });
         m82.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m82KeyTyped(evt);
@@ -1366,6 +1760,11 @@ public class MainForm extends javax.swing.JFrame {
         m91.setToolTipText("");
         m91.setActionCommand("<Not Set>");
         m91.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m91.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m91MouseClicked(evt);
+            }
+        });
         m91.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m91KeyTyped(evt);
@@ -1377,6 +1776,11 @@ public class MainForm extends javax.swing.JFrame {
         m72.setToolTipText("");
         m72.setActionCommand("<Not Set>");
         m72.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        m72.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                m72MouseClicked(evt);
+            }
+        });
         m72.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 m72KeyTyped(evt);
@@ -1978,7 +2382,8 @@ private JTextField[][] setBox(){
 
     private void m99KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_m99KeyTyped
         // TODO add your handling code here:
-        m99.setBackground(new Color(251, 255, 0));
+        if (mt[8][8] == 0)
+            m99.setBackground(new Color(251, 255, 0));
         char caracter = evt.getKeyChar();
             if (m99.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                     && (caracter != '\b')) {
@@ -2026,9 +2431,498 @@ private JTextField[][] setBox(){
         // TODO add your handling code here:
     }//GEN-LAST:event_m64ActionPerformed
 
+    private void m11MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[0][0] == 0) {
+            m11.setText("");
+            m11.setBackground(Color.white);
+        }
+    }
+    private void m12MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[0][1] == 0) {
+            m12.setText("");
+            m12.setBackground(Color.white);
+        }
+    }
+    private void m13MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[0][2] == 0) {
+            m13.setText("");
+            m13.setBackground(Color.white);
+        }
+    }
+    private void m14MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[0][3] == 0) {
+            m14.setText("");
+            m14.setBackground(Color.white);
+        }
+    }
+    private void m15MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[0][4] == 0) {
+            m15.setText("");
+            m15.setBackground(Color.white);
+        }
+    }
+    private void m16MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[0][5] == 0) {
+            m16.setText("");
+            m16.setBackground(Color.white);
+        }
+    }
+    private void m17MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[0][6] == 0) {
+            m17.setText("");
+            m17.setBackground(Color.white);
+        }
+    }
+    private void m18MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[0][7] == 0) {
+            m18.setText("");
+            m18.setBackground(Color.white);
+        }
+    }
+    private void m19MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[0][8] == 0) {
+            m19.setText("");
+            m19.setBackground(Color.white);
+        }
+    }
+    private void m21MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[1][0] == 0) {
+            m21.setText("");
+            m21.setBackground(Color.white);
+        }
+    }
+    private void m22MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[1][1] == 0) {
+            m22.setText("");
+            m22.setBackground(Color.white);
+        }
+    }
+    private void m23MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[1][2] == 0) {
+            m23.setText("");
+            m23.setBackground(Color.white);
+        }
+    }
+    private void m24MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[1][3] == 0) {
+            m24.setText("");
+            m24.setBackground(Color.white);
+        }
+    }
+    private void m25MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[1][4] == 0) {
+            m25.setText("");
+            m25.setBackground(Color.white);
+        }
+    }
+    private void m26MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[1][5] == 0) {
+            m26.setText("");
+            m26.setBackground(Color.white);
+        }
+    }
+    private void m27MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[1][6] == 0) {
+            m27.setText("");
+            m27.setBackground(Color.white);
+        }
+    }
+    private void m28MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[1][7] == 0) {
+            m28.setText("");
+            m28.setBackground(Color.white);
+        }
+    }
+    private void m29MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[1][8] == 0) {
+            m29.setText("");
+            m29.setBackground(Color.white);
+        }
+    }
+    private void m31MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[2][0] == 0) {
+            m31.setText("");
+            m31.setBackground(Color.white);
+        }
+    }
+    private void m32MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[2][1] == 0) {
+            m32.setText("");
+            m32.setBackground(Color.white);
+        }
+    }
+    private void m33MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[2][2] == 0) {
+            m33.setText("");
+            m33.setBackground(Color.white);
+        }
+    }
+    private void m34MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[2][3] == 0) {
+            m34.setText("");
+            m34.setBackground(Color.white);
+        }
+    }
+    private void m35MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[2][4] == 0) {
+            m35.setText("");
+            m35.setBackground(Color.white);
+        }
+    }
+    private void m36MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[2][5] == 0) {
+            m36.setText("");
+            m36.setBackground(Color.white);
+        }
+    }
+    private void m37MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[2][6] == 0) {
+            m37.setText("");
+            m37.setBackground(Color.white);
+        }
+    }
+    private void m38MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[2][7] == 0) {
+            m38.setText("");
+            m38.setBackground(Color.white);
+        }
+    }
+    private void m39MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[2][8] == 0) {
+            m39.setText("");
+            m39.setBackground(Color.white);
+        }
+    }
+    private void m41MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[3][0] == 0) {
+            m41.setText("");
+            m41.setBackground(Color.white);
+        }
+    }
+    private void m42MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[3][1] == 0) {
+            m42.setText("");
+            m42.setBackground(Color.white);
+        }
+    }
+    private void m43MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[3][2] == 0) {
+            m43.setText("");
+            m43.setBackground(Color.white);
+        }
+    }
+    private void m44MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[3][3] == 0) {
+            m44.setText("");
+            m44.setBackground(Color.white);
+        }
+    }
+    private void m45MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[3][4] == 0) {
+            m45.setText("");
+            m45.setBackground(Color.white);
+        }
+    }
+    private void m46MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[3][5] == 0) {
+            m46.setText("");
+            m46.setBackground(Color.white);
+        }
+    }
+    private void m47MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[3][6] == 0) {
+            m47.setText("");
+            m47.setBackground(Color.white);
+        }
+    }
+    private void m48MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[3][7] == 0) {
+            m48.setText("");
+            m48.setBackground(Color.white);
+        }
+    }
+    private void m49MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[3][8] == 0) {
+            m49.setText("");
+            m49.setBackground(Color.white);
+        }
+    }
+    private void m51MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[4][0] == 0) {
+            m51.setText("");
+            m51.setBackground(Color.white);
+        }
+    }
+    private void m52MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[4][1] == 0) {
+            m52.setText("");
+            m52.setBackground(Color.white);
+        }
+    }
+    private void m53MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[4][2] == 0) {
+            m53.setText("");
+            m53.setBackground(Color.white);
+        }
+    }
+    private void m54MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[4][3] == 0) {
+            m54.setText("");
+            m54.setBackground(Color.white);
+        }
+    }
+    private void m55MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[4][4] == 0) {
+            m55.setText("");
+            m55.setBackground(Color.white);
+        }
+    }
+    private void m56MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[4][5] == 0) {
+            m56.setText("");
+            m56.setBackground(Color.white);
+        }
+    }
+    private void m57MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[4][6] == 0) {
+            m57.setText("");
+            m57.setBackground(Color.white);
+        }
+    }
+    private void m58MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[4][7] == 0) {
+            m58.setText("");
+            m58.setBackground(Color.white);
+        }
+    }
+    private void m59MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[4][8] == 0) {
+            m59.setText("");
+            m59.setBackground(Color.white);
+        }
+    }
+    private void m61MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[5][0] == 0) {
+            m61.setText("");
+            m61.setBackground(Color.white);
+        }
+    }
+    private void m62MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[5][1] == 0) {
+            m62.setText("");
+            m62.setBackground(Color.white);
+        }
+    }
+    private void m63MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[5][2] == 0) {
+            m63.setText("");
+            m63.setBackground(Color.white);
+        }
+    }
+    private void m64MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[5][3] == 0) {
+            m64.setText("");
+            m64.setBackground(Color.white);
+        }
+    }
+    private void m65MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[5][4] == 0) {
+            m65.setText("");
+            m65.setBackground(Color.white);
+        }
+    }
+    private void m66MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[5][5] == 0) {
+            m66.setText("");
+            m66.setBackground(Color.white);
+        }
+    }
+    private void m67MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[5][6] == 0) {
+            m67.setText("");
+            m67.setBackground(Color.white);
+        }
+    }
+    private void m68MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[5][7] == 0) {
+            m68.setText("");
+            m68.setBackground(Color.white);
+        }
+    }
+    private void m69MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[5][8] == 0) {
+            m69.setText("");
+            m69.setBackground(Color.white);
+        }
+    }
+    private void m71MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[6][0] == 0) {
+            m71.setText("");
+            m71.setBackground(Color.white);
+        }
+    }
+    private void m72MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[6][1] == 0) {
+            m72.setText("");
+            m72.setBackground(Color.white);
+        }
+    }
+    private void m73MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[6][2] == 0) {
+            m73.setText("");
+            m73.setBackground(Color.white);
+        }
+    }
+    private void m74MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[6][3] == 0) {
+            m74.setText("");
+            m74.setBackground(Color.white);
+        }
+    }
+    private void m75MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[6][4] == 0) {
+            m75.setText("");
+            m75.setBackground(Color.white);
+        }
+    }
+    private void m76MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[6][5] == 0) {
+            m76.setText("");
+            m76.setBackground(Color.white);
+        }
+    }
+    private void m77MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[6][6] == 0) {
+            m77.setText("");
+            m77.setBackground(Color.white);
+        }
+    }
+    private void m78MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[6][7] == 0) {
+            m78.setText("");
+            m78.setBackground(Color.white);
+        }
+    }
+    private void m79MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[6][8] == 0) {
+            m79.setText("");
+            m79.setBackground(Color.white);
+        }
+    }
+    private void m81MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[7][0] == 0) {
+            m81.setText("");
+            m81.setBackground(Color.white);
+        }
+    }
+    private void m82MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[7][1] == 0) {
+            m82.setText("");
+            m82.setBackground(Color.white);
+        }
+    }
+    private void m83MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[7][2] == 0) {
+            m83.setText("");
+            m83.setBackground(Color.white);
+        }
+    }
+    private void m84MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[7][3] == 0) {
+            m84.setText("");
+            m84.setBackground(Color.white);
+        }
+    }
+    private void m85MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[7][4] == 0) {
+            m85.setText("");
+            m85.setBackground(Color.white);
+        }
+    }
+    private void m86MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[7][5] == 0) {
+            m86.setText("");
+            m86.setBackground(Color.white);
+        }
+    }
+    private void m87MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[7][6] == 0) {
+            m87.setText("");
+            m87.setBackground(Color.white);
+        }
+    }
+    private void m88MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[7][7] == 0) {
+            m88.setText("");
+            m88.setBackground(Color.white);
+        }
+    }
+    private void m89MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[7][8] == 0) {
+            m89.setText("");
+            m89.setBackground(Color.white);
+        }
+    }
+    private void m91MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[8][0] == 0) {
+            m91.setText("");
+            m91.setBackground(Color.white);
+        }
+    }
+    private void m92MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[8][1] == 0) {
+            m92.setText("");
+            m92.setBackground(Color.white);
+        }
+    }
+    private void m93MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[8][2] == 0) {
+            m93.setText("");
+            m93.setBackground(Color.white);
+        }
+    }
+    private void m94MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[8][3] == 0) {
+            m94.setText("");
+            m94.setBackground(Color.white);
+        }
+    }
+    private void m95MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[8][4] == 0) {
+            m95.setText("");
+            m95.setBackground(Color.white);
+        }
+    }
+    private void m96MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[8][5] == 0) {
+            m96.setText("");
+            m96.setBackground(Color.white);
+        }
+    }
+    private void m97MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[8][6] == 0) {
+            m97.setText("");
+            m97.setBackground(Color.white);
+        }
+    }
+    private void m98MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[8][7] == 0) {
+            m98.setText("");
+            m98.setBackground(Color.white);
+        }
+    }
+    private void m99MouseClicked(java.awt.event.MouseEvent evt) {
+        if (mt[8][8] == 0) {
+            m99.setText("");
+            m99.setBackground(Color.white);
+        }
+    }
+
+    //end
     private void m11KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m11.setBackground(new Color(251, 255, 0));
+        if (mt[0][0] == 0)
+            m11.setBackground(new Color(251, 255, 0));
         if (m11.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2036,7 +2930,8 @@ private JTextField[][] setBox(){
     }
     private void m12KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m12.setBackground(new Color(251, 255, 0));
+        if (mt[0][1] == 0)
+            m12.setBackground(new Color(251, 255, 0));
         if (m12.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2044,7 +2939,8 @@ private JTextField[][] setBox(){
     }
     private void m13KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m13.setBackground(new Color(251, 255, 0));
+        if (mt[0][2] == 0)
+            m13.setBackground(new Color(251, 255, 0));
         if (m13.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2052,7 +2948,8 @@ private JTextField[][] setBox(){
     }
     private void m14KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m14.setBackground(new Color(251, 255, 0));
+        if (mt[0][3] == 0)
+            m14.setBackground(new Color(251, 255, 0));
         if (m14.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2060,7 +2957,8 @@ private JTextField[][] setBox(){
     }
     private void m15KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m15.setBackground(new Color(251, 255, 0));
+        if (mt[0][4] == 0)
+            m15.setBackground(new Color(251, 255, 0));
         if (m15.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2068,7 +2966,8 @@ private JTextField[][] setBox(){
     }
     private void m16KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m16.setBackground(new Color(251, 255, 0));
+        if (mt[0][5] == 0)
+            m16.setBackground(new Color(251, 255, 0));
         if (m16.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2076,7 +2975,8 @@ private JTextField[][] setBox(){
     }
     private void m17KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m17.setBackground(new Color(251, 255, 0));
+        if (mt[0][6] == 0)
+            m17.setBackground(new Color(251, 255, 0));
         if (m17.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2084,7 +2984,8 @@ private JTextField[][] setBox(){
     }
     private void m18KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m18.setBackground(new Color(251, 255, 0));
+        if (mt[0][7] == 0)
+            m18.setBackground(new Color(251, 255, 0));
         if (m18.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2092,7 +2993,8 @@ private JTextField[][] setBox(){
     }
     private void m19KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m19.setBackground(new Color(251, 255, 0));
+        if (mt[0][8] == 0)
+            m19.setBackground(new Color(251, 255, 0));
         if (m19.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2100,7 +3002,8 @@ private JTextField[][] setBox(){
     }
     private void m21KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m21.setBackground(new Color(251, 255, 0));
+        if (mt[1][0] == 0)
+            m21.setBackground(new Color(251, 255, 0));
         if (m21.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2108,7 +3011,8 @@ private JTextField[][] setBox(){
     }
     private void m22KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m22.setBackground(new Color(251, 255, 0));
+        if (mt[1][1] == 0)
+            m22.setBackground(new Color(251, 255, 0));
         if (m22.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2116,7 +3020,8 @@ private JTextField[][] setBox(){
     }
     private void m23KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m23.setBackground(new Color(251, 255, 0));
+        if (mt[1][2] == 0)
+            m23.setBackground(new Color(251, 255, 0));
         if (m23.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2124,7 +3029,8 @@ private JTextField[][] setBox(){
     }
     private void m24KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m24.setBackground(new Color(251, 255, 0));
+        if (mt[1][3] == 0)
+            m24.setBackground(new Color(251, 255, 0));
         if (m24.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2132,7 +3038,8 @@ private JTextField[][] setBox(){
     }
     private void m25KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m25.setBackground(new Color(251, 255, 0));
+        if (mt[1][4] == 0)
+            m25.setBackground(new Color(251, 255, 0));
         if (m25.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2140,7 +3047,8 @@ private JTextField[][] setBox(){
     }
     private void m26KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m26.setBackground(new Color(251, 255, 0));
+        if (mt[1][5] == 0)
+            m26.setBackground(new Color(251, 255, 0));
         if (m26.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2148,7 +3056,8 @@ private JTextField[][] setBox(){
     }
     private void m27KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m27.setBackground(new Color(251, 255, 0));
+        if (mt[1][6] == 0)
+            m27.setBackground(new Color(251, 255, 0));
         if (m27.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2156,7 +3065,8 @@ private JTextField[][] setBox(){
     }
     private void m28KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m28.setBackground(new Color(251, 255, 0));
+        if (mt[1][7] == 0)
+            m28.setBackground(new Color(251, 255, 0));
         if (m28.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2164,7 +3074,8 @@ private JTextField[][] setBox(){
     }
     private void m29KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m29.setBackground(new Color(251, 255, 0));
+        if (mt[1][8] == 0)
+            m29.setBackground(new Color(251, 255, 0));
         if (m29.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2172,7 +3083,8 @@ private JTextField[][] setBox(){
     }
     private void m31KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m31.setBackground(new Color(251, 255, 0));
+        if (mt[2][0] == 0)
+            m31.setBackground(new Color(251, 255, 0));
         if (m31.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2180,7 +3092,8 @@ private JTextField[][] setBox(){
     }
     private void m32KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m32.setBackground(new Color(251, 255, 0));
+        if (mt[2][1] == 0)
+            m32.setBackground(new Color(251, 255, 0));
         if (m32.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2188,7 +3101,8 @@ private JTextField[][] setBox(){
     }
     private void m33KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m33.setBackground(new Color(251, 255, 0));
+        if (mt[2][2] == 0)
+            m33.setBackground(new Color(251, 255, 0));
         if (m33.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2196,7 +3110,8 @@ private JTextField[][] setBox(){
     }
     private void m34KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m34.setBackground(new Color(251, 255, 0));
+        if (mt[2][3] == 0)
+            m34.setBackground(new Color(251, 255, 0));
         if (m34.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2204,7 +3119,8 @@ private JTextField[][] setBox(){
     }
     private void m35KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m35.setBackground(new Color(251, 255, 0));
+        if (mt[2][4] == 0)
+            m35.setBackground(new Color(251, 255, 0));
         if (m35.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2212,7 +3128,8 @@ private JTextField[][] setBox(){
     }
     private void m36KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m36.setBackground(new Color(251, 255, 0));
+        if (mt[2][5] == 0)
+            m36.setBackground(new Color(251, 255, 0));
         if (m36.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2220,7 +3137,8 @@ private JTextField[][] setBox(){
     }
     private void m37KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m37.setBackground(new Color(251, 255, 0));
+        if (mt[2][6] == 0)
+            m37.setBackground(new Color(251, 255, 0));
         if (m37.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2228,7 +3146,8 @@ private JTextField[][] setBox(){
     }
     private void m38KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m38.setBackground(new Color(251, 255, 0));
+        if (mt[2][7] == 0)
+            m38.setBackground(new Color(251, 255, 0));
         if (m38.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2236,7 +3155,8 @@ private JTextField[][] setBox(){
     }
     private void m39KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m39.setBackground(new Color(251, 255, 0));
+        if (mt[2][8] == 0)
+            m39.setBackground(new Color(251, 255, 0));
         if (m39.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2244,7 +3164,8 @@ private JTextField[][] setBox(){
     }
     private void m41KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m41.setBackground(new Color(251, 255, 0));
+        if (mt[3][0] == 0)
+            m41.setBackground(new Color(251, 255, 0));
         if (m41.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2252,7 +3173,8 @@ private JTextField[][] setBox(){
     }
     private void m42KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m42.setBackground(new Color(251, 255, 0));
+        if (mt[3][1] == 0)
+            m42.setBackground(new Color(251, 255, 0));
         if (m42.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2260,7 +3182,8 @@ private JTextField[][] setBox(){
     }
     private void m43KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m43.setBackground(new Color(251, 255, 0));
+        if (mt[3][2] == 0)
+            m43.setBackground(new Color(251, 255, 0));
         if (m43.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2268,7 +3191,8 @@ private JTextField[][] setBox(){
     }
     private void m44KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m44.setBackground(new Color(251, 255, 0));
+        if (mt[3][3] == 0)
+            m44.setBackground(new Color(251, 255, 0));
         if (m44.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2276,7 +3200,8 @@ private JTextField[][] setBox(){
     }
     private void m45KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m45.setBackground(new Color(251, 255, 0));
+        if (mt[3][4] == 0)
+            m45.setBackground(new Color(251, 255, 0));
         if (m45.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2284,7 +3209,8 @@ private JTextField[][] setBox(){
     }
     private void m46KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m46.setBackground(new Color(251, 255, 0));
+        if (mt[3][5] == 0)
+            m46.setBackground(new Color(251, 255, 0));
         if (m46.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2292,7 +3218,8 @@ private JTextField[][] setBox(){
     }
     private void m47KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m47.setBackground(new Color(251, 255, 0));
+        if (mt[3][6] == 0)
+            m47.setBackground(new Color(251, 255, 0));
         if (m47.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2300,7 +3227,8 @@ private JTextField[][] setBox(){
     }
     private void m48KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m48.setBackground(new Color(251, 255, 0));
+        if (mt[3][7] == 0)
+            m48.setBackground(new Color(251, 255, 0));
         if (m48.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2308,7 +3236,8 @@ private JTextField[][] setBox(){
     }
     private void m49KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m49.setBackground(new Color(251, 255, 0));
+        if (mt[3][8] == 0)
+            m49.setBackground(new Color(251, 255, 0));
         if (m49.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2316,7 +3245,8 @@ private JTextField[][] setBox(){
     }
     private void m51KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m51.setBackground(new Color(251, 255, 0));
+        if (mt[4][0] == 0)
+            m51.setBackground(new Color(251, 255, 0));
         if (m51.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2324,7 +3254,8 @@ private JTextField[][] setBox(){
     }
     private void m52KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m52.setBackground(new Color(251, 255, 0));
+        if (mt[4][1] == 0)
+            m52.setBackground(new Color(251, 255, 0));
         if (m52.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2332,7 +3263,8 @@ private JTextField[][] setBox(){
     }
     private void m53KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m53.setBackground(new Color(251, 255, 0));
+        if (mt[4][2] == 0)
+            m53.setBackground(new Color(251, 255, 0));
         if (m53.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2340,7 +3272,8 @@ private JTextField[][] setBox(){
     }
     private void m54KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m54.setBackground(new Color(251, 255, 0));
+        if (mt[4][3] == 0)
+            m54.setBackground(new Color(251, 255, 0));
         if (m54.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2348,7 +3281,8 @@ private JTextField[][] setBox(){
     }
     private void m55KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m55.setBackground(new Color(251, 255, 0));
+        if (mt[4][4] == 0)
+            m55.setBackground(new Color(251, 255, 0));
         if (m55.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2356,7 +3290,8 @@ private JTextField[][] setBox(){
     }
     private void m56KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m56.setBackground(new Color(251, 255, 0));
+        if (mt[4][5] == 0)
+            m56.setBackground(new Color(251, 255, 0));
         if (m56.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2364,7 +3299,8 @@ private JTextField[][] setBox(){
     }
     private void m57KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m57.setBackground(new Color(251, 255, 0));
+        if (mt[4][6] == 0)
+            m57.setBackground(new Color(251, 255, 0));
         if (m57.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2372,7 +3308,8 @@ private JTextField[][] setBox(){
     }
     private void m58KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m58.setBackground(new Color(251, 255, 0));
+        if (mt[4][7] == 0)
+            m58.setBackground(new Color(251, 255, 0));
         if (m58.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2380,7 +3317,8 @@ private JTextField[][] setBox(){
     }
     private void m59KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m59.setBackground(new Color(251, 255, 0));
+        if (mt[4][8] == 0)
+            m59.setBackground(new Color(251, 255, 0));
         if (m59.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2388,7 +3326,8 @@ private JTextField[][] setBox(){
     }
     private void m61KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m61.setBackground(new Color(251, 255, 0));
+        if (mt[5][0] == 0)
+            m61.setBackground(new Color(251, 255, 0));
         if (m61.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2396,7 +3335,8 @@ private JTextField[][] setBox(){
     }
     private void m62KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m62.setBackground(new Color(251, 255, 0));
+        if (mt[5][1] == 0)
+            m62.setBackground(new Color(251, 255, 0));
         if (m62.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2404,7 +3344,8 @@ private JTextField[][] setBox(){
     }
     private void m63KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m63.setBackground(new Color(251, 255, 0));
+        if (mt[5][2] == 0)
+            m63.setBackground(new Color(251, 255, 0));
         if (m63.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2412,7 +3353,8 @@ private JTextField[][] setBox(){
     }
     private void m64KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m64.setBackground(new Color(251, 255, 0));
+        if (mt[5][3] == 0)
+            m64.setBackground(new Color(251, 255, 0));
         if (m64.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2420,7 +3362,8 @@ private JTextField[][] setBox(){
     }
     private void m65KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m65.setBackground(new Color(251, 255, 0));
+        if (mt[5][4] == 0)
+            m65.setBackground(new Color(251, 255, 0));
         if (m65.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2428,7 +3371,8 @@ private JTextField[][] setBox(){
     }
     private void m66KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m66.setBackground(new Color(251, 255, 0));
+        if (mt[5][5] == 0)
+            m66.setBackground(new Color(251, 255, 0));
         if (m66.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2436,7 +3380,8 @@ private JTextField[][] setBox(){
     }
     private void m67KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m67.setBackground(new Color(251, 255, 0));
+        if (mt[5][6] == 0)
+            m67.setBackground(new Color(251, 255, 0));
         if (m67.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2444,7 +3389,8 @@ private JTextField[][] setBox(){
     }
     private void m68KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m68.setBackground(new Color(251, 255, 0));
+        if (mt[5][7] == 0)
+            m68.setBackground(new Color(251, 255, 0));
         if (m68.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2452,7 +3398,8 @@ private JTextField[][] setBox(){
     }
     private void m69KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m69.setBackground(new Color(251, 255, 0));
+        if (mt[5][8] == 0)
+            m69.setBackground(new Color(251, 255, 0));
         if (m69.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2460,7 +3407,8 @@ private JTextField[][] setBox(){
     }
     private void m71KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m71.setBackground(new Color(251, 255, 0));
+        if (mt[6][0] == 0)
+            m71.setBackground(new Color(251, 255, 0));
         if (m71.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2468,7 +3416,8 @@ private JTextField[][] setBox(){
     }
     private void m72KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m72.setBackground(new Color(251, 255, 0));
+        if (mt[6][1] == 0)
+            m72.setBackground(new Color(251, 255, 0));
         if (m72.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2476,7 +3425,8 @@ private JTextField[][] setBox(){
     }
     private void m73KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m73.setBackground(new Color(251, 255, 0));
+        if (mt[6][2] == 0)
+            m73.setBackground(new Color(251, 255, 0));
         if (m73.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2484,7 +3434,8 @@ private JTextField[][] setBox(){
     }
     private void m74KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m74.setBackground(new Color(251, 255, 0));
+        if (mt[6][3] == 0)
+            m74.setBackground(new Color(251, 255, 0));
         if (m74.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2492,7 +3443,8 @@ private JTextField[][] setBox(){
     }
     private void m75KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m75.setBackground(new Color(251, 255, 0));
+        if (mt[6][4] == 0)
+            m75.setBackground(new Color(251, 255, 0));
         if (m75.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2500,7 +3452,8 @@ private JTextField[][] setBox(){
     }
     private void m76KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m76.setBackground(new Color(251, 255, 0));
+        if (mt[6][5] == 0)
+            m76.setBackground(new Color(251, 255, 0));
         if (m76.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2508,7 +3461,8 @@ private JTextField[][] setBox(){
     }
     private void m77KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m77.setBackground(new Color(251, 255, 0));
+        if (mt[6][6] == 0)
+            m77.setBackground(new Color(251, 255, 0));
         if (m77.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2516,7 +3470,8 @@ private JTextField[][] setBox(){
     }
     private void m78KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m78.setBackground(new Color(251, 255, 0));
+        if (mt[6][7] == 0)
+            m78.setBackground(new Color(251, 255, 0));
         if (m78.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2524,7 +3479,8 @@ private JTextField[][] setBox(){
     }
     private void m79KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m79.setBackground(new Color(251, 255, 0));
+        if (mt[6][8] == 0)
+            m79.setBackground(new Color(251, 255, 0));
         if (m79.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2532,7 +3488,8 @@ private JTextField[][] setBox(){
     }
     private void m81KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m81.setBackground(new Color(251, 255, 0));
+        if (mt[7][0] == 0)
+            m81.setBackground(new Color(251, 255, 0));
         if (m81.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2540,7 +3497,8 @@ private JTextField[][] setBox(){
     }
     private void m82KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m82.setBackground(new Color(251, 255, 0));
+        if (mt[7][1] == 0)
+            m82.setBackground(new Color(251, 255, 0));
         if (m82.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2548,7 +3506,8 @@ private JTextField[][] setBox(){
     }
     private void m83KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m83.setBackground(new Color(251, 255, 0));
+        if (mt[7][2] == 0)
+            m83.setBackground(new Color(251, 255, 0));
         if (m83.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2556,7 +3515,8 @@ private JTextField[][] setBox(){
     }
     private void m84KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m84.setBackground(new Color(251, 255, 0));
+        if (mt[7][3] == 0)
+            m84.setBackground(new Color(251, 255, 0));
         if (m84.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2564,7 +3524,8 @@ private JTextField[][] setBox(){
     }
     private void m85KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m85.setBackground(new Color(251, 255, 0));
+        if (mt[7][4] == 0)
+            m85.setBackground(new Color(251, 255, 0));
         if (m85.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2572,7 +3533,8 @@ private JTextField[][] setBox(){
     }
     private void m86KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m86.setBackground(new Color(251, 255, 0));
+        if (mt[7][5] == 0)
+            m86.setBackground(new Color(251, 255, 0));
         if (m86.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2580,7 +3542,8 @@ private JTextField[][] setBox(){
     }
     private void m87KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m87.setBackground(new Color(251, 255, 0));
+        if (mt[7][6] == 0)
+            m87.setBackground(new Color(251, 255, 0));
         if (m87.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2588,7 +3551,8 @@ private JTextField[][] setBox(){
     }
     private void m88KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m88.setBackground(new Color(251, 255, 0));
+        if (mt[7][7] == 0)
+            m88.setBackground(new Color(251, 255, 0));
         if (m88.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2596,7 +3560,8 @@ private JTextField[][] setBox(){
     }
     private void m89KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m89.setBackground(new Color(251, 255, 0));
+        if (mt[7][8] == 0)
+            m89.setBackground(new Color(251, 255, 0));
         if (m89.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2604,7 +3569,8 @@ private JTextField[][] setBox(){
     }
     private void m91KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m91.setBackground(new Color(251, 255, 0));
+        if (mt[8][0] == 0)
+            m91.setBackground(new Color(251, 255, 0));
         if (m91.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2612,7 +3578,8 @@ private JTextField[][] setBox(){
     }
     private void m92KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m92.setBackground(new Color(251, 255, 0));
+        if (mt[8][1] == 0)
+            m92.setBackground(new Color(251, 255, 0));
         if (m92.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2620,7 +3587,8 @@ private JTextField[][] setBox(){
     }
     private void m93KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m93.setBackground(new Color(251, 255, 0));
+        if (mt[8][2] == 0)
+            m93.setBackground(new Color(251, 255, 0));
         if (m93.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2628,7 +3596,8 @@ private JTextField[][] setBox(){
     }
     private void m94KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m94.setBackground(new Color(251, 255, 0));
+        if (mt[8][3] == 0)
+            m94.setBackground(new Color(251, 255, 0));
         if (m94.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2636,7 +3605,8 @@ private JTextField[][] setBox(){
     }
     private void m95KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m95.setBackground(new Color(251, 255, 0));
+        if (mt[8][4] == 0)
+            m95.setBackground(new Color(251, 255, 0));
         if (m95.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2644,7 +3614,8 @@ private JTextField[][] setBox(){
     }
     private void m96KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m96.setBackground(new Color(251, 255, 0));
+        if (mt[8][5] == 0)
+            m96.setBackground(new Color(251, 255, 0));
         if (m96.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2652,7 +3623,8 @@ private JTextField[][] setBox(){
     }
     private void m97KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m97.setBackground(new Color(251, 255, 0));
+        if (mt[8][6] == 0)
+            m97.setBackground(new Color(251, 255, 0));
         if (m97.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2660,7 +3632,8 @@ private JTextField[][] setBox(){
     }
     private void m98KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
-        m98.setBackground(new Color(251, 255, 0));
+        if (mt[8][7] == 0)
+            m98.setBackground(new Color(251, 255, 0));
         if (m98.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
