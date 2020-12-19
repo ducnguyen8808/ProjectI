@@ -203,7 +203,7 @@ public class MainForm extends javax.swing.JFrame {
         setBackground(new java.awt.Color(0, 0, 0));
         setResizable(false);
 
-        menuPanel.setBackground(new java.awt.Color(214, 217, 223));
+        menuPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         name.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         name.setText("Sudoku Game");
@@ -214,17 +214,17 @@ public class MainForm extends javax.swing.JFrame {
         level.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         level.setText("Level: ");
 
-        easy.setBackground(new java.awt.Color(214, 217, 223));
+        easy.setBackground(new java.awt.Color(255, 255, 255));
         easy.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         easy.setText("Easy");
         easy.setBorder(null);
 
-        normal.setBackground(new java.awt.Color(214, 217, 223));
+        normal.setBackground(new java.awt.Color(255, 255, 255));
         normal.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         normal.setText("Normal");
         normal.setBorder(null);
 
-        hard.setBackground(new java.awt.Color(214, 217, 223));
+        hard.setBackground(new java.awt.Color(255, 255, 255));
         hard.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         hard.setText("Hard");
         hard.setBorder(null);
@@ -291,11 +291,11 @@ public class MainForm extends javax.swing.JFrame {
         jLabel1.setText("Point");
 
         jTextField1.setEditable(false);
-        jTextField1.setBackground(new java.awt.Color(214, 217, 223));
+        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
         jTextField1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jTextField1.setBorder(null);
 
-        custom.setBackground(new java.awt.Color(214, 217, 223));
+        custom.setBackground(new java.awt.Color(255, 255, 255));
         custom.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         custom.setText("Custom");
         custom.setBorder(null);
@@ -397,7 +397,7 @@ public class MainForm extends javax.swing.JFrame {
                 .add(308, 308, 308))
         );
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setPreferredSize(new java.awt.Dimension(492, 492));
 
         m11.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
@@ -1684,12 +1684,12 @@ private JTextField[][] setBox(){
                 else if(matrix[i][j]>=10){
                     matrix[i][j] /= 10;
                     boxNumber[i][j].setText(String.valueOf(matrix[i][j]));
-                    boxNumber[i][j].setBackground(Color.white);
+                    boxNumber[i][j].setBackground(new Color(255,255,0));
                     boxNumber[i][j].setEditable(true);
                 }
                 else{
                     boxNumber[i][j].setText(String.valueOf(matrix[i][j]));
-                    boxNumber[i][j].setBackground(Color.LIGHT_GRAY);
+                    boxNumber[i][j].setBackground(new Color(179, 227, 255));
                     boxNumber[i][j].setEditable(false);
                 }
             }
@@ -1886,6 +1886,7 @@ private JTextField[][] setBox(){
 
     private void m99KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_m99KeyTyped
         // TODO add your handling code here:
+        m99.setBackground(new Color(251, 255, 0));
         char caracter = evt.getKeyChar();
             if (m99.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                     && (caracter != '\b')) {
@@ -1920,6 +1921,7 @@ private JTextField[][] setBox(){
 
     private void m11KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m11.setBackground(new Color(251, 255, 0));
         if (m11.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1927,6 +1929,7 @@ private JTextField[][] setBox(){
     }
     private void m12KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m12.setBackground(new Color(251, 255, 0));
         if (m12.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1934,6 +1937,7 @@ private JTextField[][] setBox(){
     }
     private void m13KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m13.setBackground(new Color(251, 255, 0));
         if (m13.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1941,6 +1945,7 @@ private JTextField[][] setBox(){
     }
     private void m14KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m14.setBackground(new Color(251, 255, 0));
         if (m14.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1948,6 +1953,7 @@ private JTextField[][] setBox(){
     }
     private void m15KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m15.setBackground(new Color(251, 255, 0));
         if (m15.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1955,6 +1961,7 @@ private JTextField[][] setBox(){
     }
     private void m16KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m16.setBackground(new Color(251, 255, 0));
         if (m16.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1962,6 +1969,7 @@ private JTextField[][] setBox(){
     }
     private void m17KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m17.setBackground(new Color(251, 255, 0));
         if (m17.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1969,6 +1977,7 @@ private JTextField[][] setBox(){
     }
     private void m18KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m18.setBackground(new Color(251, 255, 0));
         if (m18.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1976,6 +1985,7 @@ private JTextField[][] setBox(){
     }
     private void m19KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m19.setBackground(new Color(251, 255, 0));
         if (m19.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1983,6 +1993,7 @@ private JTextField[][] setBox(){
     }
     private void m21KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m21.setBackground(new Color(251, 255, 0));
         if (m21.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1990,6 +2001,7 @@ private JTextField[][] setBox(){
     }
     private void m22KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m22.setBackground(new Color(251, 255, 0));
         if (m22.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -1997,6 +2009,7 @@ private JTextField[][] setBox(){
     }
     private void m23KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m23.setBackground(new Color(251, 255, 0));
         if (m23.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2004,6 +2017,7 @@ private JTextField[][] setBox(){
     }
     private void m24KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m24.setBackground(new Color(251, 255, 0));
         if (m24.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2011,6 +2025,7 @@ private JTextField[][] setBox(){
     }
     private void m25KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m25.setBackground(new Color(251, 255, 0));
         if (m25.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2018,6 +2033,7 @@ private JTextField[][] setBox(){
     }
     private void m26KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m26.setBackground(new Color(251, 255, 0));
         if (m26.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2025,6 +2041,7 @@ private JTextField[][] setBox(){
     }
     private void m27KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m27.setBackground(new Color(251, 255, 0));
         if (m27.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2032,6 +2049,7 @@ private JTextField[][] setBox(){
     }
     private void m28KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m28.setBackground(new Color(251, 255, 0));
         if (m28.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2039,6 +2057,7 @@ private JTextField[][] setBox(){
     }
     private void m29KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m29.setBackground(new Color(251, 255, 0));
         if (m29.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2046,6 +2065,7 @@ private JTextField[][] setBox(){
     }
     private void m31KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m31.setBackground(new Color(251, 255, 0));
         if (m31.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2053,6 +2073,7 @@ private JTextField[][] setBox(){
     }
     private void m32KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m32.setBackground(new Color(251, 255, 0));
         if (m32.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2060,6 +2081,7 @@ private JTextField[][] setBox(){
     }
     private void m33KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m33.setBackground(new Color(251, 255, 0));
         if (m33.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2067,6 +2089,7 @@ private JTextField[][] setBox(){
     }
     private void m34KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m34.setBackground(new Color(251, 255, 0));
         if (m34.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2074,6 +2097,7 @@ private JTextField[][] setBox(){
     }
     private void m35KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m35.setBackground(new Color(251, 255, 0));
         if (m35.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2081,6 +2105,7 @@ private JTextField[][] setBox(){
     }
     private void m36KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m36.setBackground(new Color(251, 255, 0));
         if (m36.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2088,6 +2113,7 @@ private JTextField[][] setBox(){
     }
     private void m37KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m37.setBackground(new Color(251, 255, 0));
         if (m37.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2095,6 +2121,7 @@ private JTextField[][] setBox(){
     }
     private void m38KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m38.setBackground(new Color(251, 255, 0));
         if (m38.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2102,6 +2129,7 @@ private JTextField[][] setBox(){
     }
     private void m39KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m39.setBackground(new Color(251, 255, 0));
         if (m39.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2109,6 +2137,7 @@ private JTextField[][] setBox(){
     }
     private void m41KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m41.setBackground(new Color(251, 255, 0));
         if (m41.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2116,6 +2145,7 @@ private JTextField[][] setBox(){
     }
     private void m42KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m42.setBackground(new Color(251, 255, 0));
         if (m42.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2123,6 +2153,7 @@ private JTextField[][] setBox(){
     }
     private void m43KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m43.setBackground(new Color(251, 255, 0));
         if (m43.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2130,6 +2161,7 @@ private JTextField[][] setBox(){
     }
     private void m44KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m44.setBackground(new Color(251, 255, 0));
         if (m44.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2137,6 +2169,7 @@ private JTextField[][] setBox(){
     }
     private void m45KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m45.setBackground(new Color(251, 255, 0));
         if (m45.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2144,6 +2177,7 @@ private JTextField[][] setBox(){
     }
     private void m46KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m46.setBackground(new Color(251, 255, 0));
         if (m46.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2151,6 +2185,7 @@ private JTextField[][] setBox(){
     }
     private void m47KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m47.setBackground(new Color(251, 255, 0));
         if (m47.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2158,6 +2193,7 @@ private JTextField[][] setBox(){
     }
     private void m48KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m48.setBackground(new Color(251, 255, 0));
         if (m48.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2165,6 +2201,7 @@ private JTextField[][] setBox(){
     }
     private void m49KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m49.setBackground(new Color(251, 255, 0));
         if (m49.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2172,6 +2209,7 @@ private JTextField[][] setBox(){
     }
     private void m51KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m51.setBackground(new Color(251, 255, 0));
         if (m51.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2179,6 +2217,7 @@ private JTextField[][] setBox(){
     }
     private void m52KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m52.setBackground(new Color(251, 255, 0));
         if (m52.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2186,6 +2225,7 @@ private JTextField[][] setBox(){
     }
     private void m53KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m53.setBackground(new Color(251, 255, 0));
         if (m53.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2193,6 +2233,7 @@ private JTextField[][] setBox(){
     }
     private void m54KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m54.setBackground(new Color(251, 255, 0));
         if (m54.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2200,6 +2241,7 @@ private JTextField[][] setBox(){
     }
     private void m55KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m55.setBackground(new Color(251, 255, 0));
         if (m55.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2207,6 +2249,7 @@ private JTextField[][] setBox(){
     }
     private void m56KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m56.setBackground(new Color(251, 255, 0));
         if (m56.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2214,6 +2257,7 @@ private JTextField[][] setBox(){
     }
     private void m57KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m57.setBackground(new Color(251, 255, 0));
         if (m57.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2221,6 +2265,7 @@ private JTextField[][] setBox(){
     }
     private void m58KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m58.setBackground(new Color(251, 255, 0));
         if (m58.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2228,6 +2273,7 @@ private JTextField[][] setBox(){
     }
     private void m59KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m59.setBackground(new Color(251, 255, 0));
         if (m59.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2235,6 +2281,7 @@ private JTextField[][] setBox(){
     }
     private void m61KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m61.setBackground(new Color(251, 255, 0));
         if (m61.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2242,6 +2289,7 @@ private JTextField[][] setBox(){
     }
     private void m62KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m62.setBackground(new Color(251, 255, 0));
         if (m62.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2249,6 +2297,7 @@ private JTextField[][] setBox(){
     }
     private void m63KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m63.setBackground(new Color(251, 255, 0));
         if (m63.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2256,6 +2305,7 @@ private JTextField[][] setBox(){
     }
     private void m64KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m64.setBackground(new Color(251, 255, 0));
         if (m64.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2263,6 +2313,7 @@ private JTextField[][] setBox(){
     }
     private void m65KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m65.setBackground(new Color(251, 255, 0));
         if (m65.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2270,6 +2321,7 @@ private JTextField[][] setBox(){
     }
     private void m66KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m66.setBackground(new Color(251, 255, 0));
         if (m66.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2277,6 +2329,7 @@ private JTextField[][] setBox(){
     }
     private void m67KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m67.setBackground(new Color(251, 255, 0));
         if (m67.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2284,6 +2337,7 @@ private JTextField[][] setBox(){
     }
     private void m68KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m68.setBackground(new Color(251, 255, 0));
         if (m68.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2291,6 +2345,7 @@ private JTextField[][] setBox(){
     }
     private void m69KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m69.setBackground(new Color(251, 255, 0));
         if (m69.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2298,6 +2353,7 @@ private JTextField[][] setBox(){
     }
     private void m71KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m71.setBackground(new Color(251, 255, 0));
         if (m71.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2305,6 +2361,7 @@ private JTextField[][] setBox(){
     }
     private void m72KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m72.setBackground(new Color(251, 255, 0));
         if (m72.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2312,6 +2369,7 @@ private JTextField[][] setBox(){
     }
     private void m73KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m73.setBackground(new Color(251, 255, 0));
         if (m73.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2319,6 +2377,7 @@ private JTextField[][] setBox(){
     }
     private void m74KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m74.setBackground(new Color(251, 255, 0));
         if (m74.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2326,6 +2385,7 @@ private JTextField[][] setBox(){
     }
     private void m75KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m75.setBackground(new Color(251, 255, 0));
         if (m75.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2333,6 +2393,7 @@ private JTextField[][] setBox(){
     }
     private void m76KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m76.setBackground(new Color(251, 255, 0));
         if (m76.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2340,6 +2401,7 @@ private JTextField[][] setBox(){
     }
     private void m77KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m77.setBackground(new Color(251, 255, 0));
         if (m77.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2347,6 +2409,7 @@ private JTextField[][] setBox(){
     }
     private void m78KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m78.setBackground(new Color(251, 255, 0));
         if (m78.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2354,6 +2417,7 @@ private JTextField[][] setBox(){
     }
     private void m79KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m79.setBackground(new Color(251, 255, 0));
         if (m79.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2361,6 +2425,7 @@ private JTextField[][] setBox(){
     }
     private void m81KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m81.setBackground(new Color(251, 255, 0));
         if (m81.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2368,6 +2433,7 @@ private JTextField[][] setBox(){
     }
     private void m82KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m82.setBackground(new Color(251, 255, 0));
         if (m82.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2375,6 +2441,7 @@ private JTextField[][] setBox(){
     }
     private void m83KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m83.setBackground(new Color(251, 255, 0));
         if (m83.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2382,6 +2449,7 @@ private JTextField[][] setBox(){
     }
     private void m84KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m84.setBackground(new Color(251, 255, 0));
         if (m84.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2389,6 +2457,7 @@ private JTextField[][] setBox(){
     }
     private void m85KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m85.setBackground(new Color(251, 255, 0));
         if (m85.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2396,6 +2465,7 @@ private JTextField[][] setBox(){
     }
     private void m86KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m86.setBackground(new Color(251, 255, 0));
         if (m86.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2403,6 +2473,7 @@ private JTextField[][] setBox(){
     }
     private void m87KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m87.setBackground(new Color(251, 255, 0));
         if (m87.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2410,6 +2481,7 @@ private JTextField[][] setBox(){
     }
     private void m88KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m88.setBackground(new Color(251, 255, 0));
         if (m88.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2417,6 +2489,7 @@ private JTextField[][] setBox(){
     }
     private void m89KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m89.setBackground(new Color(251, 255, 0));
         if (m89.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2424,6 +2497,7 @@ private JTextField[][] setBox(){
     }
     private void m91KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m91.setBackground(new Color(251, 255, 0));
         if (m91.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2431,6 +2505,7 @@ private JTextField[][] setBox(){
     }
     private void m92KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m92.setBackground(new Color(251, 255, 0));
         if (m92.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2438,6 +2513,7 @@ private JTextField[][] setBox(){
     }
     private void m93KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m93.setBackground(new Color(251, 255, 0));
         if (m93.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2445,6 +2521,7 @@ private JTextField[][] setBox(){
     }
     private void m94KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m94.setBackground(new Color(251, 255, 0));
         if (m94.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2452,6 +2529,7 @@ private JTextField[][] setBox(){
     }
     private void m95KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m95.setBackground(new Color(251, 255, 0));
         if (m95.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2459,6 +2537,7 @@ private JTextField[][] setBox(){
     }
     private void m96KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m96.setBackground(new Color(251, 255, 0));
         if (m96.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2466,6 +2545,7 @@ private JTextField[][] setBox(){
     }
     private void m97KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m97.setBackground(new Color(251, 255, 0));
         if (m97.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
@@ -2473,6 +2553,7 @@ private JTextField[][] setBox(){
     }
     private void m98KeyTyped(java.awt.event.KeyEvent evt) {
         char caracter = evt.getKeyChar();
+        m98.setBackground(new Color(251, 255, 0));
         if (m98.getText().length() > 0 || ((caracter < '0') || (caracter > '9'))
                 && (caracter != '\b')) {
             evt.consume();
